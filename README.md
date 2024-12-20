@@ -1,10 +1,10 @@
-# Scott McQueen | Sr. Data Analyst / Data Engineer Portfolio  
+# Scott McQueen | Data Engineer Portfolio  
 
 Welcome to my personal portfolio website, showcasing my expertise in data engineering, analytics, and cloud-based solutions. This site highlights my professional experience, technical skills, and data-driven projects.
 
 ## Overview  
 This portfolio is built using **GitHub Pages** and **Jekyll** to provide a clean, responsive platform for sharing my work. It serves as a central hub for:  
-- **Projects**: Detailed data engineering and analytics case studies.  
+- **Projects**: Detailed case studies of data engineering and analytics work.  
 - **Skills**: An overview of my technical and professional capabilities.  
 - **Resume**: A downloadable version of my resume.  
 - **Contact Information**: Links to connect with me via email, LinkedIn, and GitHub.  
@@ -17,11 +17,11 @@ This portfolio is built using **GitHub Pages** and **Jekyll** to provide a clean
 
 ## Getting Started  
 To view the site:  
-1. Visit [https:/SMcQueen2023.github.io](https://SMcQueen2023.github.io) (replace `SMcQueen2023` with your GitHub username).  
+1. Visit [https://smcqueen2023.github.io/skills-github-pages/](https://smcqueen2023.github.io/skills-github-pages/).  
 
 ### Local Development  
 To run the site locally:  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/SMcQueen2023/yourrepository.git  
-   cd yourrepository  
+   git clone https://github.com/smcqueen2023/skills-github-pages.git  
+   cd skills-github-pages  
