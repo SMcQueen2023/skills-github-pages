@@ -17,7 +17,7 @@ This portfolio is built using **GitHub Pages** and **Jekyll** to provide a clean
 
 ## Getting Started  
 To view the site:  
-1. Visit [https://yourusername.github.io](https://SMcQueen2023.github.io) (replace `SMcQueen2023` with your GitHub username).  
+1. Visit [https:/SMcQueen2023.github.io](https://SMcQueen2023.github.io) (replace `SMcQueen2023` with your GitHub username).  
 
 ### Local Development  
 To run the site locally:  
