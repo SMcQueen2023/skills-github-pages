@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "Scott McQueen | Sr. Data Analyst / Asipiring Data Engineer Portfolio"
 ---
 
 # Welcome to My Portfolio
@@ -8,9 +7,9 @@ title: "Scott McQueen | Sr. Data Analyst / Asipiring Data Engineer Portfolio"
 Hi, I'm **Scott McQueen**, a certified data engineer with expertise in cloud-based infrastructures, data analysis, and project management. I specialize in building robust data pipelines, optimizing data workflows, and crafting insightful visualizations that drive impactful decisions.
 
 ## About Me
-- **Master's in Applied Business Analytics** (American Public University System)
-- **Certifications**: Azure Data Engineer, SAFe POPM, PMP, and more
-- **Experience**: Managing technical and non-technical projects across various industries, focusing on delivering high-quality solutions under pressure.
+- **Experience**: Over 5 years of experience in data analytics/engineering across security, international freight, and accounting sectors
+- **M.S. Applied Business Analytics (In Progress)**: American Public University
+- **Certifications**: Azure Data Engineer, PMI PMP, SAFe POPM and more
 
 Explore my portfolio to see how I blend technical expertise and strategic thinking to solve complex business challenges.
 
