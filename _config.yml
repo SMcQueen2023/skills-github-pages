@@ -1,47 +1,47 @@
-title: "Scott McQueen's Portfolio"
-description: "A personal portfolio of Scott McQueen, Sr. Data Analyst and Aspiring Data Engineer"
-url: "https://SMcQueen2023.github.io"
-baseurl: ""
-author:
-  name: "Scott McQueen"
-  email: "scottmcqueen2023@gmail.com"
-  github: "SMcQueen2023"
-  linkedin: "smmcqueen"
-  bio: "Sr. Data Analyst | Project Management Professional | M.S. Applied Business Analytics Candidate | Asipiring Data Engineer"
-  avatar: "assets/images/avatar.jpg"
+# Site settings
+title: "Scott McQueen | Data Engineer Portfolio"
+description: "Showcasing data engineering projects, skills, and professional experience."
+author: "Scott McQueen"
+baseurl: "" # Leave empty for root site
+url: "https://SMcQueen2023.github.io" # Replace with your GitHub Pages URL
+theme: minima # Change theme if desired
 
-theme: minima
-
-# Enable dark mode
-minimal_mistakes_skin: dark
-
-# Links to show in the navigation bar
-nav:
+# Navigation links
+# Adjust paths to match your content structure
+navbar:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
   - title: "Projects"
     url: /projects/
-  - title: "Blog"
-    url: /blog/
+  - title: "Skills"
+    url: /skills/
+  - title: "Resume"
+    url: /resume/
   - title: "Contact"
     url: /contact/
 
-# Social media links
-social:
-  - title: "GitHub"
-    url: "https://github.com/SMcQueen2023"
-    icon: "fab fa-github"
-  - title: "LinkedIn"
-    url: "https://www.linkedin.com/in/smmcqueen/"
-    icon: "fab fa-linkedin"
+# Social links
+social_links:
+  github: "https://github.com/SMcQueen2023"
+  linkedin: "https://www.linkedin.com/in/smmcqueen/"
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
 
 # Markdown settings
 markdown: kramdown
-highlighter: rouge
+highlighter: rouge # Syntax highlighting for code blocks
+
+# Plugins
+plugins:
+  - jekyll-feed # Generates RSS feed
+  - jekyll-seo-tag # Adds SEO metadata
+  - jekyll-sitemap # Generates a sitemap
+
+# Pagination settings (for blog, if applicable)
+paginate: 5 # Number of posts per page
+
+# Other configurations
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
