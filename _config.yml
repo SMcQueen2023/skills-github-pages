@@ -1,2 +1,47 @@
-theme: minima
-author: Scott McQueen
+title: "Scott McQueen's Portfolio"
+description: "A personal portfolio of Scott McQueen, Sr. Data Analyst and Aspiring Data Engineer"
+url: "https://SMcQueen2023.github.io"
+baseurl: ""
+author:
+  name: "Scott McQueen"
+  email: "scottmcqueen2023@gmail.com"
+  github: "SMcQueen2023"
+  linkedin: "smmcqueen"
+  bio: "Sr. Data Analyst | Project Management Professional | M.S. Applied Business Analytics Candidate | Asipiring Data Engineer"
+  avatar: "assets/images/avatar.jpg"
+
+theme: minimal-mistakes-jekyll
+
+# Enable dark mode
+minimal_mistakes_skin: dark
+
+# Links to show in the navigation bar
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contact"
+    url: /contact/
+
+# Social media links
+social:
+  - title: "GitHub"
+    url: "https://github.com/SMcQueen2023"
+    icon: "fab fa-github"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/smmcqueen/"
+    icon: "fab fa-linkedin"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
