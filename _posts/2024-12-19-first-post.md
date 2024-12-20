@@ -21,7 +21,7 @@ On this blog, you’ll find:
 
 ## Get in Touch
 
-Feel free to reach out to me through [GitHub](https://github.com/SMcQueen2023) or [LinkedIn]([https://www.linkedin.com/in/your-linkedin](https://www.linkedin.com/in/smmcqueen/)). I’m always open to discussing new ideas, collaboration opportunities, and feedback.
+Feel free to reach out to me through [GitHub](https://github.com/SMcQueen2023) or [LinkedIn](https://www.linkedin.com/in/smmcqueen/). I’m always open to discussing new ideas, collaboration opportunities, and feedback.
 
 Stay tuned for more updates, and thanks for visiting!
 
