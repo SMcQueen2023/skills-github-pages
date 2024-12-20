@@ -43,12 +43,12 @@ I bring a diverse set of technical and professional skills, honed through years 
 ## **Certifications**  
 - **Microsoft Certified Data Engineer Associate**  
 - **Microsoft Certified Enterprise Data Analyst**  
-- **Microsoft Certified Powr BI Data Analyst**
+- **Microsoft Certified Power BI Data Analyst**
 - **Project Management Institute (PMI) Project Management Professional (PMP)**
 - **SAFe Product Owner/Product Manager**  
 - **SAFe Agilist**
-- **SAFe Practitioner** 
-
+- **SAFe Practitioner**
+See my Microsoft certifications and training [here](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript). View all of my other credentials at [Credly](https://www.credly.com/users/scott-mcqueen).
 ---
 
 ## **Professional Strengths**  
