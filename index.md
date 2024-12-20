@@ -16,16 +16,16 @@ Explore my portfolio to see how I blend technical expertise and strategic thinki
 
 ## Projects
 Some of my recent projects include:
-- **Cost Center Expense Analysis**: Created Power BI reports for Fortune 50 companies.
-- **Dynamic Reporting Solutions**: Implemented automated workflows using Azure Synapse and Power Automate.
-- **Clustering Analysis**: Performed customer segmentation using machine learning techniques like K-Means and GMM.
+- **Streaming Stock Price Ingestion**: I successfully streamed Apple Inc. (AAPL) stock prices in this project utilizing the Yahoo Finance API and Kafka. The data was subsequently loaded into Microsoft SQL Server, and insightful visualizations were created using Power BI. Source control was maintained through GitHub. The integration of generative AI supported the project to enhance data analysis, code development, and troubleshooting.
+- **Bank Customer Segmentation**: I utilized Google Colab and Python, employing libraries such as Pandas, NumPy, and scikit-learn to conduct a comprehensive exploratory data analysis (EDA). I created detailed visualizations to uncover patterns and trends and applied advanced algorithms like Principal Component Analysis (PCA) and t-SNE to distill complex data into actionable customer segments. These insights were instrumental in guiding the bank toward more effective and personalized service strategies.
+- **Marketing Campaign Analysis**: In my capstone project for the MIT Professional Education Applied Data Science course, I leveraged Google Colab and Python to explore and analyze a sample marketing dataset. Using advanced machine learning algorithms, I identified distinct customer segments and developed data-driven marketing strategies tailored to each segment's unique characteristics.
 
 [View all projects](/projects/)
 
 ## Skills
-- Cloud Platforms: Azure Synapse, Power BI, SharePoint
+- Cloud Platforms: Azure, Google
 - Programming: Python, SQL, SAS
-- Tools: SAP BO, Power Automate, Tableau
+- Tools: Azure Synapse Analytics, Power Platform, Google Colab, Google App Scripts
 
 [Learn more about my skills](/skills/)
 
