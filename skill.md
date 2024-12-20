@@ -48,7 +48,9 @@ I bring a diverse set of technical and professional skills, honed through years 
 - **SAFe Product Owner/Product Manager**  
 - **SAFe Agilist**
 - **SAFe Practitioner**
-See my Microsoft certifications and training [here](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript). View all of my other credentials at [Credly](https://www.credly.com/users/scott-mcqueen).
+  
+See my Microsoft certifications and training on [Microsoft Learn](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript). View all of my other credentials at [Credly](https://www.credly.com/users/scott-mcqueen).
+
 ---
 
 ## **Professional Strengths**  
