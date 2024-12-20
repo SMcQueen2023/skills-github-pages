@@ -10,7 +10,7 @@ author:
   bio: "Sr. Data Analyst | Project Management Professional | M.S. Applied Business Analytics Candidate | Asipiring Data Engineer"
   avatar: "assets/images/avatar.jpg"
 
-theme: jekyll-theme-cayman
+theme: minima
 
 # Enable dark mode
 minimal_mistakes_skin: dark
