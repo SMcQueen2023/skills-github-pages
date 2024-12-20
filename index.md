@@ -22,9 +22,9 @@ Some of my recent projects include:
 [View all projects](/projects/)
 
 ## **Skills**
-- Platforms: Microsoft Azure, Microsoft Power Platform, Google Cloud Platform
-- Programming: Python, SQL, SAS
-- Tools: Azure Synapse Analytics, Power BI, Google Colab, Google App Scripts, and more
+- **Platforms**: Microsoft Azure, Microsoft Power Platform, Google Cloud Platform
+- **Programming**: Python, SQL, SAS
+- **Tools**: Azure Synapse Analytics, Power BI, Google Colab, Google App Scripts, and more
 
 [Learn more about my skills](/skills/)
 
