@@ -5,13 +5,13 @@ title: "Skills | Scott McQueen"
 
 # Skills  
 
-I bring a diverse set of technical and professional skills, honed through years of experience in data engineering, analytics, and project management. Here's an overview of my key competencies:  
+I bring diverse technical and professional skills honed through years of experience in data engineering, analytics, and project management. Here's an overview of my key competencies:  
 
 ---
 
 ## **Data Engineering**  
 - Designing and building robust data pipelines using **Azure Synapse Analytics** and **Python**.  
-- Expertise in managing large datasets, with a focus on scalability and performance.  
+- Expertise in managing large datasets, focusing on scalability and performance.  
 - Skilled in integrating cloud and on-premises systems to modernize legacy workflows.  
 - Advanced SQL for serverless and dedicated pools in Azure.  
 
@@ -36,7 +36,7 @@ I bring a diverse set of technical and professional skills, honed through years 
 - **Python**: Used to perform data analysis, machine learning/data science projects, and data engineering.  
 - **SQL**: Used various dialects to create complex data analytics and data engineering queries.  
 - **SAS**: Used to perform data manipulation and ETL/ELT via scheduled SAS programs.  
-- Experience in **Git** for version control and collaboration with both Azure DevOps and GitHub.  
+- Experience in **Git** for version control and collaboration with Azure DevOps and GitHub.  
 
 ---
 
