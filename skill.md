@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Skills | Scott McQueen"
+title: "Skills |"
 ---
 
 # Skills  
