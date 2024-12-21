@@ -11,7 +11,7 @@ navbar:
   - title: "Home"
     url: https://smcqueen2023.github.io/skills-github-pages/
   - title: "Projects"
-    url: /projects/
+    url: https://smcqueen2023.github.io/skills-github-pages/projects.html
   - title: "Skills"
     url: https://smcqueen2023.github.io/skills-github-pages/skill.html
   - title: "Resume"
