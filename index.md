@@ -17,7 +17,7 @@ I’m pursuing a Master of Science in Applied Data Analytics at the American Pub
 Some of my recent projects include:
 - **Streaming Stock Price Ingestion**: I successfully streamed Apple Inc. (AAPL) stock prices in this project utilizing the Yahoo Finance API and Kafka. The data was subsequently loaded into Microsoft SQL Server, and insightful visualizations were created using Power BI. Source control was maintained through GitHub. The integration of generative AI supported the project to enhance data analysis, code development, and troubleshooting.
 - **Bank Customer Segmentation**: I utilized Google Colab and Python, employing libraries such as Pandas, NumPy, and scikit-learn to conduct a comprehensive exploratory data analysis (EDA). I created detailed visualizations to uncover patterns and trends and applied advanced algorithms like Principal Component Analysis (PCA) and t-SNE to distill complex data into actionable customer segments. These insights were instrumental in guiding the bank toward more effective and personalized service strategies.
-- **Marketing Campaign**: I leveraged Google Colab and Python to explore and analyze a sample marketing dataset for my capstone project for the MIT Professional Education Applied Data Science course. Using advanced machine learning algorithms, I identified distinct customer segments and developed data-driven marketing strategies tailored to each segment's unique characteristics.
+- **Marketing Campaign**: I leveraged Google Colab and Python to explore and analyze a sample marketing dataset for my MIT Professional Education Applied Data Science course capstone project. Using advanced machine learning algorithms, I identified distinct customer segments and developed data-driven marketing strategies tailored to each segment's unique characteristics.
 
 [View all projects](/projects/)
 
@@ -26,7 +26,7 @@ Some of my recent projects include:
 - **Programming**: Python, SQL, SAS
 - **Tools**: Azure Synapse Analytics, Power BI, Google Colab, Google App Scripts, and more
 
-[Learn more about my skills](/skill/)
+[Learn more about my skills](https://smcqueen2023.github.io/skills-github-pages/skill.html)
 
 ## **Contact Me**
 I'm always open to discussing data engineering projects, collaborations, or opportunities.  
