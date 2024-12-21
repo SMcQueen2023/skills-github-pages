@@ -1,13 +1,7 @@
 ---
 layout: page
-title: "Contact"
+title: "Contact Me"
 permalink: /contact/
----
-
-# 📬 Contact Me
-
-I’d love to hear from you! Feel free to reach out through any of the following platforms:
-
 ---
 
 ## 📧 Email
