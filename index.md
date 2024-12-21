@@ -26,7 +26,7 @@ Some of my recent projects include:
 - **Programming**: Python, SQL, SAS
 - **Tools**: Azure Synapse Analytics, Power BI, Google Colab, Google App Scripts, and more
 
-[Learn more about my skills](https://smcqueen2023.github.io/skills-github-pages/skill.html)
+[Learn more about my skills](/skill/)
 
 ## **Contact Me**
 I'm always open to discussing data engineering projects, collaborations, or opportunities.  
