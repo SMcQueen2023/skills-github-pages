@@ -5,11 +5,11 @@ title: "Projects |"
 
 # Projects  
 
-Welcome to my projects page! Below, you'll find a selection of data engineering, analytics, and data science projects that showcase my technical skills and problem-solving capabilities.  
+Welcome to my projects page! Below, I've included a selection of data engineering, analytics, and data science projects that showcase my technical skills and problem-solving capabilities.  
 
 ---
 
-## **1. Marketing Campiagn Analysis**  
+## **1. Marketing Campaign Analysis**  
 **Tools Used**: Python, Google Colab, Scikit-learn, Matplotlib  
 - **Objective**: Identify customer segments to guide targeted marketing strategies.  
 - **Highlights**:  
@@ -38,8 +38,8 @@ Welcome to my projects page! Below, you'll find a selection of data engineering,
 - **Objective**: Automatically download email attachments and place them in a Google Drive folder.  
 - **Highlights**:  
   - Code written in JavaScript.  
-  - Automatically downloads email attachments based on label each month.  
-  - Once the files are downloaded, they are placed a new folder for each month.  
+  - Email attachments are automatically downloaded each month based on the label.  
+  - Once the files are downloaded, they are placed in a new folder for each month.  
 
 [View Dashboard](https://github.com/SMcQueen2023/Email-Attachment-Downloader)  
 
