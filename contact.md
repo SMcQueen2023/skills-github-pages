@@ -24,4 +24,4 @@ I’d love to hear from you! Feel free to reach out through any of the following
 
 ---
 
-### Thank you for visiting! I'm looking forward to connecting with you.
+### Thank you for visiting! I look forward to connecting with you.
