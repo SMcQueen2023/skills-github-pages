@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Projects | Scott McQueen"
+title: "Projects | "
 ---
 
 # Projects  
@@ -16,6 +16,7 @@ Welcome to my projects page! Below, you'll find a selection of data engineering,
   - Applied K-Means and Gaussian Mixture Models (GMM) to cluster customer data.  
   - Achieved meaningful segmentation using feature engineering and silhouette scores.  
   - Visualized cluster patterns and provided actionable insights for stakeholders.  
+
 [View Details](https://github.com/SMcQueen2023/Marketing-Campaign-Analysis)  
 
 ---
@@ -39,6 +40,7 @@ Welcome to my projects page! Below, you'll find a selection of data engineering,
   - Code written in JavaScript.  
   - Automatically downloads email attachments based on label each month.  
   - Once the files are downloaded, they are placed a new folder for each month.  
+
 [View Dashboard](https://github.com/SMcQueen2023/Email-Attachment-Downloader)  
 
 ---
