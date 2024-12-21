@@ -12,7 +12,7 @@ At FedEx, I work as a Senior Data Analyst, focusing on advanced analytics soluti
 
 I’m pursuing a Master of Science in Applied Data Analytics at the American Public University System to deepen my analytical skills. As the owner of All Fronts Tactical, I blend data-driven strategies with entrepreneurial leadership, bringing a unique perspective to problem-solving and decision-making. I’m committed to continuous learning, professional growth, and applying innovative analytics tools to real-world challenges.
 
-[View my resume](/resume/)
+[View my resume](https://smcqueen2023.github.io/skills-github-pages/resume/)
 
 ## **Projects**
 Some of my recent projects include:
