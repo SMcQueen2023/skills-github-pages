@@ -20,7 +20,7 @@ Some of my recent projects include:
 - **Stock Price Ingestion**: I successfully streamed Apple Inc. (AAPL) stock prices in this project utilizing the Yahoo Finance API and Kafka. The data was subsequently loaded into Microsoft SQL Server, and insightful visualizations were created using Power BI. Source control was maintained through GitHub. The integration of generative AI supported the project to enhance data analysis, code development, and troubleshooting.
 - **Email Attachment Download**: Using JavaScript and Google App Scripts, I automated downloading email attachments and saving them to Google Drive based on email label and date.
 
-[View all projects](/projects/)
+[View all projects](https://smcqueen2023.github.io/skills-github-pages/projects.html)
 
 ## **Skills**
 - **Platforms**: Microsoft Azure, Microsoft Power Platform, Google Cloud Platform
