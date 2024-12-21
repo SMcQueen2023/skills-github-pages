@@ -8,11 +8,7 @@ permalink: /contact/
 
 Feel free to reach out to me through any of the following platforms:
 
-- **Email**: <script>
-    // Obfuscate email to prevent spam
-    document.write('<a href="mailto:' + 'scottmcqueen2023' + '@gmail.com">scottmcqueen2023[at]gmail.com</a>');
-  </script>
-  
+- **Email**: [Email Me](mailto:scottmcqueen2023@gmail.com)
 - **LinkedIn**: [Connect on LinkedIn](https://www.linkedin.com/in/smmcqueen/)
 - **GitHub**: [View My GitHub](https://github.com/SMcQueen2023)
 
