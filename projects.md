@@ -10,7 +10,8 @@ Welcome to my projects page! Below, I've included a selection of data engineerin
 ---
 
 ## **1. Marketing Campaign Analysis**  
-**Tools Used**: Python, Google Colab, Scikit-learn, Matplotlib  
+- **Description**: As part of my capstone project for the MIT Professional Studies Applied Data Science program, I designed and implemented a customer segmentation analysis using Python in Google Colab. This project involved extracting and preprocessing customer data from a CSV file and applying multiple machine-learning algorithms to uncover distinct customer segments. I identified key customer groups based on purchasing behavior and demographics by leveraging techniques such as K-Means clustering and Gaussian Mixture Models. The project also explored potential marketing strategies tailored to each segment, optimizing engagement and improving targeting precision. This experience honed my skills in data cleaning, feature engineering, machine learning model evaluation, and strategic insights derived from data.
+- **Tools Used**: Python, Google Colab, Scikit-learn, Matplotlib  
 - **Objective**: Identify customer segments to guide targeted marketing strategies.  
 - **Highlights**:  
   - Applied K-Means and Gaussian Mixture Models (GMM) to cluster customer data.  
@@ -21,8 +22,9 @@ Welcome to my projects page! Below, I've included a selection of data engineerin
 
 ---
 
-## **2. Stock Price Ingestion**  
-**Tools Used**: Python, Apache Kafka, Microsoft SQL Server, PowerShell, Power BI  
+## **2. Stock Price Ingestion**   
+- **Description**: In this project, I successfully developed a real-time streaming solution for Apple Inc. (AAPL) stock prices using the Yahoo Finance API and Apache Kafka. The real-time data was streamed and ingested into Microsoft SQL Server, stored, and processed for further analysis. I then created interactive and insightful visualizations using Power BI to provide an intuitive view of stock price trends, volatility, and key metrics. To ensure efficient version control and collaboration, the entire project was managed through GitHub. Additionally, I integrated generative AI to enhance various aspects of the project, including data analysis, code development, and troubleshooting, improving efficiency and reducing development time. This project strengthened my skills in real-time data processing, database management, business intelligence, and leveraging AI for enhanced decision-making.
+- **Tools Used**: Python, Apache Kafka, Microsoft SQL Server, PowerShell, Power BI 
 - **Objective**: Stream APPL stock prices to Microsoft SQL Server using Apache Kafka.  
 - **Highlights**:  
   - Designed and implemented a real-time streaming pipeline leveraging Apache Kafka and the Yahoo Finance API for continuous stock price ingestion.  
@@ -34,7 +36,8 @@ Welcome to my projects page! Below, I've included a selection of data engineerin
 ---
 
 ## **3. Email Attachment Downloader**  
-**Tools Used**: Google App Scripts  
+- **Description**: In this project, I developed an automated solution using Google Apps Script (written in JavaScript) to download email attachments from Gmail and organize them into a designated folder in Google Drive. The script scans incoming emails for attachments, downloads them, and stores them in a dynamically created folder within Google Drive.
+- **Tools Used**: Google App Scripts  
 - **Objective**: Automatically download email attachments and place them in a Google Drive folder.  
 - **Highlights**:  
   - Code written in JavaScript.  
