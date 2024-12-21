@@ -9,11 +9,11 @@ theme: minima # Change theme if desired
 # Adjust paths to match your content structure
 navbar:
   - title: "Home"
-    url: /
+    url: https://smcqueen2023.github.io/skills-github-pages/
   - title: "Projects"
     url: /projects/
   - title: "Skills"
-    url: /skills/
+    url: https://smcqueen2023.github.io/skills-github-pages/skill.html
   - title: "Resume"
     url: /resume/
   - title: "Contact"
