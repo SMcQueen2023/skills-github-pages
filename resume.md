@@ -3,10 +3,11 @@ layout: page
 title: "Resume"
 permalink: /resume/
 ---
-<br>
-<br>
 
 Welcome to my resume page. Below are the links to download my resumes for Data Engineering and Data Analyst roles.
+
+<br>
+<br>
 
 ## 📊 Data Engineering Resume
 
@@ -32,7 +33,7 @@ You can download my Data Analyst resume by clicking the link below:
 
 ## 📩 Contact
 
-For additional details or inquiries, please feel free to visit my [Contact Page](https://smcqueen2023.github.io/skills-github-pages/contact/).
+For additional details or inquiries, please visit my [Contact Page](https://smcqueen2023.github.io/skills-github-pages/contact/).
 
 <br>
 <br>
