@@ -1,7 +1,6 @@
 # Site settings
 title: "Scott McQueen"
 description: "Showcasing data engineering projects, skills, and professional experience."
-author: "Scott McQueen"
 # baseurl: "" # Leave empty for root site
 url: "https://SMcQueen2023.github.io" 
 theme: minima # Change theme if desired
