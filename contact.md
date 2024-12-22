@@ -5,27 +5,32 @@ permalink: /contact/
 ---
 I’d love to hear from you! Feel free to reach out through any of the following platforms:
 <br>
-<br>
+<be>
+
 ---
 ## 📧 Email
 ✉️ [Email Me](mailto:scottmcqueen2023@gmail.com)
 
 <br>
-<br>
+<be>
+
 ---
 
 ## 💼 LinkedIn
 🔗 [Connect on LinkedIn](https://www.linkedin.com/in/smmcqueen/)
 
 <br>
-<br>
+<be>
+
 ---
 
 ## 💻 GitHub
 👨‍💻 [View My GitHub](https://github.com/SMcQueen2023)
 
 <br>
-<br>
+<be>
+
 ---
 <br>
+
 ### Thank you for visiting! I look forward to connecting with you.
