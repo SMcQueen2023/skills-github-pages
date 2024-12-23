@@ -68,7 +68,7 @@ Through years of experience in data engineering, analytics, and project manageme
 - Teradata Vantage Certified Associate  
 - CompTIA A+, Security+, and Network+  
 
-See my [Microsoft certifications and training](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript) or view all credentials on [Credly](https://www.credly.com/users/scott-mcqueen).  
+See my Microsoft certifications and training on [Microsoft Learn](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript). View all of my other credentials at [Credly](https://www.credly.com/users/scott-mcqueen). 
 
 <br>
 
