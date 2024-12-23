@@ -9,7 +9,7 @@ Welcome to my resume page. Below are the links to download my resumes for Data E
 <br>
 <br>
 
-## 📊 Data Engineering Resume
+## 🏗️ Data Engineering Resume
 
 You can download my Data Engineering resume by clicking the link below:
 
