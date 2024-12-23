@@ -1,93 +1,110 @@
 ---
-layout: default
-title: "Skills"
+layout: page
+title: Skills
+permalink: /skills/
 ---
 
-# Skills  
-
-Through years of experience in data engineering, analytics, and project management, I bring diverse technical and professional expertise. Below is an overview of my key competencies and certifications.  
-
----
-
-## **Data Engineering**  
-- Designing and building robust data pipelines using **Azure Synapse Analytics**, **Python**, **SQL**, and **Apache Kafka**.  
-- Managing large datasets focusing on scalability, performance, and optimization.  
-- Integrating cloud and on-premises systems to modernize legacy workflows.  
-- Advanced SQL expertise for serverless and dedicated pools in Azure environments.  
+## **Data Engineering**
+- Designing and building robust data pipelines using **Azure Synapse Analytics**, **Python**, **SQL**, and **Apache Kafka**.
+- Managing large datasets focusing on scalability, performance, and optimization.
+- Integrating cloud and on-premises systems to modernize legacy workflows.
+- Advanced expertise in SQL for serverless and dedicated pools within Azure environments.
 
 <br>
 
 ---
 
-## **Data Analytics**  
-- Crafting interactive and insightful visualizations with **Power BI**.  
-- Applying statistical analysis and predictive modeling techniques to drive decisions.  
-- Customer segmentation expertise using algorithms like **K-Means** and **GMM**.  
-- Extracting actionable insights from structured and unstructured datasets.  
+## **Data Analytics**
+- Crafting interactive, data-driven visualizations with **Power BI**.
+- Applying statistical analysis and predictive modeling techniques to drive actionable insights.
+- Expertise in customer segmentation using algorithms such as **K-Means** and **GMM**.
+- Extracting meaningful insights from both structured and unstructured datasets to inform decision-making.
 
 <br>
 
 ---
 
-## **Microsoft Expertise**  
-- **Azure**: Synapse Analytics, Function Apps, Data Lake Gen2, Logic Apps, and DevOps.  
-- **Power Platform**: Power BI, Power Automate, and Power Apps.  
-- **Other**: SharePoint design, implementation, and integration with SQL Server.  
+## **Microsoft Technologies**
+- **Azure**: Proficient in **Synapse Analytics**, **Function Apps**, **Data Lake Gen2**, **Logic Apps**, and **Azure DevOps**.
+- **Power Platform**: Advanced skills in **Power BI**, **Power Automate**, and **Power Apps**.
+- **Other**: Extensive experience with **SharePoint** design, implementation, and integration with **SQL Server**.
 
 <br>
 
 ---
 
-## **Programming and Technical Expertise**  
-- **Python**: Proficient in data analysis, machine learning, and data engineering workflows.  
-- **SQL**: Skilled in creating complex queries for analytics and engineering tasks.  
-- **SAS**: Experienced in data manipulation and scheduled ETL/ELT processes.  
-- Version control with **Git**, including Azure DevOps and GitHub collaboration.  
+## **Programming & Technical Skills**
+- **Python**: Expertise in data analysis, machine learning, and building data engineering workflows.
+- **SQL**: Proficient in creating complex queries for analytics and engineering tasks.
+- **SAS**: Skilled in data manipulation and scheduled ETL/ELT processes.
+- **Version Control**: Experienced with **Git**, Azure DevOps, and GitHub for team collaboration and version management.
 
 <br>
 
 ---
 
-## **Certifications**  
+## **Certifications**
 
-### **Microsoft Certifications**  
-- **Data Engineer Associate**: Advanced data integration, transformation, and consolidation skills for analytics solutions.  
-- **Enterprise Data Analyst Expert**: Expertise in enterprise-scale analytics, including data modeling and lifecycle practices.  
-- **Power BI Data Analyst Associate**: Proficient in designing and building scalable data models and visualizations.
+### **Microsoft Certifications**
+- **Microsoft Certified Data Engineer Associate**: Advanced data integration, transformation, and consolidation skills for building analytics solutions.
+- **Microsoft Certified Enterprise Data Analyst Expert**: Expertise in enterprise-scale data analytics, including data modeling and lifecycle practices.
+- **Microsoft Certified Power BI Data Analyst Associate**: Proficient in designing scalable data models and crafting insightful visualizations using Power BI.
 
-### **Professional Certifications**  
-- **Project Management Professional (PMP)**: Expertise in project lifecycle management across industries and methodologies.  
-- **SAFe Product Owner/Product Manager**: Competency in identifying customer needs, writing requirements, and prioritizing value delivery.  
-- **SAFe Agilist**: Leadership in Lean-Agile principles and Agile Release Trains (ARTs).  
-- **PCEP Certified Python Programmer**: Foundational knowledge in Python programming for problem-solving and implementation.  
+### **Professional Certifications**
+- **Project Management Professional (PMP)**: Deep understanding of project lifecycle management across industries and methodologies.
+- **SAFe Product Owner/Product Manager**: Competency in identifying customer needs, writing requirements, and prioritizing value delivery in Agile environments.
+- **SAFe Agilist**: Leadership in Lean-Agile principles and Agile Release Trains (ARTs).
+- **PCEP Certified Python Programmer**: Foundational skills in Python programming for data engineering and problem-solving tasks.
 
-### **Other Certifications**  
-- SAS Certified Specialist  
-- Microsoft Certified: Azure Fundamentals  
-- Microsoft Certified: Power Platform Fundamentals  
-- Teradata Vantage Certified Associate  
-- CompTIA A+, Security+, and Network+  
+### **Additional Certifications**
+- SAS Certified Specialist
+- Microsoft Certified: Azure Fundamentals
+- Microsoft Certified: Power Platform Fundamentals
+- Teradata Vantage Certified Associate
+- CompTIA A+, Security+, and Network+
 
-See my Microsoft certifications and training on [Microsoft Learn](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript). View all of my other credentials at [Credly](https://www.credly.com/users/scott-mcqueen). 
-
-<br>
-
----
-
-## **Professional Strengths**  
-- Strong communication and presentation skills to convey complex ideas effectively.  
-- Data-driven decision-making and a logical, results-oriented approach.  
-- Leadership experience in mentoring cross-functional teams.  
-- Creative problem-solving and adaptability in dynamic environments.  
+See my Microsoft certifications and training on [Microsoft Learn](https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript). View my other credentials on [Credly](https://www.credly.com/users/scott-mcqueen).
 
 <br>
 
 ---
 
-## **Explore More**  
+## **Education**
 
-I continuously strive to expand my skills and stay updated on the latest tools and technologies to deliver innovative solutions.  
+### **American Public University (APU)**
+- **Status**: In Progress (expected completion by 2026)
+- **Degree**: M.S. in Applied Business Analytics
+- **Description**: APU’s online program provides a comprehensive foundation in analytics, covering data mining, predictive analytics, optimization, data management, and enterprise analytics. In the final project, students apply learned tools to real-world business challenges, gaining practical experience in improving business processes and decision-making.
+- For more information, visit the official program site [here](https://www.apu.apus.edu/online-masters-programs/master-of-science-in-applied-business-analytics/#requirements).
 
-Check out [my projects](/projects/) to see these skills in action!  
+### **Texas A&M University (TAMU)**
+- **Status**: Completed
+- **Degree**: B.A. in Sociology
+- **Description**: TAMU’s Sociology program emphasizes data-driven problem solving, focusing on analyzing qualitative and quantitative data. It equips students with skills to identify patterns, interpret data, and present findings using visual aids such as graphs and charts. The program also emphasizes effective communication, time management, and collaborative teamwork.
+- For more information, visit the official program site [here](https://artsci.tamu.edu/sociology/undergraduate/index.html).
+
+<br>
+
+Visit my [Resumes](https://smcqueen2023.github.io/skills-github-pages/resume/) page to download my documentation for both programs.
+
+<br>
+
+---
+
+## **Professional Strengths**
+- Strong communication and presentation skills to effectively convey complex ideas.
+- Data-driven decision-making with a logical and results-oriented approach to problem-solving.
+- Leadership in mentoring and managing cross-functional teams.
+- Creative problem-solving and adaptability in fast-paced, dynamic environments.
+
+<br>
+
+---
+
+## **Explore More**
+
+I continuously strive to expand my skills and stay updated with the latest tools and technologies to deliver innovative solutions.  
+
+Check out [my projects](https://smcqueen2023.github.io/skills-github-pages/projects.html) to see these skills in action!
 
 <br>
