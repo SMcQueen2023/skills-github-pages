@@ -28,6 +28,7 @@ You can download my Data Analyst resume by clicking the link below:
 
 <br>
 <br>
+
 ---
 
 ## 🗂️ Other Documentation
