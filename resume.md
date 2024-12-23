@@ -28,6 +28,18 @@ You can download my Data Analyst resume by clicking the link below:
 
 <br>
 <br>
+---
+
+## 🗂️ Other Documentation
+
+You can download other pertinent documents from the links below:
+
+- [American Public University Degree Plan (PDF)](https://raw.githubusercontent.com/SMcQueen2023/skills-github-pages/resume_additions/assets/otherfiles/AMU%20Degree%20Plan%202024-12-15.pdf)
+- [Texas A&M Transcript (PDF)](https://raw.githubusercontent.com/SMcQueen2023/skills-github-pages/resume_additions/assets/otherfiles/Official%20Transcript.pdf)
+
+<br>
+<br>
+
 
 ---
 
