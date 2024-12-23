@@ -48,7 +48,7 @@ Through years of experience in data engineering, analytics, and project manageme
 
 ---
 
-## **Major Certifications**  
+## **Certifications**  
 
 ### **Microsoft Certifications**  
 - **Data Engineer Associate**: Advanced data integration, transformation, and consolidation skills for analytics solutions.  
@@ -84,7 +84,7 @@ See my Microsoft certifications and training on [Microsoft Learn](https://learn.
 
 ---
 
-## Explore More  
+## **Explore More**  
 
 I continuously strive to expand my skills and stay updated on the latest tools and technologies to deliver innovative solutions.  
 
