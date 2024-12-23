@@ -13,7 +13,7 @@ Welcome to my resume page. Below are the links to download my resumes for Data E
 
 You can download my Data Engineering resume by clicking the link below:
 
-[Download Data Engineering Resume (PDF)](https://github.com/SMcQueen2023/skills-github-pages/blob/main/assets/resumes/SMcQueen%20Data%20Engineering%20Resume%2012.4.2024.pdf)
+[Download Data Engineering Resume (PDF)](https://raw.githubusercontent.com/SMcQueen2023/skills-github-pages/main/assets/resumes/SMcQueen%20DE%20Resume%202024-12-22.pdf)
 
 <br>
 <br>
@@ -24,7 +24,7 @@ You can download my Data Engineering resume by clicking the link below:
 
 You can download my Data Analyst resume by clicking the link below:
 
-[Download Data Analyst Resume (PDF)](https://github.com/SMcQueen2023/skills-github-pages/blob/main/assets/resumes/SMcQueen%20DA%20Resume%202024-12-22.pdf)
+[Download Data Analyst Resume (PDF)](https://raw.githubusercontent.com/SMcQueen2023/skills-github-pages/main/assets/resumes/SMcQueen%20DA%20Resume%202024-12-22.pdf)
 
 <br>
 <br>
