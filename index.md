@@ -5,35 +5,67 @@ title: "Home"
 
 # **Welcome to My Portfolio**
 
-Hi, I'm Scott McQueen! This site is my portfolio, showcasing my data analytics, data engineering, and data science projects. Thank you for taking the time to look at my work. Please don't hesitate to contact me through the links provided at the bottom of this page.
+Hi, I'm **Scott McQueen**! Welcome to my professional portfolio, where I showcase my expertise in **data analytics**, **data engineering**, and **data science**. Thank you for taking the time to explore my work. Feel free to connect with me through the contact links at the bottom of this page.
+
+---
 
 ## **About Me**
-At FedEx, I work as a Senior Data Analyst, focusing on advanced analytics solutions to integrate large datasets and modernize legacy systems. Leveraging tools like Azure and Power BI, I contribute to a cloud-based transformation that supports stakeholders across the organization. I also enjoy mentoring team members and fostering a collaborative analytics culture.
 
-I’m pursuing a Master of Science in Applied Data Analytics at the American Public University System to deepen my analytical skills. As the owner of All Fronts Tactical, I blend data-driven strategies with entrepreneurial leadership, bringing a unique perspective to problem-solving and decision-making. I’m committed to continuous learning, professional growth, and applying innovative analytics tools to real-world challenges.
+I am a **Senior Data Analyst at FedEx**, specializing in creating advanced analytics solutions, integrating large datasets, and modernizing legacy systems. By leveraging tools like **Azure** and **Power BI**, I contribute to cloud-based transformations that enable informed decision-making across the organization. I am also passionate about mentoring team members and fostering a collaborative analytics culture.
 
-[View my resume](https://smcqueen2023.github.io/skills-github-pages/resume/)
+In pursuit of further growth, I am completing a **Master of Science in Applied Business Analytics** at **American Public University System**. Additionally, as the owner of **All Fronts Tactical**, I blend entrepreneurial leadership with data-driven strategies to solve real-world problems creatively.
 
-## **Projects**
-Some of my recent projects include:
-- **Marketing Campaign Analysis**: I utilized Google Colab and Python, employing libraries such as Pandas, NumPy, and scikit-learn to conduct a comprehensive exploratory data analysis (EDA). I created detailed visualizations to uncover patterns and trends and applied advanced algorithms like Principal Component Analysis (PCA) and t-SNE to distill complex data into actionable customer segments. These insights were instrumental in guiding the bank toward more effective and personalized service strategies.
-- **Stock Price Ingestion**: I successfully streamed Apple Inc. (AAPL) stock prices in this project utilizing the Yahoo Finance API and Kafka. The data was subsequently loaded into Microsoft SQL Server, and insightful visualizations were created using Power BI. Source control was maintained through GitHub. The integration of generative AI supported the project to enhance data analysis, code development, and troubleshooting.
-- **Email Attachment Download**: Using JavaScript and Google App Scripts, I automated downloading email attachments and saving them to Google Drive based on email label and date.
+📄 [**View My Resume**](https://smcqueen2023.github.io/skills-github-pages/resume/)
 
-[View all projects](https://smcqueen2023.github.io/skills-github-pages/projects.html)
+---
 
-## **Skills**
-- **Platforms**: Microsoft Azure, Microsoft Power Platform, Google Cloud Platform
-- **Programming**: Python, SQL, SAS
-- **Tools**: Azure Synapse Analytics, Power BI, Google Colab, Google App Scripts, and more
+## **Highlighted Projects**
 
-[Learn more about my skills](https://smcqueen2023.github.io/skills-github-pages/skill.html)
+Here are a few of my recent projects:
+
+### **Marketing Campaign Analysis**
+- **Tools Used**: Google Colab, Python (Pandas, NumPy, scikit-learn)  
+- Conducted an exploratory data analysis (EDA) to uncover patterns and trends in customer data.  
+- Applied advanced algorithms like **Principal Component Analysis (PCA)** and **t-SNE** for actionable customer segmentation.  
+- Delivered insights that helped tailor personalized marketing strategies.
+
+### **Stock Price Ingestion**
+- **Tools Used**: Yahoo Finance API, Kafka, Microsoft SQL Server, Power BI  
+- Streamlined real-time ingestion of **Apple Inc. (AAPL)** stock prices.  
+- Built insightful Power BI dashboards for financial trend analysis.  
+- Leveraged **generative AI** to enhance data analysis and troubleshooting.
+
+### **Email Attachment Automation**
+- **Tools Used**: Google App Scripts, JavaScript  
+- Automated email attachment downloads based on labels and dates, storing them in Google Drive.  
+- Improved efficiency in handling large volumes of data.
+
+📂 [**View All Projects**](https://smcqueen2023.github.io/skills-github-pages/projects.html)
+
+---
+
+## **Core Skills**
+
+Here are some of the tools and platforms I excel in:
+
+- **Platforms**: Microsoft Azure, Power Platform, Google Cloud Platform  
+- **Programming**: Python, SQL, SAS  
+- **Tools**: Azure Synapse Analytics, Power BI, Google Colab, Google App Scripts, and more  
+
+🔍 [**Learn More About My Skills**](https://smcqueen2023.github.io/skills-github-pages/skill.html)
+
+---
 
 ## **Contact Me**
-I'm always open to discussing data engineering projects, collaborations, or opportunities.  
 
-📧 [Email Me](mailto:scottmcqueen2023@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/smmcqueen/)  
-🐙 [GitHub](https://github.com/SMcQueen2023/)  
+I am always open to discussing data engineering projects, collaborations, or new opportunities. Let’s connect!  
 
-Thank you for visiting!
+📧 [**Email Me**](mailto:scottmcqueen2023@gmail.com)  
+🔗 [**LinkedIn**](https://www.linkedin.com/in/smmcqueen/)  
+🐙 [**GitHub**](https://github.com/SMcQueen2023/)  
+
+---
+
+Thank you for visiting my portfolio. I look forward to collaborating with you!
+
+---
