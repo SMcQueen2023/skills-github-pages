@@ -10,20 +10,19 @@ theme: minima # Change theme if desired
 navbar:
   - title: "Home"
     url: https://smcqueen2023.github.io/skills-github-pages/
-  - title: "Projects"
-    url: https://smcqueen2023.github.io/skills-github-pages/projects.html
   - title: "Skills"
     url: https://smcqueen2023.github.io/skills-github-pages/skill.html
+  - title: "Projects"
+    url: https://smcqueen2023.github.io/skills-github-pages/projects.html
   - title: "Resume"
     url: /resume/
-  - title: "Contact"
+  - title: "Contact Me"
     url: /contact/
 
 # Social links
 social_links:
   github: "https://github.com/SMcQueen2023"
   linkedin: "https://www.linkedin.com/in/smmcqueen/"
-
 
 # Markdown settings
 markdown: kramdown
