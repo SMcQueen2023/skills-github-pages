@@ -20,7 +20,7 @@ In pursuit of further growth, I am completing a **Master of Science in Applied B
 ---
 
 <section id="projects" class="highlighted-projects">
-  <h2>Highlighted Projects</h2>
+  <h2><strong>Highlighted Projects</strong></h2>
   <div class="project-cards">
     <!-- Project 1 -->
     <div class="card">
