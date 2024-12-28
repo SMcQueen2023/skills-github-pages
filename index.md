@@ -24,7 +24,7 @@ In pursuit of further growth, I am completing a **Master of Science in Applied B
   <div class="project-cards">
     <!-- Project 1 -->
     <div class="card">
-      <h3>Marketing Campaign Analysis</h3>
+      <h3><strong>Marketing Campaign Analysis</strong></h3>
       <p><strong>Tools Used:</strong> Google Colab, Python (Pandas, NumPy, scikit-learn)</p>
       <ul>
         <li>Conducted exploratory data analysis (EDA) to identify customer patterns and trends.</li>
@@ -34,7 +34,7 @@ In pursuit of further growth, I am completing a **Master of Science in Applied B
     </div>
     <!-- Project 2 -->
     <div class="card">
-      <h3>Stock Price Ingestion Pipeline</h3>
+      <h3><strong>Stock Price Ingestion Pipeline</strong></h3>
       <p><strong>Tools Used:</strong> Yahoo Finance API, Kafka, Microsoft SQL Server, Power BI</p>
       <ul>
         <li>Streamlined real-time Apple Inc. (AAPL) stock price ingestion.</li>
@@ -44,7 +44,7 @@ In pursuit of further growth, I am completing a **Master of Science in Applied B
     </div>
     <!-- Project 3 -->
     <div class="card">
-      <h3>Email Automation Workflow</h3>
+      <h3><strong>Email Automation Workflow</strong></h3>
       <p><strong>Tools Used:</strong> Google App Scripts, JavaScript</p>
       <ul>
         <li>Automated email attachment downloads based on labels and date filters.</li>
