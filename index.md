@@ -19,28 +19,40 @@ In pursuit of further growth, I am completing a **Master of Science in Applied B
 
 ---
 
-## **Highlighted Projects**
-
-Here are a few of my recent projects:
-
-### **Marketing Campaign Analysis**
-- **Tools Used**: Google Colab, Python (Pandas, NumPy, scikit-learn)  
-- Conducted an exploratory data analysis (EDA) to uncover patterns and trends in customer data.  
-- Applied advanced algorithms like **Principal Component Analysis (PCA)** and **t-SNE** for actionable customer segmentation.  
-- Delivered insights that helped tailor personalized marketing strategies.
-
-### **Stock Price Ingestion**
-- **Tools Used**: Yahoo Finance API, Kafka, Microsoft SQL Server, Power BI  
-- Streamlined real-time ingestion of **Apple Inc. (AAPL)** stock prices.  
-- Built insightful Power BI dashboards for financial trend analysis.  
-- Leveraged **generative AI** to enhance data analysis and troubleshooting.
-
-### **Email Attachment Automation**
-- **Tools Used**: Google App Scripts, JavaScript  
-- Automated email attachment downloads based on labels and dates, storing them in Google Drive.  
-- Improved efficiency in handling large volumes of data.
-
-📂 [**View All Projects**](https://smcqueen2023.github.io/skills-github-pages/projects.html)
+<section id="projects" class="highlighted-projects">
+  <h2>Highlighted Projects</h2>
+  <div class="project-cards">
+    <!-- Project 1 -->
+    <div class="card">
+      <h3>Marketing Campaign Analysis</h3>
+      <p><strong>Tools Used:</strong> Google Colab, Python (Pandas, NumPy, scikit-learn)</p>
+      <ul>
+        <li>Conducted exploratory data analysis (EDA) to identify customer patterns and trends.</li>
+        <li>Applied PCA and t-SNE for actionable customer segmentation.</li>
+        <li>Delivered insights to inform personalized marketing strategies.</li>
+      </ul>
+    </div>
+    <!-- Project 2 -->
+    <div class="card">
+      <h3>Stock Price Ingestion Pipeline</h3>
+      <p><strong>Tools Used:</strong> Yahoo Finance API, Kafka, Microsoft SQL Server, Power BI</p>
+      <ul>
+        <li>Streamlined real-time Apple Inc. (AAPL) stock price ingestion.</li>
+        <li>Developed Power BI dashboards for financial trend analysis.</li>
+        <li>Enhanced analysis and troubleshooting using generative AI.</li>
+      </ul>
+    </div>
+    <!-- Project 3 -->
+    <div class="card">
+      <h3>Email Automation Workflow</h3>
+      <p><strong>Tools Used:</strong> Google App Scripts, JavaScript</p>
+      <ul>
+        <li>Automated email attachment downloads based on labels and date filters.</li>
+        <li>Improved workflow efficiency by organizing data in Google Drive.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 ---
 
