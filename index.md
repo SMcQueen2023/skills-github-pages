@@ -54,6 +54,8 @@ In pursuit of further growth, I am completing a **Master of Science in Applied B
   </div>
 </section>
 
+🔬 [**Learn More About My Projects**](https://smcqueen2023.github.io/skills-github-pages/projects.html)
+
 ---
 
 ## **Core Skills**
@@ -79,5 +81,3 @@ I am always open to discussing data engineering projects, collaborations, or new
 ---
 
 Thank you for visiting my portfolio. I look forward to collaborating with you!
-
----
