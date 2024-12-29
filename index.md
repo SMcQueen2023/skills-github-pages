@@ -11,9 +11,9 @@ Hi, I'm **Scott McQueen**! Welcome to my professional portfolio, where I showcas
 
 ## **About Me**
 
-I am a **Senior Data Analyst at FedEx**, specializing in creating advanced analytics solutions, integrating large datasets, and modernizing legacy systems. By leveraging tools like **Azure** and **Power BI**, I contribute to cloud-based transformations that enable informed decision-making across the organization. I am also passionate about mentoring team members and fostering a collaborative analytics culture.
+I am a senior data analyst with over 5 years of experience delivering enterprise-grade solutions in data analytics, engineering, visualization, and project management. My expertise spans various technologies and languages, including Microsoft Azure, the Microsoft Power Platform, Teradata, Oracle, Apache Kafka, SAS, SQL, and Python. Leveraging this technical skill set and multiple industry certifications, I have successfully led and implemented high-impact projects that streamline operations, ensure regulatory compliance, and empower data-driven decision-making. Additionally, I am a project management professional with over 4 years of experience utilizing traditional and Scaled Agile (SAFe) methodologies to lead cross-functional team in cloud modernization.
 
-In pursuit of further growth, I am completing a **Master of Science in Applied Business Analytics** at **American Public University System**. Additionally, as the owner of **All Fronts Tactical**, I blend entrepreneurial leadership with data-driven strategies to solve real-world problems creatively.
+Beyond my technical skills, I bring a people-first, teamwork-driven approach to every initiative. The true purpose of analytics is to serve and enable people, not just to achieve metrics. Guided by the proverb, "If you want to go fast, go alone. If you want to go far, go together," I am committed to fostering collaboration, building strong relationships, and delivering solutions that create lasting value for teams and organizations.
 
 📄 [**View My Resume**](https://smcqueen2023.github.io/skills-github-pages/resume/)
 
