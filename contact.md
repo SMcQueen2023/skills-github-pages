@@ -1,20 +1,18 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
+title: Resume
+permalink: /resume/
 ---
 
-## Let’s Connect
+<div class="page-shell">
 
-I’m active on LinkedIn and GitHub.  
-For collaboration, role discussions, or technical reviews, please use either channel below.
+## Resume
 
-<div class="action-row">
-  <a class="button primary" href="https://www.linkedin.com/in/smmcqueen/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-  <a class="button ghost" href="https://github.com/SMcQueen2023/" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
+I’m a Senior Data Analyst (FedEx) and PMP with 5+ years of data and project management experience focused on analytics modernization and delivery.
+
+- LinkedIn profile: [linkedin.com/in/smmcqueen](https://www.linkedin.com/in/smmcqueen/)
+- GitHub profile: [github.com/SMcQueen2023](https://github.com/SMcQueen2023/)
+
+For the latest resume version, please connect via LinkedIn.
+
 </div>
-
-### Preferred Channels
-
-- **LinkedIn:** Professional networking, recruiting conversations, direct outreach  
-- **GitHub:** Portfolio projects, code samples, technical collaboration
