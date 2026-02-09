@@ -3,26 +3,48 @@
 
 @import "minima";
 
-/* ====== Foundation ====== */
-html {
-  color-scheme: light; /* force readable light mode */
+/* =========================================================
+   HARD RESET: eliminate washed-out text / blending issues
+   ========================================================= */
+html,
+body,
+.site,
+.page-content,
+.page-content .wrapper,
+.home-page,
+.home-section,
+.projects-page,
+.projects-page section {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
 }
 
+/* =========================================================
+   Design tokens
+   ========================================================= */
 :root {
   --bg: #ffffff;
   --surface: #ffffff;
+  --surface-soft: #f8fafc;
   --text: #0f172a;
   --muted: #475569;
-  --rule: #d1d5db;
-  --accent: #1d4ed8;
-  --accent-strong: #1e40af;
-  --card-shadow: 0 10px 24px rgba(2, 6, 23, 0.06);
+  --line: #d1d5db;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
   --radius: 14px;
+  --shadow: 0 10px 24px rgba(2, 6, 23, 0.06);
   --maxw: 1120px;
-  --measure: 70ch;
+  --measure: 72ch;
 }
 
-/* ====== Global ====== */
+/* =========================================================
+   Global
+   ========================================================= */
+html {
+  color-scheme: light;
+}
+
 body,
 .site-header,
 .page-content,
@@ -35,15 +57,31 @@ body,
   max-width: var(--maxw);
 }
 
-a {
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1.5px;
+h1, h2, h3, h4, h5, h6,
+p, li, strong, em, span {
+  color: var(--text);
 }
 
-/* ====== Header / Nav ====== */
+p, li {
+  line-height: 1.65;
+}
+
+a {
+  color: var(--primary);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* =========================================================
+   Header / nav
+   ========================================================= */
 .site-header {
-  border-top: 0;
-  border-bottom: 1px solid var(--rule);
+  border-top: 0 !important;
+  border-bottom: 1px solid var(--line) !important;
 }
 
 .site-title {
@@ -61,8 +99,37 @@ a {
   margin-right: 20px;
 }
 
-/* ====== Typography ====== */
-.kicker {
+/* =========================================================
+   Footer cleanup (remove redundant clutter)
+   ========================================================= */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 1.2rem;
+}
+
+.footer-heading,
+.footer-col-2,
+.footer-col-3 {
+  display: none !important;
+}
+
+.footer-col-1 {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.footer-col-1 .contact-list,
+.footer-col-1 p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* =========================================================
+   Shared typography classes
+   ========================================================= */
+.kicker,
+.eyebrow {
   margin: 0 0 0.75rem;
   color: var(--muted);
   font-weight: 700;
@@ -72,10 +139,11 @@ a {
 .page-title {
   margin: 0 0 1rem;
   max-inline-size: 24ch;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(2.1rem, 4vw, 3.25rem);
   line-height: 1.1;
   font-weight: 800;
   text-wrap: balance;
+  color: var(--text) !important;
 }
 
 .nowrap {
@@ -86,14 +154,16 @@ a {
   margin: 0;
   max-inline-size: var(--measure);
   font-size: 1.08rem;
-  line-height: 1.65;
+  line-height: 1.7;
+  color: var(--text);
 }
 
 .section-title {
   margin: 0;
   font-size: clamp(1.55rem, 2.1vw, 2rem);
   line-height: 1.2;
-  font-weight: 800; /* bold section headers */
+  font-weight: 800;
+  color: var(--text) !important;
 }
 
 .project-title,
@@ -103,34 +173,19 @@ a {
   line-height: 1.25;
   font-weight: 700;
   font-style: italic; /* bold + italic subheaders */
+  color: var(--text) !important;
 }
 
-.project-label {
-  margin: 0 0 0.5rem;
-  color: var(--muted);
-  font-weight: 700;
-  font-style: italic;
-}
-
-.project-desc {
-  margin: 0;
-  line-height: 1.62;
-}
-
-.project-meta {
-  margin: 0.9rem 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-/* ====== Home layout ====== */
+/* =========================================================
+   Home page structure
+   ========================================================= */
 .home-page {
   color: var(--text);
 }
 
 .home-section {
-  padding-block: clamp(2rem, 3vw, 2.8rem);
-  border-top: 1px solid var(--rule); /* section-only divider lines */
+  padding-block: clamp(2.2rem, 3vw, 2.9rem);
+  border-top: 1px solid var(--line); /* section-only lines */
 }
 
 .home-section:first-of-type {
@@ -147,26 +202,12 @@ a {
   margin-bottom: 1.2rem;
 }
 
-/* Fix spacing issue between featured links and next section */
-.section-actions {
-  display: flex;
-  gap: 0.9rem;
-  flex-wrap: wrap;
-  margin-top: 1.2rem;
-  margin-bottom: 0;
-}
-
-.projects .section-row {
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-}
-
-/* ====== Buttons / Links ====== */
+/* Buttons */
 .action-row {
   display: flex;
-  gap: 0.75rem;
   flex-wrap: wrap;
-  margin-top: 1.2rem;
+  gap: 0.75rem;
+  margin-top: 1.15rem;
   margin-bottom: 1.35rem;
 }
 
@@ -175,43 +216,39 @@ a {
   border-radius: 10px;
   padding: 0.58rem 0.98rem;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important;
   border: 1px solid transparent;
 }
 
 .button.primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff !important;
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff !important;
 }
 
 .button.primary:hover {
-  background: var(--accent-strong);
-  border-color: var(--accent-strong);
-  color: #fff !important;
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #ffffff !important;
 }
 
 .button.ghost {
-  background: transparent;
-  border-color: var(--rule);
+  background: #ffffff;
+  border-color: var(--line);
   color: var(--text) !important;
 }
 
 .button.ghost:hover {
-  border-color: var(--accent);
-  color: var(--accent) !important;
+  border-color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .text-link {
-  color: var(--accent);
+  color: var(--primary) !important;
   font-weight: 600;
 }
 
-.text-link:hover {
-  color: var(--accent-strong);
-}
-
-/* ====== Pills / tags ====== */
+/* Pill tags */
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -220,14 +257,14 @@ a {
 
 .tag {
   padding: 0.36rem 0.72rem;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  color: var(--muted);
-  font-size: 0.91rem;
   background: #fff;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
-/* ====== Lists ====== */
+/* Featured list */
 .feature-list {
   margin: 1rem 0 0;
   padding-left: 1.2rem;
@@ -235,139 +272,93 @@ a {
 }
 
 .feature-list li + li {
-  margin-top: 0.48rem;
+  margin-top: 0.5rem;
 }
 
-/* ====== Cards ====== */
+/* Critical spacing fix for your issue */
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0; /* no extra collapse */
+}
+
+.projects .section-row {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+/* Card grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 1rem;
 }
 
 .project-card {
-  border: 1px solid var(--rule);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1rem 1.05rem;
   background: var(--surface);
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--shadow);
 }
 
-/* ====== Content pages ====== */
-.page-shell {
-  max-inline-size: var(--measure);
+.project-label {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-weight: 700;
+  font-style: italic;
 }
 
-.page-shell h2 {
-  font-weight: 800;
-  margin-top: 0;
+.project-desc {
+  margin: 0;
+  color: var(--text);
 }
 
-.project-list,
-.skill-list {
-  display: grid;
-  gap: 0.9rem;
+.project-meta {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
-.project-item,
-.skill-item {
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-  padding: 0.9rem 1rem;
-  background: #fff;
-}
-
-.contact-links {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-/* ====== Mobile ====== */
-@media (max-width: 700px) {
-  .page-title {
-    max-inline-size: 18ch;
-    text-wrap: pretty;
-  }
-}
-/* =========================
-   Projects page polish
-   ========================= */
+/* =========================================================
+   Projects page
+   ========================================================= */
 .projects-page {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 1.25rem 1rem 2.75rem;
+  color: var(--text);
 }
 
 .projects-page .section {
-  padding: 1.25rem 0;
+  padding-block: 2.2rem;
+  border-top: 1px solid var(--line);
 }
 
-.projects-page .section-divider {
-  border: 0;
-  border-top: 1px solid var(--color-border, #d1d5db);
-  margin: 2rem 0;
-}
-
-.projects-page h1 {
-  margin: 0.25rem 0 0.75rem;
-  line-height: 1.15;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-}
-
-.projects-page h2 {
-  margin: 0 0 1rem;
-  line-height: 1.2;
-  font-weight: 800;
-}
-
-.projects-page .project-item {
-  margin: 0;
-  padding: 0;
+.projects-page .section:first-of-type {
+  border-top: none;
+  padding-top: 1.1rem;
 }
 
 .projects-page .project-item + .project-item {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--color-border, #d1d5db);
-}
-
-.projects-page .project-label {
-  margin: 0 0 0.35rem;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--color-text-muted, #6b7280);
-}
-
-.projects-page .project-name {
-  margin: 0 0 0.75rem;
-  line-height: 1.25;
-}
-
-.projects-page .project-desc {
-  margin: 0 0 1rem;
-  line-height: 1.7;
-}
-
-.projects-page .feature-list {
-  margin: 0 0 1rem 1.25rem;
-  padding: 0;
-}
-
-.projects-page .feature-list li {
-  margin-bottom: 0.45rem;
-  line-height: 1.6;
-}
-
-.projects-page .project-meta {
-  margin: 0.45rem 0;
-  line-height: 1.6;
+  border-top: 1px solid var(--line);
 }
 
 .projects-page .project-links {
-  margin: 1rem 0 0;
-  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.projects-page .project-links a {
+  font-weight: 600;
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+@media (max-width: 700px) {
+  .page-title {
+    max-inline-size: 18ch;
+    text-wrap: pretty;
+  }
 }
