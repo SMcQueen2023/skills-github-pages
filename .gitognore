@@ -1,16 +1,16 @@
-# OS / editor
+# OS / IDE
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Build artifacts
+# Jekyll build
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 
-# Sensitive docs - never commit transcripts
+# Security
 *transcript*
 *Transcript*
 *official_transcript*
