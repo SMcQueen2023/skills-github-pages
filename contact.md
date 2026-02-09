@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Resume
-permalink: /resume/
+title: Contact
+permalink: /contact/
 ---
 
 <div class="page-shell">
 
-## Resume
+## Contact
 
-I’m a Senior Data Analyst (FedEx) and PMP with 5+ years of data and project management experience focused on analytics modernization and delivery.
+I’m always open to collaboration, recruiting conversations, and data engineering partnerships.
+The easiest way to connect is through LinkedIn or GitHub.
 
-- LinkedIn profile: [linkedin.com/in/smmcqueen](https://www.linkedin.com/in/smmcqueen/)
-- GitHub profile: [github.com/SMcQueen2023](https://github.com/SMcQueen2023/)
-
-For the latest resume version, please connect via LinkedIn.
+- **LinkedIn:** [linkedin.com/in/smmcqueen](https://www.linkedin.com/in/smmcqueen/)
+- **GitHub:** [github.com/SMcQueen2023](https://github.com/SMcQueen2023/)
 
 </div>

@@ -27,11 +27,11 @@ permalink: /projects/
       </p>
 
       <ul class="feature-list">
-        <li><strong>Multi-format workflows:</strong> open Parquet, CSV, Excel; export to Parquet for downstream speed.</li>
-        <li><strong>Large-data usability:</strong> configurable pagination to reduce memory pressure during exploration.</li>
-        <li><strong>Reliable editing:</strong> inline edits, undo/redo, type conversion, add-column ops, multi-sort.</li>
-        <li><strong>Practical analytics:</strong> profiling and advanced filtering for fast exploratory analysis.</li>
-        <li><strong>ML extras:</strong> featurization and PCA/UMAP workflows.</li>
+        <li><strong>Multi-format support:</strong> work across Parquet, CSV, and Excel with clean export paths.</li>
+        <li><strong>Large-data usability:</strong> pagination keeps big datasets responsive during inspection.</li>
+        <li><strong>Inline editing:</strong> undo/redo, type conversion, and sorting for controlled updates.</li>
+        <li><strong>Profiling + filtering:</strong> fast column statistics and targeted data slicing.</li>
+        <li><strong>ML extras:</strong> PCA/UMAP workflows for clustering and projection.</li>
         <li><strong>Optional AI assistant:</strong> natural-language to Polars with validation before execution.</li>
       </ul>
 
@@ -54,7 +54,7 @@ permalink: /projects/
       <p class="project-label"><strong>Data Engineering</strong></p>
       <h3 class="project-name"><strong><em>Streaming Stock Price Ingestion</em></strong></h3>
       <p class="project-meta"><strong>Timeline:</strong> Dec 2024 – Present</p>
-      <p class="project-meta"><strong>Association:</strong> American Public University System</p>
+      <p class="project-meta"><strong>Association:</strong> American Public University System (APUS)</p>
       <p class="project-desc">
         Streaming ingestion pipeline for AAPL pricing data using Yahoo Finance API + Kafka.
         Data is loaded to SQL Server and surfaced in Power BI for monitoring and analysis.
@@ -65,7 +65,7 @@ permalink: /projects/
     <article class="project-item">
       <p class="project-label"><strong>Analytics / Data Science</strong></p>
       <h3 class="project-name"><strong><em>Bank Customer Segmentation</em></strong></h3>
-      <p class="project-meta"><strong>Association:</strong> MIT Professional Education (Applied Data Science)</p>
+      <p class="project-meta"><strong>Association:</strong> MIT Professional Education (Applied Data Science program)</p>
       <p class="project-desc">
         Built customer segmentation using exploratory analysis plus PCA and t-SNE to identify actionable groups
         for more personalized and effective service strategies.
