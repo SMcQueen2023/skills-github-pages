@@ -291,3 +291,83 @@ a {
     text-wrap: pretty;
   }
 }
+/* =========================
+   Projects page polish
+   ========================= */
+.projects-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.75rem;
+}
+
+.projects-page .section {
+  padding: 1.25rem 0;
+}
+
+.projects-page .section-divider {
+  border: 0;
+  border-top: 1px solid var(--color-border, #d1d5db);
+  margin: 2rem 0;
+}
+
+.projects-page h1 {
+  margin: 0.25rem 0 0.75rem;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.projects-page h2 {
+  margin: 0 0 1rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.projects-page .project-item {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-page .project-item + .project-item {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border, #d1d5db);
+}
+
+.projects-page .project-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted, #6b7280);
+}
+
+.projects-page .project-name {
+  margin: 0 0 0.75rem;
+  line-height: 1.25;
+}
+
+.projects-page .project-desc {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+}
+
+.projects-page .feature-list {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+}
+
+.projects-page .feature-list li {
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.projects-page .project-meta {
+  margin: 0.45rem 0;
+  line-height: 1.6;
+}
+
+.projects-page .project-links {
+  margin: 1rem 0 0;
+  line-height: 1.6;
+}
