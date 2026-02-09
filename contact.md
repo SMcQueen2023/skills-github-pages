@@ -1,17 +1,19 @@
 ---
-layout: page
-title: Contact
+layout: default
+title: "Contact"
 permalink: /contact/
 ---
 
 <div class="page-shell">
+  <h1>Contact</h1>
 
-## Contact
+  <p>
+    I’m always open to collaboration, recruiting conversations, and data engineering partnerships.
+    The easiest way to connect is through LinkedIn or GitHub.
+  </p>
 
-I’m always open to collaboration, recruiting conversations, and data engineering partnerships.
-The easiest way to connect is through LinkedIn or GitHub.
-
-- **LinkedIn:** [linkedin.com/in/smmcqueen](https://www.linkedin.com/in/smmcqueen/)
-- **GitHub:** [github.com/SMcQueen2023](https://github.com/SMcQueen2023/)
-
+  <ul>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/smmcqueen/" target="_blank" rel="noopener noreferrer">linkedin.com/in/smmcqueen</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/SMcQueen2023/" target="_blank" rel="noopener noreferrer">github.com/SMcQueen2023</a></li>
+  </ul>
 </div>
