@@ -57,6 +57,12 @@ body,
   max-width: var(--maxw);
 }
 
+.page-shell {
+  display: grid;
+  gap: 1rem;
+  max-inline-size: var(--measure);
+}
+
 h1, h2, h3, h4, h5, h6,
 p, li, strong, em, span {
   color: var(--text);
@@ -281,7 +287,7 @@ a:hover {
   flex-wrap: wrap;
   gap: 0.9rem;
   margin-top: 1.2rem;
-  margin-bottom: 0; /* no extra collapse */
+  margin-bottom: 1.4rem;
 }
 
 .projects .section-row {
@@ -341,8 +347,8 @@ a:hover {
 
 .projects-page .project-item + .project-item {
   margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
+  padding-top: 0;
+  border-top: 0;
 }
 
 .projects-page .project-links {
