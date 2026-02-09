@@ -1,0 +1,15 @@
+title: "Scott McQueen | Data Engineering Portfolio"
+description: ""
+url: "https://smcqueen2023.github.io"
+baseurl: "/skills-github-pages"
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+header_pages:
+  - projects.md
+  - skills.md
+  - resume.md
+  - contact.md
