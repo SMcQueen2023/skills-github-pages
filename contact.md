@@ -7,7 +7,7 @@ permalink: /contact/
 ## Let’s Connect
 
 I’m active on LinkedIn and GitHub.  
-For collaboration, role discussions, or project reviews, please reach out through either channel below.
+For collaboration, role discussions, or technical reviews, please use either channel below.
 
 <div class="action-row">
   <a class="button primary" href="https://www.linkedin.com/in/smmcqueen/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
@@ -16,5 +16,5 @@ For collaboration, role discussions, or project reviews, please reach out throug
 
 ### Preferred Channels
 
-- **LinkedIn:** Professional networking, recruiting conversations, and direct outreach  
-- **GitHub:** Portfolio projects, code samples, and technical collaboration
+- **LinkedIn:** Professional networking, recruiting conversations, direct outreach  
+- **GitHub:** Portfolio projects, code samples, technical collaboration
