@@ -11,5 +11,4 @@ plugins:
 header_pages:
   - projects.md
   - skills.md
-  - resume.md
   - contact.md

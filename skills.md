@@ -6,7 +6,7 @@ permalink: /skills/
 
 <div class="page-shell">
 
-## Core Skills
+<h2>Core Skills</h2>
 
 <div class="skill-list">
 
