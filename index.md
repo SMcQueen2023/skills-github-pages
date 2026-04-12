@@ -9,23 +9,25 @@ permalink: /
 
 Senior analytics and BI leader focused on trusted reporting, analytics modernization, governance, and executive decision support.
 
-<p class="lede">I bring structure and repeatability to messy enterprise analytics environments — improving trust, executive visibility, and delivery reliability.</p>
+<p class="lede">I help organizations improve trust in data, modernize reporting, and turn messy business needs into clear, decision-ready analytics.</p>
 
 ## Selected wins
 
-- Led reporting modernization and reconciliation automation that improved executive confidence in key metrics.
-- Designed executive-ready scorecards to shorten decision cycles and clarify KPI ownership.
-- Built repeatable analytics patterns to reduce ad-hoc reporting and improve scale.
+- Helped elevate a major reporting modernization effort from a low-priority risk to an active business continuity initiative.
+- Built executive scorecards used by senior leaders to monitor cost and performance initiatives.
+- Designed an automated reconciliation workflow that saved roughly 30 hours per month and improved auditability.
+- Supported customs clearance reporting changes that helped improve on-time performance from roughly 90 percent to 93 percent or better.
 
 ## Featured projects
 
-- MIT Capstone — customer segmentation and applied modeling for marketing optimization. [Learn more]({{ site.baseurl }}/projects/)
-- OneCity Analytics — operational KPI design and reporting modernization. [Learn more]({{ site.baseurl }}/projects/)
+- MIT Capstone — customer segmentation and model comparison for targeted marketing decisions. [Learn more]({{ site.baseurl }}/projects/)
+- OneCity Analytics — validation-first reporting and leadership-ready metrics for a small external organization. [Learn more]({{ site.baseurl }}/projects/)
+- Parqcel — a desktop data utility that reflects practical analytics tooling and workflow design. [Learn more]({{ site.baseurl }}/projects/)
 
 ## Certifications snapshot
 
-Microsoft Azure, Power BI, MIT Applied Data Science, PMP, SAS.
+Azure Data Engineer, Azure Data Scientist, Power BI Data Analyst, MIT Applied Data Science, PMP, and SAS credentials.
 
 ---
 
-Want to see projects or get in touch? [Contact]({{ site.baseurl }}/contact/)
+See more on [About]({{ site.baseurl }}/about/), [Experience]({{ site.baseurl }}/experience/), or [Contact]({{ site.baseurl }}/contact/).

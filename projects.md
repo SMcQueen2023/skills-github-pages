@@ -10,20 +10,20 @@ Selected projects that demonstrate analytics modernization, governance, and busi
 
 ## MIT Capstone — Customer segmentation
 
-One-sentence: Practical segmentation and model comparison to inform targeted marketing.
+Applied unsupervised learning to segment customers for marketing optimization using PCA, clustering, and business-focused interpretation.
 
-- Business problem: Improve targeting and measure incremental opportunity.
-- Tools: Python, clustering methods, evaluation frameworks.
-- Key takeaway: Framed model choices around measurables and business adoption.
+- Business problem: Identify meaningful customer groups from demographic, behavioral, and campaign-response data so marketing resources could be targeted more effectively.
+- Tools: Python, PCA, hierarchical clustering, model comparison, exploratory analysis.
+- Key takeaway: Treated the work like an analytics engagement, not just a notebook exercise, and translated segment findings into practical recommendations.
 
-## OneCity Analytics — Reporting modernization
+## OneCity Analytics — Analytics enablement
 
-- Business problem: Fragmented operational reporting and low metric trust.
-- Tools: SQL, dashboarding, process automation.
-- Key takeaway: Established standardized KPIs and automated reconciliations to restore trust.
+- Business problem: Manually maintained ministry data was useful but not structured for defensible reporting.
+- Tools: Python, Jupyter notebooks, validation workflows, presentation design.
+- Key takeaway: Turned messy operational data into leadership-ready reporting while staying disciplined about trust boundaries and data quality.
 
-## Parqcel — Operational analytics product
+## Parqcel — Desktop data utility
 
-- Business problem: Improve visibility into delivery performance and operational KPIs.
-- Tools: data modeling, dashboards, automation.
-- Key takeaway: Combined pragmatic engineering with business-focused metrics to improve decision cycles.
+- Business problem: Make tabular data exploration, editing, and analysis faster for analysts working with parquet, CSV, and Excel files.
+- Tools: Python, PyQt, Polars, desktop application design.
+- Key takeaway: Shows practical product thinking and workflow design without diluting the site's core BI and analytics positioning.

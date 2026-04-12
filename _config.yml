@@ -1,0 +1,11 @@
+title: Scott McQueen
+description: Business-facing analytics and BI leader focused on trusted reporting, analytics modernization, governance, and executive decision support.
+url: https://smcqueen2023.github.io
+baseurl: /skills-github-pages
+lang: en-US
+markdown: kramdown
+permalink: pretty
+exclude:
+  - about-me
+  - project-descriptions
+  - site-planning
