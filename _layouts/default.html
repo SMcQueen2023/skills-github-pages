@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      {% include nav.html %}
+    </header>
+
+    <main class="site-main container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; {{ site.time | date: '%Y' }} Scott McQueen</p>
+      </div>
+    </footer>
+  </body>
+</html>
