@@ -78,7 +78,7 @@ page_class: page-home
 	<div class="project-preview-grid">
 		<article class="project-card">
 			<p class="card-kicker">Analytics enablement</p>
-			<h3>OneCity Analytics</h3>
+			<h3>External Organization Analytics Enablement</h3>
 			<p>Turned fragmented operational data into leadership-ready reporting with stronger trust boundaries, clearer recommendations, and a realistic path to recurring monthly analytics.</p>
 			<div class="tag-list">
 				<span>Validation-first analysis</span>

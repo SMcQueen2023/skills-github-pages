@@ -15,7 +15,7 @@ page_class: page-projects
 	<article class="project-case">
 		<div class="case-header">
 			<p class="card-kicker">Featured project</p>
-			<h2>OneCity Analytics</h2>
+			<h2>External Organization Analytics Enablement</h2>
 			<p>Turned a manually maintained workbook into defensible, leadership-ready reporting and a more realistic path toward recurring analytics for a small external organization.</p>
 			<div class="meta-list">
 				<span>Python</span>
