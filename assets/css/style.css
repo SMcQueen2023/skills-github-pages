@@ -198,8 +198,8 @@ ul {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.76fr);
-  gap: 1.6rem;
+  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.8fr);
+  gap: 1.7rem;
   align-items: stretch;
   margin-bottom: 4.15rem;
 }
@@ -239,9 +239,9 @@ ul {
 }
 
 .hero-copy h1 {
-  max-width: 13.5ch;
-  font-size: clamp(2.08rem, 4.35vw, 3.35rem);
-  line-height: 1.03;
+  max-width: 14.25ch;
+  font-size: clamp(1.96rem, 4.05vw, 3.1rem);
+  line-height: 1.04;
 }
 
 .hero-support,
@@ -322,8 +322,17 @@ ul {
 .hero-panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 1.68rem 1.58rem;
+  justify-content: flex-start;
+  padding: 1.85rem 1.7rem;
+}
+
+.hero-panel .panel-label {
+  margin-bottom: 1rem;
+}
+
+.hero-panel .panel-stack p {
+  font-size: 1.02rem;
+  line-height: 1.66;
 }
 
 .panel-stack {
@@ -344,7 +353,7 @@ ul {
 }
 
 .hero-panel h2 {
-  font-size: 1.12rem;
+  font-size: 1.18rem;
 }
 
 .section-block {
@@ -444,14 +453,14 @@ ul {
 }
 
 .page-intro {
-  max-width: 54rem;
+  max-width: var(--copy-width);
   margin-bottom: 3.1rem;
 }
 
 .page-intro h1 {
-  max-width: 14.5ch;
+  max-width: 100%;
   margin-bottom: 0.95rem;
-  font-size: clamp(1.92rem, 3.7vw, 2.9rem);
+  font-size: clamp(1.84rem, 3.35vw, 2.7rem);
   line-height: 1.05;
 }
 
@@ -527,8 +536,9 @@ ul {
 }
 
 .page-home .section-heading {
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.68fr);
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  align-items: start;
+  column-gap: 2rem;
   max-width: none;
 }
 

@@ -9,7 +9,7 @@ page_class: page-home
 <section class="hero">
 	<div class="hero-copy">
 		<p class="eyebrow">Scott McQueen</p>
-		<h1>I build trusted reporting, modernize analytics environments, and design workflow systems that support better decisions.</h1>
+		<h1>I build trusted reporting, modernize analytics environments, and design workflow systems for better decisions.</h1>
 		<p class="hero-support">My work centers on reporting trust, modernization discipline, and the operating structure that makes analytics useful over time. I bring business clarity, stronger governance, and practical execution to environments where reporting is fragmented or high-stakes decisions need better visibility.</p>
 		<div class="button-row">
 			<a class="button-link button-link-primary" href="{{ site.baseurl }}/projects/">View featured work</a>
@@ -41,7 +41,7 @@ page_class: page-home
 			<p class="section-label">Selected impact</p>
 			<h2>Work that changed reporting quality, continuity, and executive visibility.</h2>
 		</div>
-		<p>The strongest through-line in my work is improving the trust, structure, and decision value of analytics where those qualities matter.</p>
+		<p>The strongest through-line in my work is improving the trust, structure, and decision value of analytics in high-stakes environments.</p>
 	</div>
 	<div class="impact-grid">
 		<article class="impact-card">

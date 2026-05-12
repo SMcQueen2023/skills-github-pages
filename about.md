@@ -7,7 +7,7 @@ page_class: page-about
 
 <section class="page-intro">
 	<p class="intro-label">About</p>
-	<h1>I bring structure, trust, and delivery discipline to analytics and workflow systems leaders need to rely on.</h1>
+	<h1>I bring structure, trust, and delivery discipline to analytics work that leaders need to rely on.</h1>
 	<p>I do my best work where reporting is fragmented, metrics are negotiated, or the path from business question to usable analytics is unclear. My value is in building the reporting structure, governance habits, and operating rhythm that make analytics dependable over time.</p>
 </section>
 
