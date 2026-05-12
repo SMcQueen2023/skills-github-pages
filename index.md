@@ -20,10 +20,6 @@ page_class: page-home
 		<p class="panel-label">Known for</p>
 		<div class="panel-stack">
 			<div>
-				<h2>Reporting trust</h2>
-				<p>I strengthen validation, documentation, and delivery discipline so leaders can rely on the numbers in front of them.</p>
-			</div>
-			<div>
 				<h2>Modernization with structure</h2>
 				<p>I turn fragile reporting environments into clearer, more supportable analytics systems with stronger continuity and governance.</p>
 			</div>
@@ -49,7 +45,7 @@ page_class: page-home
 			<p class="section-label">Selected impact</p>
 			<h2>Work that changed reporting quality, continuity, and executive visibility.</h2>
 		</div>
-		<p>The strongest through-line in my work is improving the trust, structure, and decision value of analytics in high-stakes environments.</p>
+		<p>The strongest through-line in my work is improving trust, structure, and decision value in high-stakes analytics settings.</p>
 	</div>
 	<div class="impact-grid">
 		<article class="impact-card">

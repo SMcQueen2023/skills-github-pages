@@ -564,6 +564,14 @@ ul {
   padding: 0;
 }
 
+.page-about .section-heading,
+.page-experience .section-heading,
+.page-projects .section-heading,
+.page-certifications .section-heading,
+.page-contact .section-heading {
+  max-width: min(100%, 70rem);
+}
+
 .page-contact .contact-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
