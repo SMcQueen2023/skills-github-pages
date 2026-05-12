@@ -84,6 +84,8 @@ page_class: page-about
 		<article class="info-card">
 			<h2>Core stack</h2>
 			<div class="chip-list">
+				<span>Google Workspace</span>
+				<span>Google Cloud Console</span>
 				<span>SQL</span>
 				<span>Azure</span>
 				<span>Power BI</span>

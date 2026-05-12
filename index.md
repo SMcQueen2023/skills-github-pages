@@ -28,6 +28,14 @@ page_class: page-home
 				<p>I turn fragile reporting environments into clearer, more supportable analytics systems with stronger continuity and governance.</p>
 			</div>
 			<div>
+				<h2>Workflow automation</h2>
+				<p>I turn intake, follow-up, and internal handoffs into clearer, more reliable operating workflows.</p>
+			</div>
+			<div>
+				<h2>Cloud-connected delivery</h2>
+				<p>I connect Google Workspace and cloud services when a process needs more structure than lightweight automation alone.</p>
+			</div>
+			<div>
 				<h2>Executive-ready decision support</h2>
 				<p>I design scorecards, KPI frameworks, and operating views that give stakeholders direct, usable visibility.</p>
 			</div>
