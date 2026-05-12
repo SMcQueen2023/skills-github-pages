@@ -7,8 +7,8 @@ page_class: page-experience
 
 <section class="page-intro">
 	<p class="intro-label">Experience</p>
-	<h1>I build reporting and analytics environments that are easier to trust, easier to operate, and more useful to senior decision-makers.</h1>
-	<p>My experience is strongest in enterprise settings where modernization, executive reporting, continuity, and controls-minded delivery all matter at the same time. The common pattern is clear: I improve how analytics work gets defined, delivered, and relied on.</p>
+	<h1>I build reporting and analytics environments that are easier to trust, operate, and use for senior decision-makers.</h1>
+	<p>My experience is strongest in enterprise settings where modernization, executive reporting, continuity, and controls-minded delivery matter at the same time. The common pattern is clear: I improve how analytics work gets defined, delivered, and relied on.</p>
 </section>
 
 <section class="section-block">
@@ -16,7 +16,7 @@ page_class: page-experience
 		<article class="theme-card">
 			<p class="card-kicker">Modernization</p>
 			<h3>Shaping more supportable reporting environments</h3>
-			<p>I help move fragile or legacy reporting environments toward clearer architecture, stronger planning, and more disciplined delivery.</p>
+			<p>I help move fragile reporting and workflow environments toward clearer architecture, stronger planning, and more disciplined delivery.</p>
 		</article>
 		<article class="theme-card">
 			<p class="card-kicker">Executive visibility</p>
@@ -35,7 +35,7 @@ page_class: page-experience
 	<div class="section-heading">
 		<div>
 			<p class="section-label">Selected accomplishments</p>
-			<h2>Representative work that reflects the level and shape of the role.</h2>
+			<h2>Representative work that reflects the shape of the role.</h2>
 		</div>
 	</div>
 	<div class="impact-grid">
@@ -52,8 +52,8 @@ page_class: page-experience
 			<p>The workflow replaced fragile manual steps with a more reliable, supportable operating process.</p>
 		</article>
 		<article class="impact-card">
-			<h3>Improved legacy SAS processing performance and strengthened reporting resilience in a critical reporting environment.</h3>
-			<p>The work improved runtime, reduced fragility, and supported a stronger modernization path.</p>
+			<h3>Built workflow automation that connected Google Workspace, Cloud Run, and structured AI preparation.</h3>
+			<p>The system turned booking and intake steps into a more repeatable, supportable consultation process.</p>
 		</article>
 	</div>
 </section>
@@ -64,7 +64,7 @@ page_class: page-experience
 			<p class="card-kicker">What I am trusted to do</p>
 			<h3>Bring order to reporting work that carries real business consequence.</h3>
 			<ul>
-				<li>Translate ambiguous business needs into cleaner metrics, scorecards, and reporting design.</li>
+				<li>Translate ambiguous business needs into cleaner metrics, scorecards, reporting design, and workflow structure.</li>
 				<li>Establish stronger delivery habits around documentation, validation, and standardization.</li>
 				<li>Align business leaders, architects, IT partners, and analytics teams around what matters most.</li>
 			</ul>

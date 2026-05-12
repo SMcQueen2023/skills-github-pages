@@ -7,16 +7,45 @@ page_class: page-projects
 
 <section class="page-intro">
 	<p class="intro-label">Projects</p>
-	<h1>Selected work that shows how I frame business problems, structure analytics work, and turn technical effort into usable value.</h1>
-	<p>These are not random portfolio pieces. Each project supports the same professional story: practical analytics judgment, stronger reporting discipline, and solutions designed to be useful in the real world.</p>
+	<h1>Selected work that shows how I structure business problems, build useful analytics systems, and turn technical effort into business value.</h1>
+	<p>These projects share the same through-line: stronger operating structure, clearer reporting discipline, and solutions teams can actually use.</p>
 </section>
 
 <section class="case-stack">
 	<article class="project-case">
 		<div class="case-header">
 			<p class="card-kicker">Featured project</p>
+			<h2>Consultation Workflow Automation</h2>
+			<p>Built a cloud-connected consultation workflow that links Google Workspace operations, authenticated Cloud Run services, and structured AI preparation into one repeatable system.</p>
+			<div class="meta-list">
+				<span>Google Workspace</span>
+				<span>Apps Script</span>
+				<span>Cloud Run</span>
+				<span>FastAPI</span>
+				<span>Vertex AI</span>
+			</div>
+		</div>
+		<div class="case-grid">
+			<article class="case-panel">
+				<h3>Business challenge</h3>
+				<p>Consultation intake often lives across calendars, forms, email, and documents, creating manual follow-up, weak status visibility, and inconsistent preparation.</p>
+			</article>
+			<article class="case-panel">
+				<h3>What I built</h3>
+				<p>I designed a state-driven workflow across Apps Script, Sheets, Docs, Gmail, Cloud Run, and Vertex AI to automate intake matching, brief creation, draft emails, and AI-assisted prep.</p>
+			</article>
+			<article class="case-panel">
+				<h3>Why it matters</h3>
+				<p>The project shows workflow design, authenticated service integration, structured AI output, and practical systems thinking in a process that could operate beyond a demo.</p>
+			</article>
+		</div>
+	</article>
+
+	<article class="project-case">
+		<div class="case-header">
+			<p class="card-kicker">Analytics enablement</p>
 			<h2>External Organization Analytics Enablement</h2>
-			<p>Turned a manually maintained workbook into defensible, leadership-ready reporting and a more realistic path toward recurring analytics for a small external organization.</p>
+			<p>Turned a manually maintained workbook into defensible, leadership-ready reporting and a more realistic path to recurring analytics.</p>
 			<div class="meta-list">
 				<span>Python</span>
 				<span>Jupyter notebooks</span>
@@ -31,11 +60,11 @@ page_class: page-projects
 			</article>
 			<article class="case-panel">
 				<h3>What I delivered</h3>
-				<p>I validated the source data, rebuilt corrected datasets, shaped an executive-facing presentation, and defined a lightweight future-state data capture model.</p>
+				<p>I validated the source data, rebuilt corrected datasets, shaped an executive-facing presentation, and outlined a lightweight future-state capture model.</p>
 			</article>
 			<article class="case-panel">
 				<h3>Why it matters</h3>
-				<p>The project demonstrates validation-first analytics, stakeholder-ready communication, and the ability to turn fragmented operational data into reporting that leaders can actually use.</p>
+				<p>The project demonstrates validation-first analytics, stakeholder-ready communication, and the ability to turn fragmented data into reporting leaders can use.</p>
 			</article>
 		</div>
 	</article>
@@ -44,7 +73,7 @@ page_class: page-projects
 		<div class="case-header">
 			<p class="card-kicker">Applied analytics</p>
 			<h2>MIT Capstone: Marketing Campaign Analysis</h2>
-			<p>Built a customer segmentation workflow that combined dimensionality reduction, clustering model comparison, and business interpretation to support more targeted marketing decisions.</p>
+			<p>Built a customer segmentation workflow that combined dimensionality reduction, model comparison, and business interpretation to support more targeted marketing decisions.</p>
 			<div class="meta-list">
 				<span>Python</span>
 				<span>PCA</span>
@@ -59,11 +88,11 @@ page_class: page-projects
 			</article>
 			<article class="case-panel">
 				<h3>What I built</h3>
-				<p>I cleaned and profiled the dataset, reduced dimensionality with PCA, evaluated multiple clustering approaches, and selected the most interpretable final model.</p>
+				<p>I cleaned and profiled the dataset, reduced dimensionality with PCA, evaluated multiple clustering approaches, and selected the most interpretable model.</p>
 			</article>
 			<article class="case-panel">
 				<h3>Why it matters</h3>
-				<p>The project shows disciplined model comparison and stronger business framing than a typical academic notebook, while staying honest about its scope as applied portfolio work.</p>
+				<p>The project shows disciplined model comparison and stronger business framing than a typical academic notebook while staying honest about its scope.</p>
 			</article>
 		</div>
 	</article>
@@ -72,7 +101,7 @@ page_class: page-projects
 		<div class="case-header">
 			<p class="card-kicker">Practical tooling</p>
 			<h2>Parqcel</h2>
-			<p>Created a desktop data utility for exploring, editing, and analyzing parquet, CSV, and Excel files with a faster and more analyst-friendly workflow.</p>
+			<p>Created a desktop data utility for exploring, editing, and analyzing parquet, CSV, and Excel files with a faster analyst workflow.</p>
 			<div class="meta-list">
 				<span>Python</span>
 				<span>PyQt</span>
@@ -83,15 +112,15 @@ page_class: page-projects
 		<div class="case-grid">
 			<article class="case-panel">
 				<h3>Business challenge</h3>
-				<p>Analysts and data practitioners often need a faster way to inspect and manipulate large flat files without jumping between multiple tools.</p>
+				<p>Analysts often need a faster way to inspect and manipulate large flat files without jumping between multiple tools.</p>
 			</article>
 			<article class="case-panel">
 				<h3>What I built</h3>
-				<p>I designed a desktop utility with data editing, filtering, exploration, and optional AI-assisted workflows aimed at practical day-to-day analyst use.</p>
+				<p>I designed a desktop utility with data editing, filtering, exploration, and optional AI-assisted workflows aimed at day-to-day analyst use.</p>
 			</article>
 			<article class="case-panel">
 				<h3>Why it matters</h3>
-				<p>It reinforces hands-on technical credibility and product-minded execution while still fitting the broader story of practical analytics enablement.</p>
+				<p>It reinforces hands-on technical credibility and product-minded execution while fitting the broader story of practical analytics enablement.</p>
 			</article>
 		</div>
 	</article>

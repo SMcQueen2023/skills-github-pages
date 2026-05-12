@@ -9,8 +9,8 @@ page_class: page-home
 <section class="hero">
 	<div class="hero-copy">
 		<p class="eyebrow">Scott McQueen</p>
-		<h1>I build trusted reporting, modernize analytics environments, and help leaders make better decisions in complex enterprise settings.</h1>
-		<p class="hero-support">My work centers on reporting trust, modernization discipline, and the operating structure required to make analytics useful over time. I bring business clarity, stronger governance, and practical execution to environments where reporting is fragmented or high-stakes decisions depend on better visibility.</p>
+		<h1>I build trusted reporting, modernize analytics environments, and design workflow systems that support better decisions.</h1>
+		<p class="hero-support">My work centers on reporting trust, modernization discipline, and the operating structure that makes analytics useful over time. I bring business clarity, stronger governance, and practical execution to environments where reporting is fragmented or high-stakes decisions need better visibility.</p>
 		<div class="button-row">
 			<a class="button-link button-link-primary" href="{{ site.baseurl }}/projects/">View featured work</a>
 			<a class="button-link button-link-secondary" href="{{ site.baseurl }}/contact/">Get in touch</a>
@@ -29,7 +29,7 @@ page_class: page-home
 			</div>
 			<div>
 				<h2>Executive-ready decision support</h2>
-				<p>I design scorecards, KPI frameworks, and operating views that give senior stakeholders direct, usable visibility.</p>
+				<p>I design scorecards, KPI frameworks, and operating views that give stakeholders direct, usable visibility.</p>
 			</div>
 		</div>
 	</aside>
@@ -41,17 +41,17 @@ page_class: page-home
 			<p class="section-label">Selected impact</p>
 			<h2>Work that changed reporting quality, continuity, and executive visibility.</h2>
 		</div>
-		<p>The strongest through-line in my work is not just producing analysis. It is improving the trust, structure, and decision value of analytics in environments where those qualities matter.</p>
+		<p>The strongest through-line in my work is improving the trust, structure, and decision value of analytics where those qualities matter.</p>
 	</div>
 	<div class="impact-grid">
 		<article class="impact-card">
 			<p class="card-kicker">Modernization priority</p>
-			<h3>Elevated a major reporting modernization effort from background risk to active business continuity priority.</h3>
+			<h3>Elevated a major reporting modernization effort into active business continuity planning.</h3>
 			<p>That shift moved architecture and planning conversations forward in a reporting environment with significant operational dependency.</p>
 		</article>
 		<article class="impact-card">
 			<p class="card-kicker">Executive visibility</p>
-			<h3>Built executive scorecards that gave senior leadership clearer visibility into cost and performance initiatives.</h3>
+			<h3>Built executive scorecards that gave leadership clearer visibility into cost and performance initiatives.</h3>
 			<p>The work strengthened decision support by translating complex reporting needs into concise, leadership-ready views.</p>
 		</article>
 		<article class="impact-card">
@@ -62,7 +62,7 @@ page_class: page-home
 		<article class="impact-card">
 			<p class="card-kicker">Operational performance</p>
 			<h3>Strengthened reporting that helped improve on-time customs clearance performance from roughly 90 percent to 93 percent or better.</h3>
-			<p>The reporting sharpened KPI visibility and supported operational process changes that held up in practice.</p>
+			<p>The reporting sharpened KPI visibility and supported operational changes that held up in practice.</p>
 		</article>
 	</div>
 </section>
@@ -71,29 +71,29 @@ page_class: page-home
 	<div class="section-heading">
 		<div>
 			<p class="section-label">Featured work</p>
-			<h2>Selected projects that reinforce analytics modernization, reporting trust, and practical technical execution.</h2>
+			<h2>Selected projects that show analytics modernization, workflow design, and practical technical execution.</h2>
 		</div>
-		<p>These projects were chosen because they support the same story: structured problem solving, clear business framing, and work that leaders or teams can actually use.</p>
+		<p>These projects were chosen because they support the same story: structured problem solving, clear business framing, and work teams can actually use.</p>
 	</div>
 	<div class="project-preview-grid">
 		<article class="project-card">
+			<p class="card-kicker">Workflow automation</p>
+			<h3>Consultation Workflow Automation</h3>
+			<p>Connected Google Workspace, Cloud Run, and structured AI enrichment to automate consultation intake, brief creation, and client preparation.</p>
+			<div class="tag-list">
+				<span>Apps Script</span>
+				<span>Cloud Run</span>
+				<span>Vertex AI</span>
+			</div>
+		</article>
+		<article class="project-card">
 			<p class="card-kicker">Analytics enablement</p>
 			<h3>External Organization Analytics Enablement</h3>
-			<p>Turned fragmented operational data into leadership-ready reporting with stronger trust boundaries, clearer recommendations, and a realistic path to recurring monthly analytics.</p>
+			<p>Turned fragmented operational data into leadership-ready reporting with stronger trust boundaries and a realistic path to recurring analytics.</p>
 			<div class="tag-list">
 				<span>Validation-first analysis</span>
 				<span>Leadership presentation</span>
 				<span>Process design</span>
-			</div>
-		</article>
-		<article class="project-card">
-			<p class="card-kicker">Applied modeling</p>
-			<h3>MIT Capstone</h3>
-			<p>Built a customer segmentation workflow that combined PCA, model comparison, and business interpretation to produce more targeted marketing recommendations.</p>
-			<div class="tag-list">
-				<span>PCA</span>
-				<span>Hierarchical clustering</span>
-				<span>Business interpretation</span>
 			</div>
 		</article>
 		<article class="project-card">
@@ -124,7 +124,7 @@ page_class: page-home
 		<article class="summary-panel">
 			<p class="card-kicker">Target lane</p>
 			<h3>Built for business-facing analytics leadership roles.</h3>
-			<p>The site is intentionally aligned to analytics modernization, BI leadership, trusted reporting, governance, and executive decision support.</p>
+			<p>The site is intentionally aligned to analytics modernization, workflow design, trusted reporting, governance, and executive decision support.</p>
 		</article>
 	</div>
 </section>

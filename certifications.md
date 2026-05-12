@@ -8,7 +8,7 @@ page_class: page-certifications
 <section class="page-intro">
 	<p class="intro-label">Credentials</p>
 	<h1>Selected credentials that reinforce delivery credibility across analytics, BI, and modernization work.</h1>
-	<p>This page is intentionally curated. The credentials support the story, but they do not substitute for hands-on experience delivering trusted reporting and business-facing analytics.</p>
+	<p>This page is intentionally curated. The credentials support the story, but they do not substitute for hands-on work delivering trusted reporting and business-facing analytics.</p>
 </section>
 
 <section class="section-block">

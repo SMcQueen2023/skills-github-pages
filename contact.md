@@ -7,8 +7,8 @@ page_class: page-contact
 
 <section class="page-intro">
 	<p class="intro-label">Contact</p>
-	<h1>The easiest way to reach me is through LinkedIn.</h1>
-	<p>You can also review public work and side projects on GitHub and GitLab. If you would like a resume PDF or want to discuss a role, LinkedIn is the best place to start.</p>
+	<h1>LinkedIn is the easiest way to reach me.</h1>
+	<p>You can also review public work on GitHub and GitLab. For a resume PDF or role discussion, LinkedIn is the best place to start.</p>
 </section>
 
 <section class="section-block">
@@ -16,7 +16,7 @@ page_class: page-contact
 		<article class="contact-card">
 			<p class="card-kicker">Primary</p>
 			<h2><a href="https://www.linkedin.com/in/smmcqueen/">LinkedIn Profile</a></h2>
-			<p>Best for direct outreach, networking, and role-related conversations.</p>
+			<p>Best for direct outreach and role-related conversations.</p>
 		</article>
 		<article class="contact-card">
 			<p class="card-kicker">Public code</p>

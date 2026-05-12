@@ -7,16 +7,16 @@ page_class: page-about
 
 <section class="page-intro">
 	<p class="intro-label">About</p>
-	<h1>I bring structure, trust, and delivery discipline to analytics work that leaders need to rely on.</h1>
-	<p>I do my best work where reporting is fragmented, metrics are negotiated, or the path from business question to usable analytics is still unclear. My value is not just in producing analysis. It is in building the reporting structure, governance habits, and practical operating rhythm that make analytics dependable over time.</p>
+	<h1>I bring structure, trust, and delivery discipline to analytics and workflow systems leaders need to rely on.</h1>
+	<p>I do my best work where reporting is fragmented, metrics are negotiated, or the path from business question to usable analytics is unclear. My value is in building the reporting structure, governance habits, and operating rhythm that make analytics dependable over time.</p>
 </section>
 
 <section class="section-block">
 	<div class="surface-grid">
 		<article class="info-card">
 			<p class="card-kicker">What I build</p>
-			<h2>Trusted reporting that holds up under executive scrutiny.</h2>
-			<p>I build scorecards, KPI frameworks, validation patterns, and reporting workflows that improve clarity for both business stakeholders and delivery teams.</p>
+			<h2>Trusted reporting and workflow systems that hold up under scrutiny.</h2>
+			<p>I build scorecards, KPI frameworks, validation patterns, and automation workflows that improve clarity for business stakeholders and delivery teams.</p>
 		</article>
 		<article class="info-card">
 			<p class="card-kicker">Where I add value</p>
@@ -45,7 +45,7 @@ page_class: page-about
 		</article>
 		<article class="theme-card">
 			<h3>Translation</h3>
-			<p>I translate between technical detail and business decision needs so stakeholders can move faster with fewer assumptions and fewer surprises.</p>
+			<p>I translate between technical detail and business decision needs so stakeholders can move faster with fewer assumptions and surprises.</p>
 		</article>
 	</div>
 </section>
@@ -98,7 +98,7 @@ page_class: page-about
 				<span>Metadata tooling</span>
 				<span>Reporting modernization</span>
 				<span>KPI governance</span>
-				<span>Automation</span>
+				<span>Workflow automation</span>
 				<span>Executive scorecards</span>
 				<span>Cross-functional delivery</span>
 			</div>
