@@ -14,7 +14,36 @@ page_class: page-projects
 <section class="case-stack">
 	<article class="project-case">
 		<div class="case-header">
-			<p class="card-kicker">Featured project</p>
+			<p class="card-kicker">Featured technical build</p>
+			<h2>Cloud Engineer by McQueen Cloud Advisory</h2>
+			<p>Built and deployed a public cloud engineering documentation platform using MkDocs, Firebase Hosting, GitHub Actions CI/CD, and a custom McQueen Cloud Advisory subdomain.</p>
+			<div class="meta-list">
+				<span>MkDocs</span>
+				<span>Firebase Hosting</span>
+				<span>GitHub Actions</span>
+				<span>Google Cloud</span>
+				<span>Custom DNS</span>
+			</div>
+		</div>
+		<div class="case-grid">
+			<article class="case-panel">
+				<h3>Business challenge</h3>
+				<p>Create a real cloud-hosted documentation platform that could support structured learning, public technical writing, and future portfolio projects without turning into a one-off notes repository.</p>
+			</article>
+			<article class="case-panel">
+				<h3>What I built</h3>
+				<p>I set up a documentation-first delivery workflow using MkDocs source, strict local builds, GitHub source control, GitHub Actions CI/CD for automated build and Firebase deploy, Firebase Hosting, and Squarespace-managed DNS for cloudengineer.mcqueencloud.com.</p>
+			</article>
+			<article class="case-panel">
+				<h3>Why it matters</h3>
+				<p>The project demonstrates hosting-model judgment, CI/CD discipline, custom-domain delivery, and hands-on troubleshooting across IAM, organization policy, API enablement, and deployment workflow issues in a real public cloud asset.</p>
+			</article>
+		</div>
+	</article>
+
+	<article class="project-case">
+		<div class="case-header">
+			<p class="card-kicker">Workflow automation</p>
 			<h2>Consultation Workflow Automation</h2>
 			<p>Built a cloud-connected consultation workflow that links Google Workspace operations, authenticated Cloud Run services, and structured AI preparation into one repeatable system.</p>
 			<div class="meta-list">

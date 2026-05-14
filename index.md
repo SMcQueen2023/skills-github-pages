@@ -117,12 +117,27 @@ page_class: page-home
 	</div>
 	<div class="project-preview-grid">
 		<article class="project-card">
+			<p class="card-kicker">Featured technical build</p>
+			<h3>Cloud Engineer by McQueen Cloud Advisory</h3>
+			<p>Built a public cloud engineering documentation platform with MkDocs, Firebase Hosting, GitHub Actions CI/CD, and a custom McQueen Cloud Advisory subdomain.</p>
+			<div class="tag-list">
+				<span>MkDocs</span>
+				<span>Firebase Hosting</span>
+				<span>GitHub Actions</span>
+				<span>GCP</span>
+				<span>Cloud Engineering</span>
+			</div>
+		</article>
+		<article class="project-card">
 			<p class="card-kicker">Workflow automation</p>
 			<h3>Consultation Workflow Automation</h3>
 			<p>Connected Google Workspace, Cloud Run, and structured AI enrichment to automate consultation intake, brief creation, and client preparation.</p>
 			<div class="tag-list">
+				<span>Google Workspace</span>
 				<span>Apps Script</span>
+				<span>JavaScript</span>
 				<span>Cloud Run</span>
+				<span>Gemini</span>
 				<span>Vertex AI</span>
 			</div>
 		</article>
@@ -134,16 +149,6 @@ page_class: page-home
 				<span>Validation-first analysis</span>
 				<span>Leadership presentation</span>
 				<span>Process design</span>
-			</div>
-		</article>
-		<article class="project-card">
-			<p class="card-kicker">Practical tooling</p>
-			<h3>Parqcel</h3>
-			<p>Developed a desktop data utility that reflects product thinking, workflow design, and hands-on credibility with analyst-facing tools.</p>
-			<div class="tag-list">
-				<span>Python</span>
-				<span>Polars</span>
-				<span>Desktop application design</span>
 			</div>
 		</article>
 	</div>
