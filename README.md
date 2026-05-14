@@ -29,4 +29,27 @@ If Ruby and Bundler are available locally:
 bundle exec jekyll serve --baseurl '/skills-github-pages'
 ```
 
-If Jekyll is not installed locally, use GitHub Actions or GitHub Pages to validate the rendered site.
+If Jekyll is not installed locally, use Docker:
+
+```bash
+docker build -t skills-github-pages .
+docker run --rm -p 4000:4000 skills-github-pages
+```
+
+The local preview will be available at `http://localhost:4000/skills-github-pages/`.
+
+If you want the container to reflect local file edits without rebuilding the image each time, run it with a bind mount instead:
+
+```bash
+docker run --rm -p 4000:4000 -v "${PWD}:/srv/jekyll" skills-github-pages
+```
+
+For the shortest local preview workflow, use Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+The compose setup mounts the repo into the container so content and CSS edits are reflected without rebuilding the image each time.
+
+The Docker image uses the official GitHub Pages Jekyll runtime so the local preview stays aligned with the deployment build.

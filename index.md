@@ -8,32 +8,32 @@ page_class: page-home
 
 <section class="hero">
 	<div class="hero-copy">
-		<p class="eyebrow">Scott McQueen</p>
-		<h1>I build trusted reporting, modernize analytics environments, and design workflow systems for better decisions.</h1>
-		<p class="hero-support">My work centers on reporting trust, modernization discipline, and the operating structure that makes analytics useful over time. I bring business clarity, stronger governance, and practical execution to environments where reporting is fragmented or high-stakes decisions need better visibility.</p>
+		<p class="eyebrow">Portfolio and Working Profile</p>
+		<h1>Trusted analytics systems for reporting, modernization, and workflow design.</h1>
+		<p class="hero-support">This site brings together project evidence, operating context, and credentials behind my work in business-facing analytics, reporting governance, cloud-connected delivery, and executive decision support.</p>
 		<div class="button-row">
 			<a class="button-link button-link-primary" href="{{ site.baseurl }}/projects/">View featured work</a>
-			<a class="button-link button-link-secondary" href="{{ site.baseurl }}/contact/">Get in touch</a>
+			<a class="button-link button-link-secondary" href="{{ site.baseurl }}/experience/">Review experience</a>
 		</div>
 	</div>
 	<aside class="hero-panel">
-		<p class="panel-label">Known for</p>
+		<p class="panel-label">What This Site Covers</p>
 		<div class="panel-stack">
 			<div>
-				<h2>Modernization with structure</h2>
-				<p>I turn fragile reporting environments into clearer, more supportable analytics systems with stronger continuity and governance.</p>
+				<h2>Reporting trust</h2>
+				<p>Scorecards, KPI structure, and validation habits that make metrics usable, auditable, and easier to rely on.</p>
 			</div>
 			<div>
-				<h2>Workflow automation</h2>
-				<p>I turn intake, follow-up, and internal handoffs into clearer, more reliable operating workflows.</p>
+				<h2>Modernization planning</h2>
+				<p>Supportable delivery patterns for analytics environments that need clearer architecture, continuity, and governance.</p>
 			</div>
 			<div>
-				<h2>Cloud-connected delivery</h2>
-				<p>I connect Google Workspace and cloud services when a process needs more structure than lightweight automation alone.</p>
+				<h2>Workflow systems</h2>
+				<p>Operational design that reduces handoff friction and turns manual processes into repeatable systems.</p>
 			</div>
 			<div>
-				<h2>Executive-ready decision support</h2>
-				<p>I design scorecards, KPI frameworks, and operating views that give stakeholders direct, usable visibility.</p>
+				<h2>Cloud-connected execution</h2>
+				<p>Practical use of Google Workspace, Cloud Run, Azure, Python, and BI tooling where the operating model matters.</p>
 			</div>
 		</div>
 	</aside>
@@ -42,7 +42,43 @@ page_class: page-home
 <section class="section-block">
 	<div class="section-heading">
 		<div>
-			<p class="section-label">Selected impact</p>
+			<p class="section-label">Start here</p>
+			<h2>Use the main sections below to move quickly through background, work evidence, and credentials.</h2>
+		</div>
+		<p>The homepage stays intentionally concise. These entry points make it easy to review the profile in the order that matters to you.</p>
+	</div>
+	<div class="quick-link-grid">
+		<a class="nav-card" href="{{ site.baseurl }}/about/">
+			<p class="card-kicker">Profile</p>
+			<h3>About</h3>
+			<p>Context on how I approach reporting trust, governance, and analytics leadership.</p>
+			<span class="nav-card-action">Open profile</span>
+		</a>
+		<a class="nav-card" href="{{ site.baseurl }}/projects/">
+			<p class="card-kicker">Selected work</p>
+			<h3>Projects</h3>
+			<p>Case-style summaries of workflow automation, analytics enablement, and practical technical delivery.</p>
+			<span class="nav-card-action">Review projects</span>
+		</a>
+		<a class="nav-card" href="{{ site.baseurl }}/experience/">
+			<p class="card-kicker">Operating scope</p>
+			<h3>Experience</h3>
+			<p>Representative accomplishments in modernization, executive visibility, and controls-minded delivery.</p>
+			<span class="nav-card-action">See experience</span>
+		</a>
+		<a class="nav-card" href="{{ site.baseurl }}/certifications/">
+			<p class="card-kicker">Credentials</p>
+			<h3>Certifications</h3>
+			<p>Selected cloud, BI, analytics, and delivery credentials that reinforce the work.</p>
+			<span class="nav-card-action">View credentials</span>
+		</a>
+	</div>
+</section>
+
+<section class="section-block">
+	<div class="section-heading">
+		<div>
+			<p class="section-label">Selected outcomes</p>
 			<h2>Work that changed reporting quality, continuity, and executive visibility.</h2>
 		</div>
 		<p>The strongest through-line in my work is improving trust, structure, and decision value in high-stakes analytics settings.</p>

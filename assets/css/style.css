@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 
 :root {
   --max-width: 1160px;
   --copy-width: 760px;
-  --bg: #f5f0e8;
-  --bg-accent: #efe7db;
-  --surface: rgba(255, 252, 247, 0.86);
-  --surface-strong: #fffdf9;
-  --line: rgba(24, 34, 49, 0.12);
-  --line-strong: rgba(24, 34, 49, 0.18);
-  --text: #182231;
-  --muted: #5d6778;
-  --muted-strong: #425065;
-  --accent: #0f4fcf;
-  --accent-deep: #102849;
-  --accent-soft: #dfe8ff;
-  --warm: #8e6640;
-  --shadow-soft: 0 18px 40px rgba(24, 34, 49, 0.08);
-  --shadow-card: 0 24px 60px rgba(24, 34, 49, 0.11);
-  --radius-lg: 28px;
+  --bg: #edf3f9;
+  --bg-accent: #e0e9f2;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: #ffffff;
+  --line: rgba(21, 44, 70, 0.12);
+  --line-strong: rgba(21, 44, 70, 0.2);
+  --text: #173047;
+  --muted: #5c6f82;
+  --muted-strong: #44586b;
+  --accent: #2f6fd6;
+  --accent-deep: #0f2744;
+  --accent-soft: #d7e6fb;
+  --warm: #2c7b8d;
+  --shadow-soft: 0 18px 38px rgba(15, 39, 68, 0.07);
+  --shadow-card: 0 22px 54px rgba(15, 39, 68, 0.1);
+  --radius-lg: 24px;
   --radius-md: 20px;
   --radius-sm: 14px;
   --space-2xs: 0.35rem;
@@ -39,10 +39,10 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(15, 79, 207, 0.08), transparent 30%),
-    radial-gradient(circle at top right, rgba(142, 102, 64, 0.09), transparent 28%),
-    linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%);
-  font-family: "Manrope", "Segoe UI", sans-serif;
+    radial-gradient(circle at top left, rgba(47, 111, 214, 0.09), transparent 34%),
+    radial-gradient(circle at top right, rgba(44, 123, 141, 0.08), transparent 26%),
+    linear-gradient(180deg, #f8fbfe 0%, var(--bg) 100%);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   line-height: 1.68;
   -webkit-font-smoothing: antialiased;
 }
@@ -68,18 +68,18 @@ h3,
 h4 {
   margin: 0;
   color: var(--accent-deep);
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: clamp(2.32rem, 5vw, 3.78rem);
+  font-size: clamp(2.22rem, 4.2vw, 3.45rem);
 }
 
 h2 {
-  font-size: clamp(1.62rem, 2.45vw, 2.18rem);
+  font-size: clamp(1.58rem, 2.3vw, 2.05rem);
 }
 
 h3 {
@@ -100,9 +100,10 @@ ul {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(24, 34, 49, 0.08);
-  background: rgba(251, 248, 242, 0.78);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(8, 24, 42, 0.94);
   backdrop-filter: blur(18px);
+  box-shadow: 0 14px 34px rgba(8, 24, 42, 0.12);
 }
 
 .site-nav {
@@ -117,7 +118,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
-  color: var(--accent-deep);
+  color: #f4f8fc;
   text-decoration: none;
 }
 
@@ -130,8 +131,9 @@ ul {
   place-items: center;
   width: 2.6rem;
   height: 2.6rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent-deep), var(--accent));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #16385f, #2f6fd6);
   color: #fff;
   font-size: 0.9rem;
   font-weight: 800;
@@ -148,8 +150,8 @@ ul {
 }
 
 .brand-copy small {
-  color: var(--muted);
-  font-size: 0.74rem;
+  color: rgba(228, 236, 245, 0.7);
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -164,7 +166,7 @@ ul {
 .links a {
   padding: 0.65rem 0.95rem;
   border-radius: 999px;
-  color: var(--muted-strong);
+  color: rgba(228, 236, 245, 0.76);
   font-size: 0.92rem;
   font-weight: 700;
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -172,11 +174,11 @@ ul {
 
 .links a:hover,
 .links a.is-active {
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--accent-deep);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
   text-decoration: none;
   transform: translateY(-1px);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
 }
 
 .page-frame {
@@ -193,13 +195,14 @@ ul {
   font-size: 0.77rem;
   font-weight: 800;
   letter-spacing: 0.14em;
+  font-family: "IBM Plex Mono", Consolas, monospace;
   text-transform: uppercase;
 }
 
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.8fr);
-  gap: 1.7rem;
+  gap: 1.3rem;
   align-items: stretch;
   margin-bottom: 4.15rem;
 }
@@ -207,29 +210,29 @@ ul {
 .hero-copy {
   position: relative;
   overflow: hidden;
-  padding: 1.95rem 1.95rem 1.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 2rem 2rem 1.75rem;
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.2)),
-    radial-gradient(circle at top right, rgba(15, 79, 207, 0.06), transparent 32%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 253, 0.92)),
+    radial-gradient(circle at top right, rgba(47, 111, 214, 0.08), transparent 34%);
   box-shadow: var(--shadow-soft);
 }
 
 .hero-copy::before {
   content: "";
   position: absolute;
-  right: -4.5rem;
-  bottom: -2rem;
-  width: 15rem;
-  height: 10rem;
-  border: 1px solid rgba(15, 79, 207, 0.08);
-  border-radius: 1.4rem;
+  right: -2.8rem;
+  top: -2.2rem;
+  width: 13rem;
+  height: 13rem;
+  border: 1px solid rgba(47, 111, 214, 0.08);
+  border-radius: 2rem;
   background:
-    repeating-linear-gradient(90deg, rgba(15, 79, 207, 0.05), rgba(15, 79, 207, 0.05) 1px, transparent 1px, transparent 20px),
-    repeating-linear-gradient(0deg, rgba(15, 79, 207, 0.035), rgba(15, 79, 207, 0.035) 1px, transparent 1px, transparent 20px);
-  opacity: 0.55;
-  transform: rotate(-8deg);
+    repeating-linear-gradient(90deg, rgba(47, 111, 214, 0.05), rgba(47, 111, 214, 0.05) 1px, transparent 1px, transparent 18px),
+    repeating-linear-gradient(0deg, rgba(47, 111, 214, 0.035), rgba(47, 111, 214, 0.035) 1px, transparent 1px, transparent 18px);
+  opacity: 0.7;
+  transform: rotate(6deg);
   pointer-events: none;
 }
 
@@ -239,8 +242,8 @@ ul {
 }
 
 .hero-copy h1 {
-  max-width: 14.25ch;
-  font-size: clamp(1.96rem, 4.05vw, 3.1rem);
+  max-width: 13ch;
+  font-size: clamp(2rem, 3.75vw, 3rem);
   line-height: 1.04;
 }
 
@@ -264,7 +267,7 @@ ul {
 .hero-support {
   max-width: 40rem;
   margin-top: 1.1rem;
-  font-size: 1rem;
+  font-size: 1.02rem;
   line-height: 1.62;
 }
 
@@ -291,14 +294,14 @@ ul {
 }
 
 .button-link-primary {
-  background: linear-gradient(135deg, var(--accent-deep), var(--accent));
+  background: linear-gradient(135deg, #12385e, var(--accent-deep));
   color: #fff;
   box-shadow: var(--shadow-soft);
 }
 
 .button-link-secondary {
   border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.92);
   color: var(--accent-deep);
 }
 
@@ -324,6 +327,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   padding: 1.85rem 1.7rem;
+  background: linear-gradient(180deg, rgba(246, 250, 253, 0.94), rgba(255, 255, 255, 0.9));
 }
 
 .hero-panel .panel-label {
@@ -331,8 +335,8 @@ ul {
 }
 
 .hero-panel .panel-stack p {
-  font-size: 1.02rem;
-  line-height: 1.66;
+  font-size: 0.97rem;
+  line-height: 1.62;
 }
 
 .panel-stack {
@@ -353,7 +357,7 @@ ul {
 }
 
 .hero-panel h2 {
-  font-size: 1.18rem;
+  font-size: 1.06rem;
 }
 
 .section-block {
@@ -369,6 +373,7 @@ ul {
 
 .impact-grid,
 .project-preview-grid,
+.quick-link-grid,
 .surface-grid,
 .theme-grid,
 .trust-grid,
@@ -385,12 +390,17 @@ ul {
 }
 
 .project-preview-grid,
+.quick-link-grid,
 .theme-grid,
 .trust-grid,
 .credentials-grid,
 .contact-grid,
 .summary-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.quick-link-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .surface-grid,
@@ -407,6 +417,47 @@ ul {
 .contact-card,
 .summary-panel {
   padding: 1.32rem;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 100%;
+  padding: 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 249, 253, 0.92));
+  box-shadow: var(--shadow-soft);
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-card:hover {
+  border-color: rgba(47, 111, 214, 0.28);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(232, 241, 251, 0.96));
+  box-shadow: 0 20px 42px rgba(15, 39, 68, 0.09);
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
+.nav-card h3 {
+  margin-bottom: 0.1rem;
+  font-size: 1.08rem;
+}
+
+.nav-card p {
+  margin: 0;
+  color: var(--muted-strong);
+}
+
+.nav-card-action {
+  margin-top: auto;
+  color: var(--accent-deep);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .impact-card h3,
@@ -446,6 +497,7 @@ ul {
   align-items: center;
   padding: 0.38rem 0.74rem;
   border-radius: 999px;
+  border: 1px solid rgba(21, 44, 70, 0.08);
   background: var(--bg-accent);
   color: var(--accent-deep);
   font-size: 0.78rem;
@@ -455,6 +507,8 @@ ul {
 .page-intro {
   max-width: min(100%, 70rem);
   margin-bottom: 3.1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .page-intro h1 {
@@ -477,7 +531,7 @@ ul {
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: rgba(255, 253, 249, 0.92);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 250, 253, 0.92));
   box-shadow: var(--shadow-soft);
 }
 
@@ -543,17 +597,17 @@ ul {
 }
 
 .page-home .section-heading > p {
-  padding-top: 1.95rem;
+  padding-top: 1.3rem;
 }
 
 .page-home .summary-panel {
-  background: linear-gradient(135deg, rgba(15, 79, 207, 0.08), rgba(255, 255, 255, 0.74));
+  background: linear-gradient(135deg, rgba(47, 111, 214, 0.08), rgba(255, 255, 255, 0.86));
 }
 
 .page-home .hero-panel {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.3)),
-    linear-gradient(135deg, rgba(15, 79, 207, 0.035), transparent 55%);
+    linear-gradient(180deg, rgba(246, 250, 253, 0.96), rgba(255, 255, 255, 0.9)),
+    linear-gradient(135deg, rgba(47, 111, 214, 0.05), transparent 58%);
 }
 
 .page-about .page-intro,
@@ -581,6 +635,7 @@ ul {
   .page-home .section-heading,
   .impact-grid,
   .project-preview-grid,
+  .quick-link-grid,
   .surface-grid,
   .theme-grid,
   .trust-grid,
