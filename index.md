@@ -8,102 +8,101 @@ page_class: page-home
 
 <section class="hero">
 	<div class="hero-copy">
-		<p class="eyebrow">Portfolio and Working Profile</p>
-		<h1>Trusted analytics systems for reporting, modernization, and workflow design.</h1>
-		<p class="hero-support">This site brings together project evidence, operating context, and credentials behind my work in business-facing analytics, reporting governance, cloud-connected delivery, and executive decision support.</p>
+		<p class="eyebrow">Analytics Engineering and BI</p>
+		<h1>Trusted analytics systems for reporting, warehouse design, and modernization.</h1>
+		<p class="hero-support">This site focuses on the systems behind reliable metrics: dimensional models, tested transformation layers, reporting modernization, validation discipline, and business-facing analytics delivery leaders can actually use.</p>
 		<div class="button-row">
 			<a class="button-link button-link-primary" href="{{ site.baseurl }}/projects/">View featured work</a>
 			<a class="button-link button-link-secondary" href="{{ site.baseurl }}/experience/">Review experience</a>
 		</div>
 	</div>
 	<aside class="hero-panel">
-		<p class="panel-label">What This Site Covers</p>
+		<p class="panel-label">What I Build</p>
 		<div class="panel-stack">
 			<div>
-				<h2>Reporting trust</h2>
-				<p>Scorecards, KPI structure, and validation habits that make metrics usable, auditable, and easier to rely on.</p>
+				<h2>Trusted reporting systems</h2>
+				<p>Metrics, scorecards, and reporting assets designed so business stakeholders can trace definitions, challenge logic, and reuse outputs with confidence.</p>
 			</div>
 			<div>
-				<h2>Modernization planning</h2>
-				<p>Supportable delivery patterns for analytics environments that need clearer architecture, continuity, and governance.</p>
+				<h2>Analytics warehouse design</h2>
+				<p>Raw, staging, fact, and dimensional structures that make messy source data more supportable without hiding the tradeoffs behind the model.</p>
 			</div>
 			<div>
-				<h2>Workflow systems</h2>
-				<p>Operational design that reduces handoff friction and turns manual processes into repeatable systems.</p>
+				<h2>BI modernization</h2>
+				<p>Reporting environments rebuilt around clearer metric ownership, reusable logic, validation, and continuity instead of fragile legacy behavior.</p>
 			</div>
 			<div>
-				<h2>Cloud-connected execution</h2>
-				<p>Practical use of Google Workspace, Cloud Run, Azure, Python, and BI tooling where the operating model matters.</p>
+				<h2>Operational governance</h2>
+				<p>Platforms that compute health and performance from measurable signals rather than relying only on manual status updates or disconnected trackers.</p>
 			</div>
 		</div>
 	</aside>
 </section>
 
 <section class="section-block">
-	<div class="section-heading">
-		<div>
-			<p class="section-label">Start here</p>
-			<h2>Use the main sections below to move quickly through background, work evidence, and credentials.</h2>
+	<div class="proof-strip">
+		<div class="artifact-header">
+			<p class="section-label">Evidence at a glance</p>
+			<h2>Tangible delivery before the case studies.</h2>
+			<p>The work is strongest where warehouse design, reporting modernization, and business-facing analytics have to hold up under real operating pressure.</p>
 		</div>
-		<p>The homepage stays intentionally concise. These entry points make it easy to review the profile in the order that matters to you.</p>
-	</div>
-	<div class="quick-link-grid">
-		<a class="nav-card" href="{{ site.baseurl }}/about/">
-			<p class="card-kicker">Profile</p>
-			<h3>About</h3>
-			<p>Context on how I approach reporting trust, governance, and analytics leadership.</p>
-			<span class="nav-card-action">Open profile</span>
-		</a>
-		<a class="nav-card" href="{{ site.baseurl }}/projects/">
-			<p class="card-kicker">Selected work</p>
-			<h3>Projects</h3>
-			<p>Case-style summaries of workflow automation, analytics enablement, and practical technical delivery.</p>
-			<span class="nav-card-action">Review projects</span>
-		</a>
-		<a class="nav-card" href="{{ site.baseurl }}/experience/">
-			<p class="card-kicker">Operating scope</p>
-			<h3>Experience</h3>
-			<p>Representative accomplishments in modernization, executive visibility, and controls-minded delivery.</p>
-			<span class="nav-card-action">See experience</span>
-		</a>
-		<a class="nav-card" href="{{ site.baseurl }}/certifications/">
-			<p class="card-kicker">Credentials</p>
-			<h3>Certifications</h3>
-			<p>Selected cloud, BI, analytics, and delivery credentials that reinforce the work.</p>
-			<span class="nav-card-action">View credentials</span>
-		</a>
+		<div class="proof-grid">
+			<article class="proof-item">
+				<span class="proof-value">170+</span>
+				<span class="proof-label">Reporting assets in modernization scope</span>
+				<p class="proof-copy">Large-scale enterprise reporting context rather than isolated dashboard work.</p>
+			</article>
+			<article class="proof-item">
+				<span class="proof-value">30 hrs/mo</span>
+				<span class="proof-label">Manual effort removed through automation</span>
+				<p class="proof-copy">Controls-minded reconciliation design, not just convenience scripting.</p>
+			</article>
+			<article class="proof-item">
+				<span class="proof-value">90% -&gt; 93%+</span>
+				<span class="proof-label">Operational KPI improvement supported</span>
+				<p class="proof-copy">Reporting used to sharpen decision-making, not only to summarize it.</p>
+			</article>
+			<article class="proof-item">
+				<span class="proof-value">Azure + GCP</span>
+				<span class="proof-label">Warehouse and BI tooling in practice</span>
+				<p class="proof-copy">Power BI, Synapse, BigQuery, dbt, Terraform, SQL, and Python across the portfolio.</p>
+			</article>
+		</div>
 	</div>
 </section>
 
 <section class="section-block">
-	<div class="section-heading">
-		<div>
-			<p class="section-label">Selected outcomes</p>
-			<h2>Work that changed reporting quality, continuity, and executive visibility.</h2>
+	<div class="artifact-board">
+		<div class="artifact-header">
+			<p class="section-label">Analytical System Shape</p>
+			<h2>The work is designed in layers so metric trust is visible.</h2>
+			<p>Most of the portfolio revolves around the same engineering pattern: understand the existing state, separate raw inputs from modeled logic, validate the transformation path, and expose metrics leaders can trust.</p>
 		</div>
-		<p>The strongest through-line in my work is improving trust, structure, and decision value in high-stakes analytics settings.</p>
-	</div>
-	<div class="impact-grid">
-		<article class="impact-card">
-			<p class="card-kicker">Modernization priority</p>
-			<h3>Elevated a major reporting modernization effort into active business continuity planning.</h3>
-			<p>That shift moved architecture and planning conversations forward in a reporting environment with significant operational dependency.</p>
-		</article>
-		<article class="impact-card">
-			<p class="card-kicker">Executive visibility</p>
-			<h3>Built executive scorecards that gave leadership clearer visibility into cost and performance initiatives.</h3>
-			<p>The work strengthened decision support by translating complex reporting needs into concise, leadership-ready views.</p>
-		</article>
-		<article class="impact-card">
-			<p class="card-kicker">Continuity and controls</p>
-			<h3>Designed reconciliation automation that reduced manual effort, improved continuity, and tightened auditability.</h3>
-			<p>The workflow consolidated fragile manual steps into a more repeatable and supportable operating process.</p>
-		</article>
-		<article class="impact-card">
-			<p class="card-kicker">Operational performance</p>
-			<h3>Strengthened reporting that helped improve on-time customs clearance performance from roughly 90 percent to 93 percent or better.</h3>
-			<p>The reporting sharpened KPI visibility and supported operational changes that held up in practice.</p>
-		</article>
+		<div class="stack-diagram">
+			<div class="stack-layers">
+				<div class="stack-layer">
+					<strong>Operational sources</strong>
+					<span>Legacy reports, transactional systems, files, forms, and manually maintained operational data.</span>
+				</div>
+				<div class="stack-layer">
+					<strong>Raw and staging layers</strong>
+					<span>Defensive parsing, normalization, reconciliation, and traceable transformation logic.</span>
+				</div>
+				<div class="stack-layer">
+					<strong>Fact and semantic structures</strong>
+					<span>Dimensional models, surrogate keys, governed calculations, and business-ready metrics.</span>
+				</div>
+				<div class="stack-layer">
+					<strong>Decision support</strong>
+					<span>Executive BI, finance reporting, governance views, and reusable analytical assets.</span>
+				</div>
+			</div>
+			<div class="stack-notes">
+				<p class="stack-note"><strong>Constraint:</strong> legacy logic and source quality issues cannot be hidden under dashboard polish.</p>
+				<p class="stack-note"><strong>Validation:</strong> testing, notebook review, reconciliation, and metric traceability are built into the process.</p>
+				<p class="stack-note"><strong>Outcome:</strong> leaders spend less time debating data structure and more time acting on the signal.</p>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -111,46 +110,122 @@ page_class: page-home
 	<div class="section-heading">
 		<div>
 			<p class="section-label">Featured work</p>
-			<h2>Selected projects that show analytics modernization, workflow design, and practical technical execution.</h2>
+			<h2>Selected projects that show reporting modernization, data modeling, and analytics engineering judgment.</h2>
 		</div>
-		<p>These projects were chosen because they support the same story: structured problem solving, clear business framing, and work teams can actually use.</p>
+		<p>These projects were chosen because they show architecture decisions, validation discipline, and business framing rather than just a list of technologies used.</p>
 	</div>
 	<div class="project-preview-grid">
 		<article class="project-card">
-			<p class="card-kicker">Featured technical build</p>
-			<h3>Cloud Engineer by McQueen Cloud Advisory</h3>
-			<p>Built a public cloud engineering documentation platform with MkDocs, Firebase Hosting, GitHub Actions CI/CD, and a custom McQueen Cloud Advisory subdomain.</p>
+			<p class="card-kicker">Flagship project</p>
+			<h3>GCP Analytics Engineering Project</h3>
+			<p>Built a portfolio-scale warehouse slice with Terraform, BigQuery, dbt, tested fact modeling, notebook validation, and explicit grain analysis.</p>
 			<div class="tag-list">
-				<span>MkDocs</span>
-				<span>Firebase Hosting</span>
-				<span>GitHub Actions</span>
-				<span>GCP</span>
-				<span>Cloud Engineering</span>
+				<span>BigQuery</span>
+				<span>dbt</span>
+				<span>Terraform</span>
+				<span>Warehouse Layering</span>
 			</div>
+			<p class="case-study-link"><a href="{{ site.baseurl }}/projects/gcp-analytics-engineering/">Read full case study</a></p>
 		</article>
 		<article class="project-card">
-			<p class="card-kicker">Workflow automation</p>
-			<h3>Consultation Workflow Automation</h3>
-			<p>Connected Google Workspace, Cloud Run, and structured AI enrichment to automate consultation intake, brief creation, and client preparation.</p>
+			<p class="card-kicker">Enterprise data modeling</p>
+			<h3>Revenue Accounting Modeling Proof of Concept</h3>
+			<p>Designed a revenue-accounting proof of concept that turned normalized sources into a business-friendly star schema built for Power BI and reusable semantic logic.</p>
 			<div class="tag-list">
-				<span>Google Workspace</span>
-				<span>Apps Script</span>
-				<span>JavaScript</span>
-				<span>Cloud Run</span>
-				<span>Gemini</span>
-				<span>Vertex AI</span>
+				<span>Dimensional Modeling</span>
+				<span>Surrogate Keys</span>
+				<span>Power BI</span>
+				<span>Semantic Layer</span>
 			</div>
+			<p class="case-study-link"><a href="{{ site.baseurl }}/projects/enterprise-data-modeling/">Read full case study</a></p>
 		</article>
 		<article class="project-card">
-			<p class="card-kicker">Analytics enablement</p>
-			<h3>External Organization Analytics Enablement</h3>
-			<p>Turned fragmented operational data into leadership-ready reporting with stronger trust boundaries and a realistic path to recurring analytics.</p>
+			<p class="card-kicker">Reporting modernization</p>
+			<h3>Reporting Modernization and Trusted Finance Metrics</h3>
+			<p>Modernized legacy reporting logic into more reusable SQL-based assets, clearer metric definitions, and a stronger path toward governed finance reporting.</p>
 			<div class="tag-list">
-				<span>Validation-first analysis</span>
-				<span>Leadership presentation</span>
-				<span>Process design</span>
+				<span>SQL</span>
+				<span>Trusted Metrics</span>
+				<span>Finance Reporting</span>
+				<span>Reporting Validation</span>
 			</div>
+			<p class="case-study-link"><a href="{{ site.baseurl }}/projects/reporting-modernization/">Read full case study</a></p>
 		</article>
+	</div>
+</section>
+
+<section class="section-block">
+	<div class="artifact-board">
+		<div class="artifact-header">
+			<p class="section-label">Operational Impact</p>
+			<h2>Representative signals from the work.</h2>
+			<p>The portfolio is strongest where analytical structure changes operating decisions, trust, or continuity. These are the types of outcomes the case studies are designed to explain.</p>
+		</div>
+		<div class="signal-grid">
+			<article class="signal-card">
+				<div>
+					<p class="signal-value">Modernization priority</p>
+				</div>
+				<div>
+					<h3>Elevated reporting migration into a business continuity discussion.</h3>
+					<p class="signal-copy">The work moved legacy reporting logic out of the background and into a more serious architecture and planning conversation.</p>
+				</div>
+			</article>
+			<article class="signal-card">
+				<div>
+					<p class="signal-value">Executive visibility</p>
+				</div>
+				<div>
+					<h3>Built scorecards and governance views used by senior leaders.</h3>
+					<p class="signal-copy">The reporting was designed so cost, initiative, and operational signals could be interpreted without rebuilding the logic in every meeting.</p>
+				</div>
+			</article>
+			<article class="signal-card">
+				<div>
+					<p class="signal-value">Controls and auditability</p>
+				</div>
+				<div>
+					<h3>Designed automation that stayed explainable under scrutiny.</h3>
+					<p class="signal-copy">Validation checkpoints, staged ELT logic, and traceable outputs mattered as much as the hours saved.</p>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+
+<section class="section-block">
+	<div class="section-heading">
+		<div>
+			<p class="section-label">Navigate next</p>
+			<h2>Use the main sections below to move through the portfolio deliberately.</h2>
+		</div>
+		<p>The homepage stays focused on positioning, proof, and flagship work. These links move into the deeper sections only after that evidence is clear.</p>
+	</div>
+	<div class="quick-link-grid">
+		<a class="nav-card" href="{{ site.baseurl }}/about/">
+			<p class="card-kicker">Profile</p>
+			<h3>About</h3>
+			<p>How I approach analytics engineering, reporting trust, dimensional modeling, and business-facing BI delivery.</p>
+			<span class="nav-card-action">Open profile</span>
+		</a>
+		<a class="nav-card" href="{{ site.baseurl }}/projects/">
+			<p class="card-kicker">Selected work</p>
+			<h3>Projects</h3>
+			<p>Case-style work covering reporting modernization, data modeling, warehouse design, governance platforms, and analytics tooling.</p>
+			<span class="nav-card-action">Review projects</span>
+		</a>
+		<a class="nav-card" href="{{ site.baseurl }}/experience/">
+			<p class="card-kicker">Operating scope</p>
+			<h3>Experience</h3>
+			<p>Representative enterprise work in modernization, executive reporting, controls-minded delivery, and metric design.</p>
+			<span class="nav-card-action">See experience</span>
+		</a>
+		<a class="nav-card" href="{{ site.baseurl }}/certifications/">
+			<p class="card-kicker">Credentials</p>
+			<h3>Certifications</h3>
+			<p>Selected analytics, BI, cloud, and delivery credentials that reinforce the work without replacing it.</p>
+			<span class="nav-card-action">View credentials</span>
+		</a>
 	</div>
 </section>
 
@@ -158,18 +233,18 @@ page_class: page-home
 	<div class="summary-grid">
 		<article class="summary-panel">
 			<p class="card-kicker">Credentials snapshot</p>
-			<h3>Cloud, BI, analytics, and delivery credentials that support the work rather than replace it.</h3>
+			<h3>Analytics, BI, cloud, and delivery credentials that support the work rather than replace it.</h3>
 			<p>Azure Data Engineer, Azure Data Scientist, Power BI Data Analyst, MIT Applied Data Science, PMP, and SAS credentials.</p>
 		</article>
 		<article class="summary-panel">
 			<p class="card-kicker">Next step</p>
 			<h3>Explore the full story behind the work.</h3>
-			<p><a class="inline-link" href="{{ site.baseurl }}/about/">About</a>, <a class="inline-link" href="{{ site.baseurl }}/experience/">Experience</a>, and <a class="inline-link" href="{{ site.baseurl }}/contact/">Contact</a> go deeper into how I work and what I deliver.</p>
+			<p><a class="inline-link" href="{{ site.baseurl }}/projects/">Projects</a>, <a class="inline-link" href="{{ site.baseurl }}/experience/">Experience</a>, and <a class="inline-link" href="{{ site.baseurl }}/about/">About</a> go deeper into how I model, validate, and deliver analytics systems.</p>
 		</article>
 		<article class="summary-panel">
 			<p class="card-kicker">Target lane</p>
-			<h3>Built for business-facing analytics leadership roles.</h3>
-			<p>The site is intentionally aligned to analytics modernization, workflow design, trusted reporting, governance, and executive decision support.</p>
+			<h3>Built for analytics engineering and BI modernization roles.</h3>
+			<p>The site is intentionally aligned to trusted reporting, data warehousing, dimensional modeling, governance, and business-facing decision support.</p>
 		</article>
 	</div>
 </section>

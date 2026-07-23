@@ -6,10 +6,13 @@ GitHub Pages portfolio site for Scott McQueen.
 
 - Home: `index.md`
 - About: `about.md`
-- Projects: `projects.md`
+- Projects overview: `projects.md`
+- Project case studies: `projects/*.md`
 - Experience: `experience.md`
 - Certifications: `certifications.md`
 - Contact: `contact.md`
+
+The top navigation remains flat, but the Projects section now includes child case-study pages under `projects/` for flagship and supporting work.
 
 ## Build and deploy
 
@@ -26,7 +29,7 @@ The folders `about-me/`, `project-descriptions/`, and `site-planning/` are priva
 If Ruby and Bundler are available locally:
 
 ```bash
-bundle exec jekyll serve --baseurl '/skills-github-pages'
+bundle exec jekyll serve --config _config.yml,_config.local.yml
 ```
 
 If Jekyll is not installed locally, use Docker:
@@ -36,7 +39,9 @@ docker build -t skills-github-pages .
 docker run --rm -p 4000:4000 skills-github-pages
 ```
 
-The local preview will be available at `http://localhost:4000/skills-github-pages/`.
+The local preview will be available at `http://localhost:4000/`.
+
+Local preview intentionally overrides the project-site base URL so you can browse the site from the root path. GitHub Pages deployment still uses `_config.yml`, which keeps the published base URL at `/skills-github-pages`.
 
 If you want the container to reflect local file edits without rebuilding the image each time, run it with a bind mount instead:
 

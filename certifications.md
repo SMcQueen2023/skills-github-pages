@@ -12,60 +12,83 @@ page_class: page-certifications
 </section>
 
 <section class="section-block">
-	<div class="credentials-grid">
-		<article class="credential-group">
-			<p class="card-kicker">Cloud and BI</p>
-			<h2>Microsoft</h2>
-			<div class="panel-stack">
-				<div class="credential-item">
-					<h3>Azure Data Engineer Associate</h3>
-					<p>Microsoft, January 2025</p>
+	<div class="catalog-shell">
+		<div class="catalog-header">
+			<p class="section-label">Credential catalog</p>
+			<h2>Concise credentials grouped by what they reinforce.</h2>
+			<p>The value here is not volume. It is evidence that the delivery work spans cloud data platforms, BI, analytics, and execution discipline.</p>
+		</div>
+		<div class="catalog-grid">
+			<article class="catalog-card">
+				<p class="card-kicker">Cloud and BI</p>
+				<h3>Microsoft</h3>
+				<div class="catalog-row">
+					<div class="catalog-entry">
+						<strong>Azure Data Engineer Associate</strong>
+						<p class="catalog-copy">Microsoft, January 2025</p>
+					</div>
+					<div class="catalog-entry">
+						<strong>Azure Data Scientist Associate</strong>
+						<p class="catalog-copy">Microsoft, October 2025</p>
+					</div>
+					<div class="catalog-entry">
+						<strong>Power BI Data Analyst Associate</strong>
+						<p class="catalog-copy">Microsoft, active through May 2027</p>
+					</div>
 				</div>
-				<div class="credential-item">
-					<h3>Azure Data Scientist Associate</h3>
-					<p>Microsoft, October 2025</p>
+			</article>
+			<article class="catalog-card">
+				<p class="card-kicker">Applied analytics and delivery</p>
+				<h3>Programs and operating discipline</h3>
+				<div class="catalog-row">
+					<div class="catalog-entry">
+						<strong>Applied Data Science Program</strong>
+						<p class="catalog-copy">MIT Professional Education, October 2024</p>
+					</div>
+					<div class="catalog-entry">
+						<strong>Base Programming Using SAS 9.4</strong>
+						<p class="catalog-copy">SAS Certified Specialist, March 2022</p>
+					</div>
+					<div class="catalog-entry">
+						<strong>Project Management Professional</strong>
+						<p class="catalog-copy">Project Management Institute, current through December 2026</p>
+					</div>
+					<div class="catalog-entry">
+						<strong>SAFe Practitioner and POPM</strong>
+						<p class="catalog-copy">Scaled Agile training, held historically</p>
+					</div>
 				</div>
-				<div class="credential-item">
-					<h3>Power BI Data Analyst Associate</h3>
-					<p>Microsoft, active through May 2027</p>
-				</div>
-			</div>
-		</article>
-		<article class="credential-group">
-			<p class="card-kicker">Applied analytics</p>
-			<h2>Programs and technical depth</h2>
-			<div class="panel-stack">
-				<div class="credential-item">
-					<h3>Applied Data Science Program</h3>
-					<p>MIT Professional Education, October 2024</p>
-				</div>
-				<div class="credential-item">
-					<h3>Base Programming Using SAS 9.4</h3>
-					<p>SAS Certified Specialist, March 2022</p>
-				</div>
-			</div>
-		</article>
-		<article class="credential-group">
-			<p class="card-kicker">Delivery and leadership</p>
-			<h2>Execution and operating discipline</h2>
-			<div class="panel-stack">
-				<div class="credential-item">
-					<h3>Project Management Professional</h3>
-					<p>Project Management Institute, current through December 2026</p>
-				</div>
-				<div class="credential-item">
-					<h3>SAFe Practitioner and POPM</h3>
-					<p>Scaled Agile training, held historically</p>
-				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 	</div>
 </section>
 
 <section class="section-block">
-	<article class="summary-panel">
+	<article class="callout-panel">
 		<p class="card-kicker">Public profiles</p>
 		<h3>Additional credential detail is available through my <a class="inline-link" href="https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript/vjjrpbm2lq596gn?tab=credentials-tab">Microsoft Learn transcript</a> and <a class="inline-link" href="https://www.credly.com/users/scott-mcqueen">Credly profile</a>.</h3>
 	</article>
+</section>
+
+<section class="section-block">
+	<div class="hub-shell">
+		<div class="hub-header">
+			<p class="section-label">Credentials in context</p>
+			<h2>The strongest proof is where the platform knowledge shows up in the work.</h2>
+			<p>The certifications reinforce delivery in platforms I actually use, but the project evidence is where that credibility becomes real.</p>
+		</div>
+		<div class="hub-grid">
+			<article class="hub-card">
+				<p class="card-kicker">Warehouse and modeling</p>
+				<h3>Enterprise data modeling and analytics engineering</h3>
+				<p class="hub-copy"><a class="inline-link" href="{{ site.baseurl }}/projects/enterprise-data-modeling/">Enterprise data modeling</a> and the <a class="inline-link" href="{{ site.baseurl }}/projects/gcp-analytics-engineering/">GCP analytics engineering project</a> show where the warehouse and platform knowledge is applied.</p>
+			</article>
+			<article class="hub-card">
+				<p class="card-kicker">BI and decision support</p>
+				<h3>Executive reporting and modernization</h3>
+				<p class="hub-copy"><a class="inline-link" href="{{ site.baseurl }}/projects/portfolio-governance-platform/">Project portfolio governance</a> and <a class="inline-link" href="{{ site.baseurl }}/projects/reporting-modernization/">reporting modernization</a> are the clearest examples of business-facing BI delivery.</p>
+			</article>
+		</div>
+	</div>
 </section>
 
