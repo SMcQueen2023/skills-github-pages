@@ -2,3 +2,6 @@ about-me/
 project-descriptions/
 site-planning/
 _site/
+node_modules/
+dist/
+.astro/

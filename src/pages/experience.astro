@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Base title="Experience — Scott McQueen" description="Scott McQueen's delivery scope across reporting modernization, analytics modeling, auditable automation, and executive BI." current="experience">
+  <header class="page-lead wrap">
+    <div class="lead-meta"><p class="eyebrow">Experience / 03</p><span class="mono">Business + technical delivery</span></div>
+    <h1>Technical depth. Delivery judgment.</h1>
+    <p class="lead-text">My work spans enterprise reporting, analytical modeling, reconciliation automation, and executive decision support. I bring the business question and the technical system into the same conversation.</p>
+  </header>
+
+  <section class="editorial-section wrap" aria-labelledby="scope-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">01 / Delivery scope</p>
+      <div>
+        <h2 id="scope-heading">What I take responsibility for.</h2>
+        <div class="scope-grid">
+          <article><span class="mono">01</span><h3>Problem framing</h3><p>Turn ambiguous reporting needs into decisions about business grain, metric meaning, and usable outputs.</p></article>
+          <article><span class="mono">02</span><h3>Architecture</h3><p>Choose where transformations, validation, semantic logic, and review controls should live.</p></article>
+          <article><span class="mono">03</span><h3>Alignment</h3><p>Work with business leaders, finance partners, architects, IT, and reporting teams on tradeoffs and priorities.</p></article>
+          <article><span class="mono">04</span><h3>Delivery</h3><p>Sequence the build, check the result, and make the system understandable to people who will use and support it.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section wrap" aria-labelledby="record-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">02 / Representative record</p>
+      <div>
+        <h2 id="record-heading">Four recurring problems.</h2>
+        <p class="record-intro">These are work areas, rather than a dated employment timeline. The linked case files show the decisions and system design behind each one.</p>
+        <div class="record-list">
+          <article class="record-row"><span class="mono">Modernization</span><div><h3>Move fragile reporting logic into a form that can be reviewed.</h3><p>Interpreted SAP BusinessObjects behavior, translated recurring calculations into SQL patterns, and treated finance reporting as a continuity and trust problem.</p></div><a class="action-link" href={`${base}/projects/reporting-modernization/`}>Case file <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Data modeling</span><div><h3>Give analytical assets a stable business grain.</h3><p>Designed warehouse and semantic structures for reusable metrics, dimensional analysis, and clearer Power BI behavior.</p></div><a class="action-link" href={`${base}/projects/enterprise-data-modeling/`}>Case file <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Automation</span><div><h3>Reduce manual effort while retaining an audit trail.</h3><p>Structured reconciliation as staged landing, matching, validation, and exception review using Azure Synapse, SQL, and Python.</p></div><a class="action-link" href={`${base}/projects/reconciliation-automation/`}>Case file <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Executive BI</span><div><h3>Turn operating signals into a more defensible portfolio view.</h3><p>Connected standardized SharePoint intake, modeled project activity, and Power BI measures for leadership reporting.</p></div><a class="action-link" href={`${base}/projects/portfolio-governance-platform/`}>Case file <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-close">
+    <div class="wrap close-grid">
+      <p class="eyebrow">03 / Next conversation</p>
+      <div><h2>Lead the work. Know the details.</h2><p>For business intelligence, reporting, automation, and technical delivery lead or manager roles, I can discuss the decisions behind the public examples and the context a resume can provide.</p><a class="action-link" href={`${base}/contact/`}>Start a conversation <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .scope-grid{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--ink);margin-top:2.6rem}
+  .scope-grid article{min-height:13rem;padding:1rem 1.3rem 1.8rem 0;border-bottom:1px solid var(--rule)}
+  .scope-grid article:nth-child(even){padding-left:1.3rem;border-left:1px solid var(--rule)}
+  .scope-grid .mono{color:var(--signal)}.scope-grid h3{font-size:clamp(1.65rem,2.3vw,2.6rem);letter-spacing:-.045em;margin-top:2.4rem}.scope-grid p{max-width:26rem;color:var(--muted);margin-top:.65rem}
+  .record-intro{max-width:42rem;font-size:1.13rem;margin:1.5rem 0 2.4rem}.record-row p{max-width:40rem;margin-top:.7rem;line-height:1.45}.record-row .action-link{white-space:nowrap}
+  .experience-close{background:#d8d9cd;padding-block:clamp(4rem,7vw,8rem)}.close-grid{display:grid;grid-template-columns:minmax(160px,.36fr) minmax(0,1fr);gap:clamp(2rem,6vw,7rem)}
+  .close-grid h2{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(3.5rem,7vw,8rem);letter-spacing:-.06em;max-width:12ch}.close-grid p:not(.eyebrow){max-width:42rem;font-size:1.15rem;margin-top:1.5rem}.close-grid .action-link{margin-top:2rem}
+  @media(max-width:760px){.close-grid{grid-template-columns:1fr;gap:1.2rem}.record-row .action-link{white-space:normal}}
+  @media(max-width:540px){.scope-grid{grid-template-columns:1fr}.scope-grid article:nth-child(even){padding-left:0;border-left:0}.scope-grid article{min-height:0;padding:1rem 0 1.5rem}.scope-grid h3{margin-top:1.4rem}.record-row{grid-template-columns:1fr;gap:.5rem}.record-row a{grid-column:auto}}
+</style>

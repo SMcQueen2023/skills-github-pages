@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Scott McQueen — Decision File</title>
+  <desc id="desc">Editorial graphic for Scott McQueen's business intelligence, reporting, automation and technical delivery work.</desc>
+  <rect width="1200" height="630" fill="#efede5"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#171b1a"/>
+  <text x="66" y="91" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="3" fill="#171b1a">SCOTT McQUEEN / DECISION FILE</text>
+  <path d="M66 122H1134M66 505H1134" stroke="#171b1a" stroke-width="2"/>
+  <text x="58" y="275" font-family="Georgia,serif" font-size="112" fill="#171b1a">I make the numbers</text>
+  <text x="58" y="405" font-family="Georgia,serif" font-style="italic" font-size="128" fill="#eb4b31">hold up.</text>
+  <text x="66" y="556" font-family="Arial,sans-serif" font-size="25" letter-spacing="1" fill="#171b1a">BI  /  REPORTING  /  AUTOMATION  /  TECHNICAL DELIVERY</text>
+  <circle cx="1097" cy="84" r="20" fill="#eb4b31"/>
+</svg>

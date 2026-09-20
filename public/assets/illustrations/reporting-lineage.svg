@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title description">
+  <title id="title">Reporting modernization: from report behavior to trusted metric logic</title>
+  <desc id="description">A schematic, not production lineage. Legacy BusinessObjects calculations and filters are interpreted for business meaning, translated into reusable SQL, checked against known outputs, and used for finance reporting. A margin note says historical behavior is not automatically the intended definition.</desc>
+  <rect width="1200" height="720" fill="#EFEDE5"/>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="53" font-size="16" font-weight="700" letter-spacing="3">DECISION FILE 01 / REPORTING</text>
+    <text x="48" y="128" font-size="58" font-weight="800" letter-spacing="-2">Where the metric lives</text>
+    <text x="49" y="167" font-size="21">Translate meaning before replacing the screen.</text>
+  </g>
+  <path d="M48 190H1152M48 635H1152" stroke="#171B1A" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#171B1A">
+    <text x="48" y="231" font-size="16" font-weight="700" letter-spacing="2">01 / INHERITED BEHAVIOR</text>
+    <text x="433" y="231" font-size="16" font-weight="700" letter-spacing="2">02 / SEMANTIC DECISION</text>
+    <text x="829" y="231" font-size="16" font-weight="700" letter-spacing="2">03 / REUSABLE LOGIC</text>
+  </g>
+  <path d="M411 207V608M805 207V608" stroke="#171B1A" stroke-width="1" opacity=".55"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#171B1A">
+    <text x="48" y="292" font-size="30" font-weight="700">SAP BusinessObjects</text>
+    <text x="48" y="330" font-size="20">Calculations inside reports</text>
+    <text x="48" y="362" font-size="20">Filter-dependent results</text>
+    <text x="48" y="394" font-size="20">Known legacy outputs</text>
+  </g>
+  <path d="M48 433H381" stroke="#171B1A" stroke-width="1"/>
+  <g fill="#BD3926" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">
+    <text x="48" y="466">RISK</text>
+  </g>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="48" y="500">Repeated business concepts can</text>
+    <text x="48" y="527">drift across report definitions.</text>
+  </g>
+
+  <rect x="433" y="267" width="349" height="180" fill="#171B1A"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#EFEDE5">
+    <text x="456" y="307" font-size="16" font-weight="700" letter-spacing="2">THE CRITICAL REVIEW</text>
+    <text x="456" y="357" font-size="29" font-weight="700">Business meaning</text>
+    <text x="456" y="392" font-size="29" font-weight="700">or old constraint?</text>
+  </g>
+  <path d="M432 478H782" stroke="#171B1A" stroke-width="1"/>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="433" y="510">Review calculations, filters, and</text>
+    <text x="433" y="537">business interpretation together.</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#171B1A">
+    <text x="829" y="293" font-size="30" font-weight="700">SQL translation</text>
+    <text x="829" y="331" font-size="20">Reusable calculations</text>
+    <text x="829" y="363" font-size="20">Clearer metric definitions</text>
+  </g>
+  <path d="M829 396H1152" stroke="#EB4B31" stroke-width="5"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#171B1A">
+    <text x="829" y="441" font-size="17" font-weight="700" letter-spacing="2">VALIDATION GATE</text>
+    <text x="829" y="474" font-size="18">Compare translated logic with</text>
+    <text x="829" y="501" font-size="18">known outputs before reuse.</text>
+    <text x="829" y="568" font-size="22" font-weight="700">Finance reporting →</text>
+  </g>
+
+  <path d="M382 356H410M403 349L410 356L403 363M783 356H804M797 349L804 356L797 363" fill="none" stroke="#EB4B31" stroke-width="3"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#171B1A">
+    <text x="48" y="675" font-size="15" letter-spacing="1">SANITIZED PROCESS SCHEMATIC · NO PRODUCTION DATA OR UNDISCLOSED METRICS</text>
+    <text x="1149" y="675" text-anchor="end" font-size="15" font-weight="700">SM / 01</text>
+  </g>
+</svg>

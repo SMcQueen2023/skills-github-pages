@@ -1,60 +1,36 @@
-# skills-github-pages
+# Scott McQueen — Decision File
 
-GitHub Pages portfolio site for Scott McQueen.
+Personal site for Scott McQueen's business intelligence, reporting modernization, automation, and technical delivery work. It is built with [Astro](https://astro.build/) as a static site and deployed to GitHub Pages.
 
-## Public site
+## Run locally
 
-- Home: `index.md`
-- About: `about.md`
-- Projects overview: `projects.md`
-- Project case studies: `projects/*.md`
-- Experience: `experience.md`
-- Certifications: `certifications.md`
-- Contact: `contact.md`
-
-The top navigation remains flat, but the Projects section now includes child case-study pages under `projects/` for flagship and supporting work.
-
-## Build and deploy
-
-- Jekyll configuration lives in `_config.yml`.
-- A GitHub Actions workflow in `.github/workflows/pages.yml` builds and deploys the site on pushes to `main`.
-- For project-site pathing, the configured base URL is `/skills-github-pages`.
-
-## Private source material
-
-The folders `about-me/`, `project-descriptions/`, and `site-planning/` are private working context and should not be published. They are ignored by `.gitignore` and excluded from Jekyll output.
-
-## Local preview
-
-If Ruby and Bundler are available locally:
+Install Node.js 22.12 or newer, then run:
 
 ```bash
-bundle exec jekyll serve --config _config.yml,_config.local.yml
+npm ci
+npm run dev
 ```
 
-If Jekyll is not installed locally, use Docker:
+The development server uses the project base path at `/skills-github-pages/`. For a production check:
 
 ```bash
-docker build -t skills-github-pages .
-docker run --rm -p 4000:4000 skills-github-pages
+npm run build
+npm run verify
+npm run preview
 ```
 
-The local preview will be available at `http://localhost:4000/`.
+The build writes `dist/`. The verify script checks route parity, metadata, and local links. The GitHub Actions workflow in `.github/workflows/pages.yml` runs both steps and deploys that directory on pushes to `main`.
 
-Local preview intentionally overrides the project-site base URL so you can browse the site from the root path. GitHub Pages deployment still uses `_config.yml`, which keeps the published base URL at `/skills-github-pages`.
+## Source structure
 
-If you want the container to reflect local file edits without rebuilding the image each time, run it with a bind mount instead:
+- `src/pages/` — home, interior pages, work index, and case route.
+- `src/data/projects.ts` — public case file content and route slugs.
+- `src/layouts/Base.astro` — shared navigation, footer, and metadata.
+- `src/styles/global.css` — visual system and responsive layout.
+- `public/assets/illustrations/` — original, sanitized process schematics.
 
-```bash
-docker run --rm -p 4000:4000 -v "${PWD}:/srv/jekyll" skills-github-pages
-```
+The public site remains at `https://smcqueen2023.github.io/skills-github-pages/`. Preserve the `/skills-github-pages` base and existing `/projects/{slug}/` paths when changing routes.
 
-For the shortest local preview workflow, use Docker Compose:
+## Content boundaries
 
-```bash
-docker compose up --build
-```
-
-The compose setup mounts the repo into the container so content and CSS edits are reflected without rebuilding the image each time.
-
-The Docker image uses the official GitHub Pages Jekyll runtime so the local preview stays aligned with the deployment build.
+`about-me/`, `project-descriptions/`, and `site-planning/` contain private working material. They are ignored by Git and are outside Astro's public build inputs. Publish only reviewed copy and sanitized visuals under `src/` and `public/`.

@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Base title="Credentials — Scott McQueen" description="Selected project management, Power BI, cloud data, and applied analytics credentials with public verification links." current="credentials">
+  <header class="page-lead wrap">
+    <div class="lead-meta"><p class="eyebrow">Credentials / 05</p><span class="mono">Selected record</span></div>
+    <h1>Credentials in service of the work.</h1>
+    <p class="lead-text">Formal study and certification reinforce the delivery record. The linked projects show where those disciplines meet a real reporting, governance, or automation problem.</p>
+  </header>
+
+  <section class="editorial-section wrap" aria-labelledby="current-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">01 / Dated credentials</p>
+      <div>
+        <h2 id="current-heading">Verification, plainly stated.</h2>
+        <p class="credential-note">Dates below reflect the existing public record. Microsoft Learn and Credly provide the most current verification.</p>
+        <div class="credential-list" role="list">
+          <div class="credential-row" role="listitem"><h3>Project Management Professional (PMP)</h3><p>Project Management Institute</p><p>Current through Dec 2026</p></div>
+          <div class="credential-row" role="listitem"><h3>Power BI Data Analyst Associate</h3><p>Microsoft</p><p>Active through May 2027</p></div>
+          <div class="credential-row" role="listitem"><h3>Applied Data Science Program</h3><p>MIT Professional Education</p><p>Oct 2024</p></div>
+          <div class="credential-row" role="listitem"><h3>Base Programming Using SAS 9.4</h3><p>SAS Certified Specialist</p><p>Mar 2022</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section wrap" aria-labelledby="additional-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">02 / Additional training</p>
+      <div>
+        <h2 id="additional-heading">Cloud and delivery foundations.</h2>
+        <div class="credential-list additional-list" role="list">
+          <div class="credential-row" role="listitem"><h3>Azure Data Engineer Associate</h3><p>Microsoft</p><p>Issued Jan 2025</p></div>
+          <div class="credential-row" role="listitem"><h3>Azure Data Scientist Associate</h3><p>Microsoft</p><p>Issued Oct 2025</p></div>
+          <div class="credential-row" role="listitem"><h3>SAFe Practitioner and POPM</h3><p>Scaled Agile training</p><p>Held historically</p></div>
+        </div>
+        <p class="additional-note">Issue dates describe the credential record. Use the issuer transcript for current status and renewal details.</p>
+        <div class="verify-links"><a class="action-link" href="https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript/vjjrpbm2lq596gn?tab=credentials-tab">Microsoft Learn transcript <span aria-hidden="true">↗</span></a><a class="action-link" href="https://www.credly.com/users/scott-mcqueen">Credly profile <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section wrap" aria-labelledby="context-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">03 / In context</p>
+      <div>
+        <h2 id="context-heading">The proof is in the decisions.</h2>
+        <div class="record-list context-list">
+          <article class="record-row"><span class="mono">BI</span><div><h3>Reporting and governance</h3><p>Power BI, metric logic, and leadership views grounded in modeled operational signals.</p></div><a class="action-link" href={`${base}/projects/portfolio-governance-platform/`}>Read case <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Data</span><div><h3>Warehouse and semantic modeling</h3><p>Grain, reusable structures, and validation applied to analytical delivery.</p></div><a class="action-link" href={`${base}/projects/enterprise-data-modeling/`}>Read case <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .credential-note{max-width:37rem;font-size:1.12rem;margin:1.5rem 0 2.2rem}.credential-row p:last-child{text-align:right}
+  .additional-list{margin-top:2.2rem}.additional-note{max-width:42rem;color:var(--muted);font-size:.94rem;margin-top:1.2rem}
+  .verify-links{display:flex;flex-wrap:wrap;gap:1.3rem 2.3rem;margin-top:2rem}
+  .context-list{margin-top:2.2rem}.context-list .record-row p{margin-top:.6rem;max-width:35rem}.context-list .action-link{white-space:nowrap}
+  @media(max-width:760px){.credential-row p:last-child{text-align:left}}
+  @media(max-width:520px){.credential-row{grid-template-columns:1fr}.credential-row h3{grid-column:auto}.context-list .record-row{grid-template-columns:1fr;gap:.5rem}.context-list .record-row a{grid-column:auto}}
+</style>

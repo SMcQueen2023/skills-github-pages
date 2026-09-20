@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title description">
+  <title id="title">Portfolio governance: anatomy of a computed health view</title>
+  <desc id="description">A schematic of SharePoint intake leading to a model of project, time, milestone, and status attributes. Timeliness, progression, and delivery behavior feed understandable DAX measures and Power BI executive views. The diagram does not claim a particular formula, score, threshold, or outcome metric.</desc>
+  <rect width="1200" height="720" fill="#EFEDE5"/>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="53" font-size="16" font-weight="700" letter-spacing="3">DECISION FILE 03 / GOVERNANCE</text>
+    <text x="48" y="128" font-size="58" font-weight="800" letter-spacing="-2">Status from evidence</text>
+    <text x="49" y="167" font-size="21">A portfolio view whose signals can be traced back to work.</text>
+  </g>
+  <path d="M48 190H1152M48 624H1152" stroke="#171B1A" stroke-width="2"/>
+
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="239" font-size="16" font-weight="700" letter-spacing="2">STANDARDIZED INTAKE</text>
+    <text x="449" y="239" font-size="16" font-weight="700" letter-spacing="2">MODELED SIGNALS</text>
+    <text x="876" y="239" font-size="16" font-weight="700" letter-spacing="2">EXECUTIVE VIEW</text>
+    <text x="48" y="302" font-size="33" font-weight="700">SharePoint</text>
+    <text x="48" y="341" font-size="20">Project + request details</text>
+    <text x="48" y="372" font-size="20">Shared workflow expectations</text>
+  </g>
+  <path d="M49 405H379" stroke="#171B1A" stroke-width="1"/>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="49" y="448" font-size="18">The intake stays practical</text>
+    <text x="49" y="475" font-size="18">enough for people to use.</text>
+  </g>
+
+  <path d="M402 267V573M838 267V573" stroke="#171B1A" stroke-width="1" opacity=".55"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#171B1A">
+    <text x="448" y="299" font-size="23" font-weight="700">PROJECT / TIME / STATUS</text>
+    <text x="448" y="341" font-size="19">Timeliness</text>
+    <text x="448" y="381" font-size="19">Progression</text>
+    <text x="448" y="421" font-size="19">Delivery behavior</text>
+  </g>
+  <circle cx="742" cy="334" r="7" fill="#EB4B31"/>
+  <circle cx="742" cy="374" r="7" fill="#EB4B31"/>
+  <circle cx="742" cy="414" r="7" fill="#EB4B31"/>
+  <path d="M749 334H780V374M749 374H780M749 414H780V374M780 374H824" fill="none" stroke="#EB4B31" stroke-width="3"/>
+  <path d="M448 451H809" stroke="#171B1A" stroke-width="1"/>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="448" y="486" font-size="17" font-weight="700" letter-spacing="1">DESIGN DECISION</text>
+    <text x="448" y="517" font-size="18">Compute health from observable</text>
+    <text x="448" y="545" font-size="18">activity, with logic people can explain.</text>
+  </g>
+
+  <rect x="866" y="272" width="286" height="230" fill="#171B1A"/>
+  <g fill="#EFEDE5" font-family="Arial, Helvetica, sans-serif">
+    <text x="890" y="312" font-size="16" font-weight="700" letter-spacing="2">POWER BI + DAX</text>
+    <text x="890" y="366" font-size="33" font-weight="700">Portfolio</text>
+    <text x="890" y="404" font-size="33" font-weight="700">health</text>
+    <text x="890" y="459" font-size="18">Comparable signals</text>
+    <text x="890" y="485" font-size="18">for leadership review</text>
+  </g>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="866" y="544" font-size="18">Interpret the result with the</text>
+    <text x="866" y="571" font-size="18">underlying activity in view.</text>
+  </g>
+  <path d="M379 377H400M393 370L400 377L393 384M824 377H851M844 370L851 377L844 384" fill="none" stroke="#EB4B31" stroke-width="3"/>
+  <g fill="#171B1A" font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="668" font-size="15" letter-spacing="1">SANITIZED MODEL SCHEMATIC · NO FORMULA, SCORE, OR THRESHOLD IMPLIED</text>
+    <text x="1149" y="668" text-anchor="end" font-size="15" font-weight="700">SM / 03</text>
+  </g>
+</svg>

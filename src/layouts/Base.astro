@@ -1,0 +1,79 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  current?: 'home' | 'work' | 'about' | 'experience' | 'credentials' | 'contact';
+  image?: string;
+}
+
+const {
+  title,
+  description = 'Scott McQueen works across business intelligence, reporting modernization, automation, and technical delivery.',
+  current,
+  image,
+} = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://smcqueen2023.github.io');
+const socialImage = new URL(image ?? `${base}/assets/social/decision-file.png`, Astro.site ?? 'https://smcqueen2023.github.io');
+const links = [
+  { key: 'work', label: 'Work', href: `${base}/projects/` },
+  { key: 'experience', label: 'Experience', href: `${base}/experience/` },
+  { key: 'about', label: 'Approach', href: `${base}/about/` },
+  { key: 'credentials', label: 'Credentials', href: `${base}/certifications/` },
+  { key: 'contact', label: 'Contact', href: `${base}/contact/` },
+] as const;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171b1a" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/assets/favicon.svg`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={socialImage.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href={`${base}/`} aria-label="Scott McQueen, home">
+          <span class="wordmark-signal" aria-hidden="true"></span>
+          <span>Scott McQueen</span>
+        </a>
+        <nav class="site-nav desktop-nav" aria-label="Primary navigation">
+          {links.map((link) => <a href={link.href} aria-current={current === link.key ? 'page' : undefined}>{link.label}</a>)}
+        </nav>
+        <details class="mobile-nav">
+          <summary>Menu <span aria-hidden="true">+</span></summary>
+          <nav aria-label="Mobile navigation">
+            {links.map((link) => <a href={link.href} aria-current={current === link.key ? 'page' : undefined}>{link.label}</a>)}
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="footer-name">Scott McQueen<span class="signal-dot" aria-hidden="true">.</span></p>
+          <p>Business intelligence / reporting / automation / technical delivery</p>
+        </div>
+        <div class="footer-links">
+          <a href={`${base}/projects/`}>Selected work <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/smmcqueen/">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="footer-end">© {new Date().getFullYear()} Scott McQueen<br />Designed as a record of decisions and delivery.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Base title="Contact — Scott McQueen" description="Connect with Scott McQueen about business intelligence, reporting, automation, and technical delivery roles." current="contact">
+  <header class="page-lead wrap">
+    <div class="lead-meta"><p class="eyebrow">Contact / 06</p><span class="mono">An open line</span></div>
+    <h1>Let's talk about the work.</h1>
+    <p class="lead-text">For business intelligence, reporting, automation, or technical delivery lead and manager roles, LinkedIn is the best way to reach me. I can share a resume or discuss the context behind a case file there.</p>
+  </header>
+
+  <section class="editorial-section wrap" aria-labelledby="channels-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">01 / Direct paths</p>
+      <div>
+        <h2 id="channels-heading">Start here.</h2>
+        <div class="contact-list channels">
+          <a href="https://www.linkedin.com/in/smmcqueen/"><span class="mono">01 / Primary</span><strong>LinkedIn</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/SMcQueen2023"><span class="mono">02 / Public code</span><strong>GitHub</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://gitlab.com/scottmcqueen2023"><span class="mono">03 / More projects</span><strong>GitLab</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://www.mcqueencloud.com/"><span class="mono">04 / Advisory</span><strong>McQueen Cloud</strong><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-tail">
+    <div class="wrap editorial-grid">
+      <p class="eyebrow">02 / Before we talk</p>
+      <div><h2>The useful starting points.</h2><p>The three lead files cover enterprise reporting modernization, audit-ready reconciliation automation, and operating visibility through portfolio governance.</p><a class="action-link" href={`${base}/projects/`}>Explore the work <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .channels{margin-top:2.4rem}.channels a:hover{background:#e5e3d9}.channels a{transition:background .18s ease}
+  .contact-tail{background:#d8d9cd;padding-block:clamp(4rem,7vw,8rem)}.contact-tail h2{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(3.5rem,7vw,8rem);max-width:11ch;letter-spacing:-.06em}.contact-tail p:not(.eyebrow){max-width:40rem;font-size:1.18rem;margin-top:1.6rem}.contact-tail .action-link{margin-top:2rem}
+  @media(max-width:580px){.channels strong{font-size:clamp(2.4rem,10vw,4rem)}.channels a span:last-child{font-size:1.5rem}}
+</style>

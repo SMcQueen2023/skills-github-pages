@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Base title="Approach — Scott McQueen" description="How Scott McQueen frames business intelligence, reporting modernization, automation, and AI-assisted development." current="about">
+  <header class="page-lead wrap">
+    <div class="lead-meta"><p class="eyebrow">Approach / 04</p><span class="mono">From ambiguity to a decision that holds up</span></div>
+    <h1>Make the work legible. Then make it last.</h1>
+    <p class="lead-text">I work where business meaning, data, and delivery have to meet. The useful result is a reporting or automation system people can explain, validate, maintain, and use under pressure.</p>
+  </header>
+
+  <section class="editorial-section wrap" aria-labelledby="method-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">01 / Working method</p>
+      <div>
+        <h2 id="method-heading">A decision has a lineage.</h2>
+        <div class="editorial-copy method-intro">
+          <p>I start with the decision a report or process must support. Then I find where its meaning is currently held: in source fields, inherited calculations, manual review habits, or assumptions that nobody has written down.</p>
+          <p>That makes architecture and adoption part of the same problem. A cleaner model matters only when people can trust the definition and carry the work forward.</p>
+        </div>
+        <div class="method-sequence" role="group" aria-label="Five steps in my delivery method">
+          <div><span class="mono">01</span><strong>Frame</strong><p>What is at stake for the business?</p></div>
+          <div><span class="mono">02</span><strong>Define</strong><p>Which logic and terms must agree?</p></div>
+          <div><span class="mono">03</span><strong>Build</strong><p>Where should the logic live?</p></div>
+          <div><span class="mono">04</span><strong>Check</strong><p>What evidence would disprove it?</p></div>
+          <div><span class="mono">05</span><strong>Transfer</strong><p>Who can operate and explain it?</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section wrap" aria-labelledby="principles-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">02 / Decisions in practice</p>
+      <div>
+        <h2 id="principles-heading">The operating principles.</h2>
+        <div class="record-list principles">
+          <article class="record-row"><span class="mono">Meaning</span><div><h3>Model the business before modeling the data.</h3><p>Clarify grain, definitions, and filter behavior before a dashboard makes ambiguity look finished.</p></div><a class="action-link" href={`${base}/projects/reporting-modernization/`}>Read case <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Control</span><div><h3>Make the exception visible.</h3><p>Validation and reviewer attention belong inside the workflow, especially in finance-adjacent automation.</p></div><a class="action-link" href={`${base}/projects/reconciliation-automation/`}>Read case <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Adoption</span><div><h3>Measure how work actually moves.</h3><p>Useful governance connects intake, operating signals, and executive interpretation.</p></div><a class="action-link" href={`${base}/projects/portfolio-governance-platform/`}>Read case <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-section" id="ai-method" aria-labelledby="ai-heading">
+    <div class="wrap editorial-grid">
+      <p class="eyebrow">03 / AI-assisted development</p>
+      <div>
+        <h2 id="ai-heading">I use AI. I own the result.</h2>
+        <div class="editorial-copy">
+          <p>Gemini, GitHub Copilot, and Codex have assisted my development work. I use them to explore approaches, accelerate implementation, and inspect possible issues. I remain responsible for the problem framing, architecture, tradeoffs, and final behavior.</p>
+          <p>For this site, Codex assisted with the Astro migration, page implementation, and visual assets. The project claims were checked against the existing public case material, and the generated routes and assets were tested before release. That is different from an AI feature inside a product: suggested code and copy still require source checks, review, and appropriate testing.</p>
+        </div>
+        <a class="action-link" href={`${base}/projects/`}>See the decisions in the work <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .method-intro{margin-top:2rem}
+  .method-sequence{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:3rem}
+  .method-sequence>div{min-height:12rem;padding:1rem .8rem 1rem 0;border-right:1px solid var(--rule)}
+  .method-sequence>div+div{padding-left:.8rem}.method-sequence>div:last-child{border-right:0}
+  .method-sequence .mono{display:block;color:var(--signal);margin-bottom:3.5rem}
+  .method-sequence strong{display:block;font-size:1.25rem;letter-spacing:-.035em}
+  .method-sequence p{font-size:.88rem;color:var(--muted);margin-top:.4rem;line-height:1.35}
+  .principles{margin-top:2.5rem}.principles .record-row p{max-width:34rem;margin-top:.6rem;line-height:1.4}
+  .principles .action-link{white-space:nowrap}
+  .ai-section{background:var(--ink);color:var(--paper-light);padding-block:clamp(4rem,7vw,8rem)}
+  .ai-section .eyebrow{color:#ff806a}.ai-section .editorial-copy{margin-top:2rem}.ai-section .editorial-copy p{color:#d4d7cf}
+  .ai-section .action-link{margin-top:2.2rem;border-color:var(--paper-light)}.ai-section .action-link:hover{color:#ff806a;border-color:#ff806a}
+  @media(max-width:900px){.method-sequence{grid-template-columns:repeat(3,1fr)}.method-sequence>div:nth-child(3){border-right:0}.method-sequence>div:nth-child(n+4){border-top:1px solid var(--rule)}.method-sequence>div:nth-child(4){padding-left:0}}
+  @media(max-width:600px){.method-sequence{grid-template-columns:1fr 1fr}.method-sequence>div:nth-child(3){border-right:1px solid var(--rule)}.method-sequence>div:nth-child(even){border-right:0}.method-sequence>div:nth-child(n+3){border-top:1px solid var(--rule)}.method-sequence>div:nth-child(odd){padding-left:0}.method-sequence .mono{margin-bottom:2rem}.principles .record-row{grid-template-columns:1fr;gap:.55rem}.principles .record-row a{grid-column:auto}}
+</style>
