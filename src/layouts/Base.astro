@@ -4,7 +4,7 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
-  current?: 'home' | 'work' | 'about' | 'experience' | 'credentials' | 'contact';
+  current?: 'home' | 'work' | 'projects' | 'about' | 'experience' | 'credentials' | 'contact';
   image?: string;
 }
 
@@ -18,8 +18,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://smcqueen2023.github.io');
 const socialImage = new URL(image ?? `${base}/assets/social/decision-file.png`, Astro.site ?? 'https://smcqueen2023.github.io');
 const links = [
-  { key: 'work', label: 'Work', href: `${base}/projects/` },
+  { key: 'work', label: 'Work', href: `${base}/work/` },
   { key: 'experience', label: 'Experience', href: `${base}/experience/` },
+  { key: 'projects', label: 'Projects', href: `${base}/projects/` },
   { key: 'about', label: 'Approach', href: `${base}/about/` },
   { key: 'credentials', label: 'Credentials', href: `${base}/certifications/` },
   { key: 'contact', label: 'Contact', href: `${base}/contact/` },
@@ -30,7 +31,7 @@ const links = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#171b1a" />
+    <meta name="theme-color" content="#0c1722" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical.href} />
     <link rel="icon" type="image/svg+xml" href={`${base}/assets/favicon.svg`} />
@@ -69,10 +70,11 @@ const links = [
           <p>Business intelligence / reporting / automation / technical delivery</p>
         </div>
         <div class="footer-links">
-          <a href={`${base}/projects/`}>Selected work <span aria-hidden="true">↗</span></a>
+          <a href={`${base}/work/`}>Selected work <span aria-hidden="true">↗</span></a>
+          <a href={`${base}/projects/`}>Projects <span aria-hidden="true">↗</span></a>
           <a href="https://www.linkedin.com/in/smmcqueen/">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="footer-end">© {new Date().getFullYear()} Scott McQueen<br />Designed as a record of decisions and delivery.</p>
+        <p class="footer-end">© {new Date().getFullYear()} Scott McQueen<br />Business intelligence, automation, and technical delivery.</p>
       </div>
     </footer>
   </body>

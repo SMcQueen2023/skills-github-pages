@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import { featuredProjects, supportingProjects, type Project } from '../../data/projects';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = (project: Project) => `${base}/work/${project.slug}/`;
+---
+
+<Base title="Selected work — Scott McQueen" description="Reporting modernization, reconciliation automation, portfolio governance, and the decisions behind each system." current="work">
+  <div class="work-page">
+    <header class="work-cover wrap">
+      <div class="cover-meta"><span class="eyebrow">Index / Decision files</span><span>01—{String(featuredProjects.length + supportingProjects.length).padStart(2, '0')}</span></div>
+      <h1>What changed. <em>What I checked.</em></h1>
+      <div class="cover-bottom">
+        <p>A Power BI proof of concept changed the SAP BusinessObjects migration plan. Reconciliation replaced hand calculations across 30 monthly files. Portfolio status became a calculated measure. These cases show what each decision required.</p>
+        <p class="cover-aside">Business intelligence<br />Automation<br />Technical delivery</p>
+      </div>
+    </header>
+
+    <section class="featured wrap" aria-labelledby="featured-heading">
+      <div class="section-bar"><h2 id="featured-heading">Three delivery cases</h2><p>Reporting / automation / governance</p></div>
+      <div class="lead-case">
+        <div class="lead-case-copy">
+          <div class="file-label"><span>File {featuredProjects[0].number}</span><span>{featuredProjects[0].context}</span></div>
+          <h3><a href={href(featuredProjects[0])}>{featuredProjects[0].headline}</a></h3>
+          <p>{featuredProjects[0].summary}</p>
+          <div class="lead-case-foot"><span class="case-signal">{featuredProjects[0].signal}</span><a class="case-link" href={href(featuredProjects[0])}>Open case file <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="lead-artifact" role="group" aria-label="Power BI platform fit evaluation">
+          <div class="artifact-top">Platform fit / conceptual reconstruction <span>RPT—01</span></div>
+          {featuredProjects[0].artifact.map((step, i) => <div class="artifact-row"><b>{String(i + 1).padStart(2, '0')}</b><div><strong>{step.label.replace(/^\d+ \/ /, '')}</strong><small>{step.detail}</small></div><span aria-hidden="true">{i < 3 ? '↓' : '■'}</span></div>)}
+          <p class="artifact-note">A working proof of concept did not clear the constraints facing the wider migration.</p>
+        </div>
+      </div>
+      <div class="paired-cases">
+        {featuredProjects.slice(1).map((project, i) => <article class:list={['paired-case', i === 1 && 'paired-case-light']}>
+          <div class="file-label"><span>File {project.number}</span><span>{project.context}</span></div>
+          <div class="paired-center"><p class="paired-mark" aria-hidden="true">{i === 0 ? '↳' : '⌁'}</p><h3><a href={href(project)}>{project.headline}</a></h3><p>{project.summary}</p></div>
+          <div class="paired-proof"><span>{project.artifactTitle}</span><a class="case-link" href={href(project)}>Open case file <span aria-hidden="true">↗</span></a></div>
+        </article>)}
+      </div>
+    </section>
+
+    <section class="work-catalog wrap" aria-labelledby="catalog-heading">
+      <div class="section-bar"><h2 id="catalog-heading">Other delivery and analysis</h2><p>Migration / modeling / analytics</p></div>
+      <p class="catalog-intro">The additional files cover a cross-team SAS migration, a revenue accounting model, and an external analytics engagement. Each shows the business need, the delivery choices, and what the record supports.</p>
+      <div class="catalog-list">
+        {supportingProjects.map((project) => <article class="catalog-row">
+          <span class="catalog-number">{project.number}</span>
+          <div class="catalog-main"><p class="catalog-lane">{project.lane} <span>/</span> {project.context}</p><h3><a href={href(project)}>{project.headline}</a></h3><p>{project.summary}</p></div>
+          <a class="catalog-arrow" href={href(project)} aria-label={`Read ${project.title}`}>↗</a>
+        </article>)}
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .work-page{--ink:#0c1722;--paper:#f2f6f7;--red:#0b707c;color:var(--ink);overflow:hidden}
+  .work-cover{padding-top:clamp(4rem,8vw,8rem);padding-bottom:clamp(4rem,8vw,8rem)}
+  .cover-meta,.section-bar,.file-label,.artifact-top,.lead-case-foot,.paired-proof{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+  .cover-meta,.file-label,.artifact-top,.section-bar p,.cover-aside,.catalog-lane,.catalog-number,.case-signal{font-family:var(--font-mono,monospace);font-size:.73rem;letter-spacing:.06em;text-transform:uppercase}
+  .cover-meta{border-top:2px solid var(--ink);padding-top:.8rem}
+  .work-cover h1{font-size:clamp(4.4rem,9.2vw,9.8rem);max-width:13ch;line-height:.88;letter-spacing:-.085em;margin:2.3rem 0 4rem;font-weight:700}
+  .work-cover h1 em{font-family:var(--font-display);font-style:normal;font-weight:500;letter-spacing:-.085em;color:var(--red)}
+  .cover-bottom{display:grid;grid-template-columns:minmax(0,1fr) 13rem;gap:3rem;align-items:end;border-bottom:1px solid var(--ink);padding-bottom:1.5rem}
+  .cover-bottom>p:first-child{font-size:clamp(1.3rem,2.1vw,2rem);line-height:1.28;max-width:41rem;margin:0}
+  .cover-aside{line-height:1.65;margin:0;border-left:1px solid var(--ink);padding-left:1.3rem}
+  .featured,.work-catalog{padding-bottom:clamp(5rem,9vw,9rem)}
+  .section-bar{border-bottom:1px solid var(--ink);padding-bottom:.75rem;margin-bottom:1.5rem;align-items:end}
+  .section-bar h2{font-size:clamp(1.3rem,2vw,1.8rem);margin:0;letter-spacing:-.04em}
+  .section-bar p{margin:0}
+  .lead-case{display:grid;grid-template-columns:1.05fr .95fr;background:var(--ink);color:var(--paper);min-height:39rem}
+  .lead-case-copy{padding:clamp(1.5rem,4vw,4rem);display:flex;flex-direction:column}
+  .file-label{border-top:1px solid currentColor;padding-top:.65rem;opacity:.8}
+  .lead-case h3{font-size:clamp(3.3rem,5.4vw,6rem);line-height:.9;letter-spacing:-.07em;max-width:12ch;margin:auto 0 1.4rem}
+  .lead-case h3 a,.paired-case h3 a,.catalog-row h3 a{color:inherit;text-decoration:none}
+  .lead-case h3 a:hover,.paired-case h3 a:hover,.catalog-row h3 a:hover{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:.07em;text-underline-offset:.1em}
+  .lead-case-copy>p{font-size:1.1rem;max-width:33rem;line-height:1.45}
+  .lead-case-foot{border-top:1px solid #56717c;padding-top:1.2rem;margin-top:2rem}
+  .case-link{color:inherit;text-underline-offset:.25em;font-weight:700;white-space:nowrap}
+  .lead-artifact{background:#dfeaed;color:var(--ink);padding:clamp(1.5rem,3.3vw,3rem);display:flex;flex-direction:column}
+  .artifact-top{border-top:1px solid var(--ink);padding-top:.55rem;margin-bottom:2.5rem}
+  .artifact-row{display:grid;grid-template-columns:2.5rem 1fr 1.5rem;gap:.5rem;border-top:1px solid #aebfc6;padding:.9rem 0;align-items:start}
+  .artifact-row b,.artifact-row>span{color:var(--red);font-family:var(--font-mono,monospace)}
+  .artifact-row strong{display:block;font-size:1.35rem;line-height:1.05}
+  .artifact-row small{display:block;line-height:1.35;margin-top:.35rem;font-size:.85rem;max-width:24rem}
+  .artifact-note{margin:auto 0 0;padding-top:3rem;font-size:1.12rem;line-height:1.3;max-width:19rem;font-family:var(--font-display);font-weight:600;letter-spacing:-.025em}
+  .paired-cases{display:grid;grid-template-columns:1fr 1fr}
+  .paired-case{background:var(--red);color:#f2fafa;padding:clamp(1.5rem,3vw,3rem);min-height:31rem;display:flex;flex-direction:column}
+  .paired-case:not(.paired-case-light) a:focus-visible{outline:3px solid #f2fafa;outline-offset:2px;box-shadow:0 0 0 6px var(--ink)}
+  .paired-case-light{background:#dfeaed;color:var(--ink)}
+  .paired-center{margin:auto 0}
+  .paired-mark{font-size:5rem;line-height:1;margin:0 0 .75rem;opacity:.75}
+  .paired-case h3{font-size:clamp(3rem,5vw,5.7rem);line-height:.9;letter-spacing:-.07em;max-width:12ch;margin:0 0 1.5rem}
+  .paired-center>p:last-child{font-size:1.05rem;max-width:29rem;line-height:1.4}
+  .paired-proof{border-top:1px solid currentColor;padding-top:1rem;font-size:.84rem}
+  .paired-proof>span{max-width:15rem}
+  .catalog-intro{font-size:clamp(1.2rem,1.8vw,1.6rem);line-height:1.35;max-width:52rem;margin:0 0 2.5rem}
+  .catalog-row{display:grid;grid-template-columns:6rem minmax(0,1fr) 3rem;gap:1.5rem;border-top:1px solid var(--ink);padding:1.7rem 0 2.3rem;align-items:start}
+  .catalog-row:last-child{border-bottom:1px solid var(--ink)}
+  .catalog-number{font-size:1rem;color:var(--red);padding-top:.2rem}
+  .catalog-lane{margin:.1rem 0 .6rem}.catalog-lane span{color:var(--red)}
+  .catalog-row h3{font-size:clamp(2rem,3.3vw,3.8rem);letter-spacing:-.06em;line-height:.95;margin:0 0 .6rem;max-width:23ch}
+  .catalog-row .catalog-main>p:last-child{max-width:42rem;line-height:1.4;margin:0}
+  .catalog-arrow{font-size:2.2rem;line-height:1;color:var(--red);text-decoration:none}
+  @media(max-width:800px){.work-cover h1{font-size:clamp(4rem,13vw,6.8rem)}.lead-case{grid-template-columns:1fr}.lead-case-copy{min-height:31rem}.lead-artifact{min-height:31rem}.paired-cases{grid-template-columns:1fr}.paired-case{min-height:27rem}}
+  @media(max-width:570px){.cover-meta,.section-bar,.file-label{font-size:.65rem}.work-cover h1{font-size:clamp(2.75rem,11.5vw,5rem);margin:2rem 0 3rem}.cover-bottom{grid-template-columns:1fr;gap:1.5rem}.cover-aside{border-left:0;border-top:1px solid var(--ink);padding:1rem 0 0}.lead-case h3{font-size:clamp(2.9rem,11vw,4.6rem)}.lead-case-copy{min-height:28rem}.lead-case-foot,.paired-proof{align-items:flex-start;flex-direction:column}.paired-case h3{font-size:clamp(3rem,12vw,5rem)}.catalog-row{grid-template-columns:2.5rem 1fr 1.5rem;gap:.65rem}.catalog-row h3{font-size:2rem}.catalog-arrow{font-size:1.5rem}.catalog-intro{font-size:1.15rem}}
+</style>

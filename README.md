@@ -23,13 +23,15 @@ The build writes `dist/`. The verify script checks route parity, metadata, and l
 
 ## Source structure
 
-- `src/pages/` — home, interior pages, work index, and case route.
-- `src/data/projects.ts` — public case file content and route slugs.
+- `src/pages/work/` — professional delivery cases and the Work index.
+- `src/pages/projects/` — independent Projects index, case pages, and legacy Work redirects.
+- `src/data/projects.ts` — professional case content and Work route slugs.
+- `src/data/standaloneProjects.ts` — independent project content, led by Everything is Random.
 - `src/layouts/Base.astro` — shared navigation, footer, and metadata.
 - `src/styles/global.css` — visual system and responsive layout.
 - `public/assets/illustrations/` — original, sanitized process schematics.
 
-The public site remains at `https://smcqueen2023.github.io/skills-github-pages/`. Preserve the `/skills-github-pages` base and existing `/projects/{slug}/` paths when changing routes.
+The public site remains at `https://smcqueen2023.github.io/skills-github-pages/`. Preserve the `/skills-github-pages` base. Professional cases live at `/work/{slug}/`; independent builds live at `/projects/{slug}/`. Former professional `/projects/{slug}/` URLs have static redirect pages so existing links still reach the cases.
 
 ## Content boundaries
 

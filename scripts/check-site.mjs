@@ -3,13 +3,20 @@ import { join } from 'node:path';
 
 const output = new URL('../dist/', import.meta.url).pathname.replace(/^\/(?=[A-Za-z]:\/)/, '');
 const base = '/skills-github-pages';
+const workSlugs = [
+  'reporting-modernization', 'reconciliation-automation',
+  'portfolio-governance-platform', 'sas-to-azure-migration',
+  'enterprise-data-modeling', 'external-analytics-enablement',
+];
+const independentSlugs = [
+  'everything-is-random', 'parqcel', 'consultation-workflow-automation',
+  'gcp-analytics-engineering', 'marketing-campaign-analysis', 'cloud-engineer-site',
+];
 const routes = [
-  '/', '/about/', '/projects/', '/experience/', '/certifications/', '/contact/',
-  '/projects/reporting-modernization/', '/projects/reconciliation-automation/',
-  '/projects/portfolio-governance-platform/', '/projects/enterprise-data-modeling/',
-  '/projects/external-analytics-enablement/', '/projects/consultation-workflow-automation/',
-  '/projects/gcp-analytics-engineering/', '/projects/parqcel/',
-  '/projects/marketing-campaign-analysis/', '/projects/cloud-engineer-site/',
+  '/', '/about/', '/work/', '/projects/', '/experience/', '/certifications/', '/contact/',
+  ...workSlugs.map((slug) => `/work/${slug}/`),
+  ...workSlugs.map((slug) => `/projects/${slug}/`), // Previous public URLs.
+  ...independentSlugs.map((slug) => `/projects/${slug}/`),
 ];
 
 const errors = [];
@@ -25,6 +32,14 @@ function walk(dir) {
 for (const route of routes) {
   const file = join(output, route, 'index.html');
   if (!existsSync(file)) errors.push(`Missing route: ${route}`);
+}
+for (const slug of workSlugs) {
+  const file = join(output, 'projects', slug, 'index.html');
+  if (!existsSync(file)) continue;
+  const html = readFileSync(file, 'utf8');
+  if (!html.includes(`http-equiv="refresh" content="0; url=${base}/work/${slug}/"`)) {
+    errors.push(`Old work URL does not redirect to its new route: ${slug}`);
+  }
 }
 walk(output);
 
@@ -51,5 +66,5 @@ if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Verified ${htmlFiles.length} pages, ${routes.length} legacy routes, metadata, and local links.`);
+  console.log(`Verified ${htmlFiles.length} pages, ${routes.length} expected routes, metadata, and local links.`);
 }

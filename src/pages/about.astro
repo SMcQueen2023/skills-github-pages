@@ -4,28 +4,28 @@ import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<Base title="Approach — Scott McQueen" description="How Scott McQueen frames business intelligence, reporting modernization, automation, and AI-assisted development." current="about">
+<Base title="Approach — Scott McQueen" description="How Scott McQueen handles metric definitions, automation controls, technical delivery, and AI-assisted development." current="about">
   <header class="page-lead wrap">
-    <div class="lead-meta"><p class="eyebrow">Approach / 04</p><span class="mono">From ambiguity to a decision that holds up</span></div>
-    <h1>Make the work legible. Then make it last.</h1>
-    <p class="lead-text">I work where business meaning, data, and delivery have to meet. The useful result is a reporting or automation system people can explain, validate, maintain, and use under pressure.</p>
+    <div class="lead-meta"><p class="eyebrow">Approach / 04</p><span class="mono">Scope / design / delivery</span></div>
+    <h1>Understand the problem. Build for the handoff.</h1>
+    <p class="lead-text">I start with the business problem, the people affected, and the expected benefit. From there I research the current process, design and build the solution, monitor it, and hand it over with room to improve.</p>
   </header>
 
   <section class="editorial-section wrap" aria-labelledby="method-heading">
     <div class="editorial-grid">
       <p class="eyebrow">01 / Working method</p>
       <div>
-        <h2 id="method-heading">A decision has a lineage.</h2>
+        <h2 id="method-heading">How I move the work forward.</h2>
         <div class="editorial-copy method-intro">
-          <p>I start with the decision a report or process must support. Then I find where its meaning is currently held: in source fields, inherited calculations, manual review habits, or assumptions that nobody has written down.</p>
-          <p>That makes architecture and adoption part of the same problem. A cleaner model matters only when people can trust the definition and carry the work forward.</p>
+          <p>First I establish what needs to change for the business and who will use the result. Then I examine the current data and workflow: source fields, report formulas, spreadsheets, and manual steps.</p>
+          <p>The design and definitions take shape together. During development I check outputs against source records, monitor the result after release, and work with its owners on the next iteration.</p>
         </div>
         <div class="method-sequence" role="group" aria-label="Five steps in my delivery method">
-          <div><span class="mono">01</span><strong>Frame</strong><p>What is at stake for the business?</p></div>
-          <div><span class="mono">02</span><strong>Define</strong><p>Which logic and terms must agree?</p></div>
-          <div><span class="mono">03</span><strong>Build</strong><p>Where should the logic live?</p></div>
-          <div><span class="mono">04</span><strong>Check</strong><p>What evidence would disprove it?</p></div>
-          <div><span class="mono">05</span><strong>Transfer</strong><p>Who can operate and explain it?</p></div>
+          <div><span class="mono">01</span><strong>Scope</strong><p>Define the problem, people affected, and expected benefit.</p></div>
+          <div><span class="mono">02</span><strong>Research and design</strong><p>Analyze the current process and data; design the model and checks.</p></div>
+          <div><span class="mono">03</span><strong>Development</strong><p>Build, test, and coordinate dependencies with the teams involved.</p></div>
+          <div><span class="mono">04</span><strong>Monitoring</strong><p>Watch output quality and how the solution works in use.</p></div>
+          <div><span class="mono">05</span><strong>Handoff and iteration</strong><p>Transfer ownership and adjust as requirements change.</p></div>
         </div>
       </div>
     </div>
@@ -35,11 +35,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <div class="editorial-grid">
       <p class="eyebrow">02 / Decisions in practice</p>
       <div>
-        <h2 id="principles-heading">The operating principles.</h2>
+        <h2 id="principles-heading">Where I spend the extra time.</h2>
         <div class="record-list principles">
-          <article class="record-row"><span class="mono">Meaning</span><div><h3>Model the business before modeling the data.</h3><p>Clarify grain, definitions, and filter behavior before a dashboard makes ambiguity look finished.</p></div><a class="action-link" href={`${base}/projects/reporting-modernization/`}>Read case <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Control</span><div><h3>Make the exception visible.</h3><p>Validation and reviewer attention belong inside the workflow, especially in finance-adjacent automation.</p></div><a class="action-link" href={`${base}/projects/reconciliation-automation/`}>Read case <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Adoption</span><div><h3>Measure how work actually moves.</h3><p>Useful governance connects intake, operating signals, and executive interpretation.</p></div><a class="action-link" href={`${base}/projects/portfolio-governance-platform/`}>Read case <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Platform fit</span><div><h3>Test the target against the workload.</h3><p>Power BI proofs of concept, service stress tests, and query plans exposed constraints in the proposed SAP BusinessObjects migration.</p></div><a class="action-link" href={`${base}/work/reporting-modernization/`}>Reporting <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Automation</span><div><h3>Replace thirty manual calculations with a repeatable run.</h3><p>Monthly 401(k) contribution files are aggregated and reconciled automatically; the report shows whether totals balance.</p></div><a class="action-link" href={`${base}/work/reconciliation-automation/`}>Automation <span aria-hidden="true">↗</span></a></article>
+          <article class="record-row"><span class="mono">Signals</span><div><h3>Show what feeds the status.</h3><p>Intake, milestones, and timing data give a portfolio measure something concrete to stand on.</p></div><a class="action-link" href={`${base}/work/portfolio-governance-platform/`}>Portfolio <span aria-hidden="true">↗</span></a></article>
         </div>
       </div>
     </div>
@@ -49,30 +49,31 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <div class="wrap editorial-grid">
       <p class="eyebrow">03 / AI-assisted development</p>
       <div>
-        <h2 id="ai-heading">I use AI. I own the result.</h2>
+        <h2 id="ai-heading">How AI fits into the build.</h2>
         <div class="editorial-copy">
-          <p>Gemini, GitHub Copilot, and Codex have assisted my development work. I use them to explore approaches, accelerate implementation, and inspect possible issues. I remain responsible for the problem framing, architecture, tradeoffs, and final behavior.</p>
-          <p>For this site, Codex assisted with the Astro migration, page implementation, and visual assets. The project claims were checked against the existing public case material, and the generated routes and assets were tested before release. That is different from an AI feature inside a product: suggested code and copy still require source checks, review, and appropriate testing.</p>
+          <p>I have used Gemini, GitHub Copilot, and Codex to explore implementation options, write code, and look for issues. I set the requirements, choose the architecture, review the changes, and check the behavior.</p>
+          <p>Codex assisted with this site's Astro migration, pages, and diagrams. The project descriptions were checked against existing public material and firsthand project details, and the generated routes and assets were tested locally. AI suggestions still need review against the requirements and source claims.</p>
         </div>
-        <a class="action-link" href={`${base}/projects/`}>See the decisions in the work <span aria-hidden="true">↗</span></a>
+        <a class="action-link" href={`${base}/work/`}>View the work <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </section>
 </Base>
 
 <style>
-  .method-intro{margin-top:2rem}
-  .method-sequence{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:3rem}
-  .method-sequence>div{min-height:12rem;padding:1rem .8rem 1rem 0;border-right:1px solid var(--rule)}
+  .editorial-grid h2{max-width:22ch;font-size:clamp(2.35rem,3.5vw,3.75rem);letter-spacing:-.055em}
+  .method-intro{margin-top:1.25rem}
+  .method-sequence{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:2.25rem}
+  .method-sequence>div{min-height:11rem;padding:1rem .8rem 1rem 0;border-right:1px solid var(--rule)}
   .method-sequence>div+div{padding-left:.8rem}.method-sequence>div:last-child{border-right:0}
-  .method-sequence .mono{display:block;color:var(--signal);margin-bottom:3.5rem}
-  .method-sequence strong{display:block;font-size:1.25rem;letter-spacing:-.035em}
+  .method-sequence .mono{display:block;color:var(--signal);margin-bottom:2.4rem}
+  .method-sequence strong{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-size:1.18rem;letter-spacing:-.035em}
   .method-sequence p{font-size:.88rem;color:var(--muted);margin-top:.4rem;line-height:1.35}
-  .principles{margin-top:2.5rem}.principles .record-row p{max-width:34rem;margin-top:.6rem;line-height:1.4}
+  .principles{margin-top:1.75rem}.principles .record-row p{max-width:34rem;margin-top:.6rem;line-height:1.4}
   .principles .action-link{white-space:nowrap}
-  .ai-section{background:var(--ink);color:var(--paper-light);padding-block:clamp(4rem,7vw,8rem)}
-  .ai-section .eyebrow{color:#ff806a}.ai-section .editorial-copy{margin-top:2rem}.ai-section .editorial-copy p{color:#d4d7cf}
-  .ai-section .action-link{margin-top:2.2rem;border-color:var(--paper-light)}.ai-section .action-link:hover{color:#ff806a;border-color:#ff806a}
+  .ai-section{background:var(--ink);color:var(--paper-light);padding-block:clamp(4rem,6vw,6rem)}
+  .ai-section .eyebrow{color:#66d5d7}.ai-section .editorial-copy{margin-top:1.25rem}.ai-section .editorial-copy p{color:#c4d4d9}
+  .ai-section .action-link{margin-top:1.8rem;border-color:var(--paper-light)}.ai-section .action-link:hover{color:#66d5d7;border-color:#66d5d7}
   @media(max-width:900px){.method-sequence{grid-template-columns:repeat(3,1fr)}.method-sequence>div:nth-child(3){border-right:0}.method-sequence>div:nth-child(n+4){border-top:1px solid var(--rule)}.method-sequence>div:nth-child(4){padding-left:0}}
   @media(max-width:600px){.method-sequence{grid-template-columns:1fr 1fr}.method-sequence>div:nth-child(3){border-right:1px solid var(--rule)}.method-sequence>div:nth-child(even){border-right:0}.method-sequence>div:nth-child(n+3){border-top:1px solid var(--rule)}.method-sequence>div:nth-child(odd){padding-left:0}.method-sequence .mono{margin-bottom:2rem}.principles .record-row{grid-template-columns:1fr;gap:.55rem}.principles .record-row a{grid-column:auto}}
 </style>

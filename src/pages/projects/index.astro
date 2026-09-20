@@ -1,54 +1,60 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { featuredProjects, supportingProjects, type Project } from '../../data/projects';
+import { standaloneProjects, type StandaloneProject } from '../../data/standaloneProjects';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const href = (project: Project) => `${base}/projects/${project.slug}/`;
+const [flagship, ...moreProjects] = standaloneProjects;
+const href = (project: StandaloneProject) => `${base}/projects/${project.slug}/`;
 ---
 
-<Base title="Selected work — Scott McQueen" description="Case files on reporting modernization, auditable automation, portfolio governance, and analytical delivery." current="work">
-  <div class="work-page">
-    <header class="work-cover wrap">
-      <div class="cover-meta"><span class="eyebrow">Index / Decision files</span><span>01—10</span></div>
-      <h1>Work, with <em>consequences.</em></h1>
-      <div class="cover-bottom">
-        <p>Reporting has to hold up when definitions are challenged. Automation has to remain legible when an exception appears. These records show the choices behind that kind of delivery.</p>
-        <p class="cover-aside">Business intelligence<br />Automation<br />Technical delivery</p>
+<Base
+  title="Projects — Scott McQueen"
+  description="Independent products and technical projects by Scott McQueen, led by Everything is Random."
+  current="projects"
+>
+  <div class="project-index">
+    <header class="index-cover wrap">
+      <div class="index-kicker"><span>Independent projects</span><span>01 — {String(standaloneProjects.length).padStart(2, '0')}</span></div>
+      <h1>What I’ve made <em>beyond my roles.</em></h1>
+      <div class="index-intro">
+        <p>This collection spans a launched browser product, desktop software, workflow automation, a data warehouse slice, technical publishing, and applied academic analysis.</p>
+        <p class="mono">Product thinking<br />Engineering decisions<br />Working software</p>
       </div>
     </header>
 
-    <section class="featured wrap" aria-labelledby="featured-heading">
-      <div class="section-bar"><h2 id="featured-heading">The lead files</h2><p>Three problems / three kinds of evidence</p></div>
-      <div class="lead-case">
-        <div class="lead-case-copy">
-          <div class="file-label"><span>File {featuredProjects[0].number}</span><span>{featuredProjects[0].context}</span></div>
-          <h3><a href={href(featuredProjects[0])}>{featuredProjects[0].headline}</a></h3>
-          <p>{featuredProjects[0].summary}</p>
-          <div class="lead-case-foot"><span class="case-signal">{featuredProjects[0].signal}</span><a class="case-link" href={href(featuredProjects[0])}>Open case file <span aria-hidden="true">↗</span></a></div>
+    <section class="flagship-band" aria-labelledby="flagship-heading">
+      <div class="wrap">
+        <div class="section-rail"><span>01 / Flagship project</span><span>{flagship.status}</span></div>
+        <div class="flagship-grid">
+          <div class="flagship-copy">
+            <p class="eyebrow">{flagship.kind}</p>
+            <h2 id="flagship-heading">{flagship.title}<span class="period">.</span></h2>
+            <p class="flagship-headline">{flagship.headline}</p>
+            <p class="flagship-summary">{flagship.summary}</p>
+            <div class="flagship-actions">
+              <a href={href(flagship)}>Read the project case <span aria-hidden="true">↗</span></a>
+              {flagship.liveUrl && <a href={flagship.liveUrl} target="_blank" rel="noopener noreferrer">Open the live site <span aria-hidden="true">↗</span></a>}
+            </div>
+          </div>
+          <div class="system-portrait" role="img" aria-label="Sample of four Everything is Random tools: Dice, Words, UUID, and Teams">
+            <div class="portrait-top"><span>Everything is Random / four example tools</span><span>001</span></div>
+            <div class="portrait-orbit" aria-hidden="true"><span class="orbit-center">?</span><span class="orbit-label orbit-one">DICE</span><span class="orbit-label orbit-two">WORDS</span><span class="orbit-label orbit-three">UUID</span><span class="orbit-label orbit-four">TEAMS</span></div>
+            <div class="portrait-base"><span>Choose a tool</span><span>→</span><span>Generate</span><span>→</span><span>Use the result</span></div>
+          </div>
         </div>
-        <div class="lead-artifact" role="group" aria-label="Reporting logic transformation">
-          <div class="artifact-top">Metric lineage / conceptual reconstruction <span>RPT—01</span></div>
-          {featuredProjects[0].artifact.map((step, i) => <div class="artifact-row"><b>{String(i + 1).padStart(2, '0')}</b><div><strong>{step.label.replace(/^\d+ \/ /, '')}</strong><small>{step.detail}</small></div><span aria-hidden="true">{i < 3 ? '↓' : '■'}</span></div>)}
-          <p class="artifact-note">Meaning travels through the system. The screen is only the last stop.</p>
+        <div class="flagship-highlights">
+          {flagship.highlights.slice(0, 3).map((item, index) => <div><span>{String(index + 1).padStart(2, '0')} / {item.label}</span><p>{item.detail}</p></div>)}
         </div>
-      </div>
-      <div class="paired-cases">
-        {featuredProjects.slice(1).map((project, i) => <article class:list={['paired-case', i === 1 && 'paired-case-light']}>
-          <div class="file-label"><span>File {project.number}</span><span>{project.context}</span></div>
-          <div class="paired-center"><p class="paired-mark" aria-hidden="true">{i === 0 ? '↳' : '⌁'}</p><h3><a href={href(project)}>{project.headline}</a></h3><p>{project.summary}</p></div>
-          <div class="paired-proof"><span>{project.artifactTitle}</span><a class="case-link" href={href(project)}>Open case file <span aria-hidden="true">↗</span></a></div>
-        </article>)}
       </div>
     </section>
 
-    <section class="work-catalog wrap" aria-labelledby="catalog-heading">
-      <div class="section-bar"><h2 id="catalog-heading">Further evidence</h2><p>Models / systems / experiments</p></div>
-      <p class="catalog-intro">The remaining files show the engineering depth behind the delivery work. Context labels distinguish enterprise work, external engagements, independent builds, and academic analysis.</p>
-      <div class="catalog-list">
-        {supportingProjects.map((project) => <article class="catalog-row">
-          <span class="catalog-number">{project.number}</span>
-          <div class="catalog-main"><p class="catalog-lane">{project.lane} <span>/</span> {project.context}</p><h3><a href={href(project)}>{project.headline}</a></h3><p>{project.summary}</p></div>
-          <a class="catalog-arrow" href={href(project)} aria-label={`Read ${project.title}`}>↗</a>
+    <section class="project-list wrap" aria-labelledby="more-projects-heading">
+      <div class="list-head"><p class="eyebrow">02 / More projects</p><h2 id="more-projects-heading">Other things I’ve made.</h2></div>
+      <div class="list-items">
+        {moreProjects.map((project, index) => <article class="project-row">
+          <span class="row-number">{String(index + 2).padStart(2, '0')}</span>
+          <div class="row-main"><div class="row-meta"><span>{project.kind}</span><span>{project.status}</span></div><h3><a href={href(project)}>{project.title}</a></h3><p>{project.summary}</p></div>
+          <a class="row-arrow" href={href(project)} aria-label={`Read the ${project.title} project case`}>↗</a>
         </article>)}
       </div>
     </section>
@@ -56,54 +62,50 @@ const href = (project: Project) => `${base}/projects/${project.slug}/`;
 </Base>
 
 <style>
-  .work-page{--ink:#171b1a;--paper:#efede5;--red:#bd3926;color:var(--ink);overflow:hidden}
-  .work-cover{padding-top:clamp(4rem,8vw,8rem);padding-bottom:clamp(4rem,8vw,8rem)}
-  .cover-meta,.section-bar,.file-label,.artifact-top,.lead-case-foot,.paired-proof{display:flex;justify-content:space-between;gap:1rem;align-items:center}
-  .cover-meta,.file-label,.artifact-top,.section-bar p,.cover-aside,.catalog-lane,.catalog-number,.case-signal{font-family:var(--font-mono,monospace);font-size:.73rem;letter-spacing:.06em;text-transform:uppercase}
-  .cover-meta{border-top:2px solid var(--ink);padding-top:.8rem}
-  .work-cover h1{font-size:clamp(5rem,12vw,12rem);max-width:13ch;line-height:.79;letter-spacing:-.095em;margin:2.3rem 0 4rem;font-weight:800}
-  .work-cover h1 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.075em;color:var(--red)}
-  .cover-bottom{display:grid;grid-template-columns:minmax(0,1fr) 13rem;gap:3rem;align-items:end;border-bottom:1px solid var(--ink);padding-bottom:1.5rem}
-  .cover-bottom>p:first-child{font-size:clamp(1.3rem,2.1vw,2rem);line-height:1.28;max-width:41rem;margin:0}
-  .cover-aside{line-height:1.65;margin:0;border-left:1px solid var(--ink);padding-left:1.3rem}
-  .featured,.work-catalog{padding-bottom:clamp(5rem,9vw,9rem)}
-  .section-bar{border-bottom:1px solid var(--ink);padding-bottom:.75rem;margin-bottom:1.5rem;align-items:end}
-  .section-bar h2{font-size:clamp(1.3rem,2vw,1.8rem);margin:0;letter-spacing:-.04em}
-  .section-bar p{margin:0}
-  .lead-case{display:grid;grid-template-columns:1.05fr .95fr;background:var(--ink);color:var(--paper);min-height:39rem}
-  .lead-case-copy{padding:clamp(1.5rem,4vw,4rem);display:flex;flex-direction:column}
-  .file-label{border-top:1px solid currentColor;padding-top:.65rem;opacity:.8}
-  .lead-case h3{font-size:clamp(3.7rem,6.7vw,7.7rem);line-height:.86;letter-spacing:-.075em;max-width:11ch;margin:auto 0 1.4rem}
-  .lead-case h3 a,.paired-case h3 a,.catalog-row h3 a{color:inherit;text-decoration:none}
-  .lead-case h3 a:hover,.paired-case h3 a:hover,.catalog-row h3 a:hover{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:.07em;text-underline-offset:.1em}
-  .lead-case-copy>p{font-size:1.1rem;max-width:33rem;line-height:1.45}
-  .lead-case-foot{border-top:1px solid #777c76;padding-top:1.2rem;margin-top:2rem}
-  .case-link{color:inherit;text-underline-offset:.25em;font-weight:700;white-space:nowrap}
-  .lead-artifact{background:#d9d8cf;color:var(--ink);padding:clamp(1.5rem,3.3vw,3rem);display:flex;flex-direction:column}
-  .artifact-top{border-top:1px solid var(--ink);padding-top:.55rem;margin-bottom:2.5rem}
-  .artifact-row{display:grid;grid-template-columns:2.5rem 1fr 1.5rem;gap:.5rem;border-top:1px solid #92958f;padding:.9rem 0;align-items:start}
-  .artifact-row b,.artifact-row>span{color:#9f2d1f;font-family:var(--font-mono,monospace)}
-  .artifact-row strong{display:block;font-size:1.35rem;line-height:1.05;text-transform:capitalize}
-  .artifact-row small{display:block;line-height:1.35;margin-top:.35rem;font-size:.85rem;max-width:24rem}
-  .artifact-note{margin:auto 0 0;padding-top:3rem;font-size:1.25rem;line-height:1.2;max-width:17rem;font-family:Georgia,serif;font-style:italic}
-  .paired-cases{display:grid;grid-template-columns:1fr 1fr}
-  .paired-case{background:var(--red);color:#fff7ed;padding:clamp(1.5rem,3vw,3rem);min-height:31rem;display:flex;flex-direction:column}
-  .paired-case:not(.paired-case-light) a:focus-visible{outline:3px solid #fff7ed;outline-offset:2px;box-shadow:0 0 0 6px var(--ink)}
-  .paired-case-light{background:#d6d5cc;color:var(--ink)}
-  .paired-center{margin:auto 0}
-  .paired-mark{font-size:5rem;line-height:1;margin:0 0 .75rem;opacity:.75}
-  .paired-case h3{font-size:clamp(3rem,5vw,5.7rem);line-height:.9;letter-spacing:-.07em;max-width:12ch;margin:0 0 1.5rem}
-  .paired-center>p:last-child{font-size:1.05rem;max-width:29rem;line-height:1.4}
-  .paired-proof{border-top:1px solid currentColor;padding-top:1rem;font-size:.84rem}
-  .paired-proof>span{max-width:15rem}
-  .catalog-intro{font-size:clamp(1.2rem,1.8vw,1.6rem);line-height:1.35;max-width:52rem;margin:0 0 2.5rem}
-  .catalog-row{display:grid;grid-template-columns:6rem minmax(0,1fr) 3rem;gap:1.5rem;border-top:1px solid var(--ink);padding:1.7rem 0 2.3rem;align-items:start}
-  .catalog-row:last-child{border-bottom:1px solid var(--ink)}
-  .catalog-number{font-size:1rem;color:var(--red);padding-top:.2rem}
-  .catalog-lane{margin:.1rem 0 .6rem}.catalog-lane span{color:var(--red)}
-  .catalog-row h3{font-size:clamp(2rem,3.3vw,3.8rem);letter-spacing:-.06em;line-height:.95;margin:0 0 .6rem;max-width:23ch}
-  .catalog-row .catalog-main>p:last-child{max-width:42rem;line-height:1.4;margin:0}
-  .catalog-arrow{font-size:2.2rem;line-height:1;color:var(--red);text-decoration:none}
-  @media(max-width:800px){.work-cover h1{font-size:clamp(4.2rem,16vw,8rem)}.lead-case{grid-template-columns:1fr}.lead-case-copy{min-height:31rem}.lead-artifact{min-height:31rem}.paired-cases{grid-template-columns:1fr}.paired-case{min-height:27rem}}
-  @media(max-width:570px){.cover-meta,.section-bar,.file-label{font-size:.65rem}.work-cover h1{font-size:clamp(2.75rem,11.5vw,5rem);margin:2rem 0 3rem}.cover-bottom{grid-template-columns:1fr;gap:1.5rem}.cover-aside{border-left:0;border-top:1px solid var(--ink);padding:1rem 0 0}.lead-case h3{font-size:clamp(3.5rem,14vw,5.7rem)}.lead-case-copy{min-height:28rem}.lead-case-foot,.paired-proof{align-items:flex-start;flex-direction:column}.paired-case h3{font-size:clamp(3rem,12vw,5rem)}.catalog-row{grid-template-columns:2.5rem 1fr 1.5rem;gap:.65rem}.catalog-row h3{font-size:2rem}.catalog-arrow{font-size:1.5rem}.catalog-intro{font-size:1.15rem}}
+  .project-index{overflow:hidden}
+  .index-cover{padding-block:clamp(3.5rem,7vw,7rem) clamp(4.5rem,8vw,8rem)}
+  .index-kicker,.section-rail,.row-meta,.row-number,.portrait-top,.portrait-base,.flagship-highlights span{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+  .index-kicker,.section-rail{display:flex;justify-content:space-between;gap:1rem;border-top:2px solid currentColor;padding-top:.8rem}
+  .index-cover h1{font-size:clamp(3.7rem,9vw,9.5rem);line-height:.88;letter-spacing:-.085em;max-width:13ch;margin:3rem 0 3.5rem}
+  .index-cover h1 em{color:var(--signal);font-style:normal}
+  .index-intro{display:grid;grid-template-columns:minmax(0,1fr) 13rem;gap:3rem;border-top:1px solid var(--ink);padding-top:1.2rem}
+  .index-intro>p:first-child{font-size:clamp(1.25rem,2vw,1.9rem);line-height:1.3;max-width:47rem}
+  .index-intro .mono{color:var(--muted);line-height:1.65;border-left:1px solid var(--rule);padding-left:1.25rem}
+  .flagship-band{background:var(--ink);color:var(--paper-light);padding-block:clamp(3rem,5vw,5rem) clamp(4rem,7vw,7rem)}
+  .section-rail{color:var(--signal-bright);border-color:#56717c}
+  .flagship-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,6rem);padding-block:clamp(3rem,6vw,6rem)}
+  .flagship-copy{display:flex;flex-direction:column;align-items:start}
+  .flagship-copy .eyebrow{color:var(--signal-bright)}
+  .flagship-copy h2{font-size:clamp(4rem,7vw,8rem);line-height:.88;letter-spacing:-.08em;max-width:11ch;margin:2rem 0}
+  .period{color:var(--signal-bright)}
+  .flagship-headline{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.6rem);font-weight:600;line-height:1.1;letter-spacing:-.045em;max-width:23ch}
+  .flagship-summary{color:#b8cbd1;font-size:1.05rem;line-height:1.45;max-width:38rem;margin:1.4rem 0 2.4rem}
+  .flagship-actions{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:auto}
+  .flagship-actions a{display:inline-flex;justify-content:space-between;gap:2rem;border-bottom:2px solid var(--signal-bright);padding:.5rem 0;color:#fff;font-family:var(--font-mono);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  .flagship-actions a:hover{color:var(--signal-bright)}
+  .system-portrait{min-height:29rem;display:flex;flex-direction:column;border:1px solid #55717c;background:radial-gradient(circle at 50% 52%,#183b46 0,#11252f 38%,#0c1722 72%);position:relative;overflow:hidden}
+  .system-portrait::before{content:'';position:absolute;inset:0;background-image:linear-gradient(#6fa0a518 1px,transparent 1px),linear-gradient(90deg,#6fa0a518 1px,transparent 1px);background-size:34px 34px}
+  .portrait-top,.portrait-base{z-index:1;display:flex;justify-content:space-between;gap:.6rem;padding:1rem;color:#b8ced4}
+  .portrait-top{border-bottom:1px solid #55717c}
+  .portrait-base{margin-top:auto;border-top:1px solid #55717c;color:#e9fafa}
+  .portrait-base span:nth-child(even){color:var(--signal-bright)}
+  .portrait-orbit{z-index:1;width:min(70%,19rem);aspect-ratio:1;margin:auto;border:1px solid #68b8be88;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 0 3rem #49d6d00a,0 0 0 6rem #49d6d006}
+  .portrait-orbit::before,.portrait-orbit::after{content:'';position:absolute;inset:17%;border:1px dashed #68b8be88;border-radius:50%}.portrait-orbit::after{inset:37%;border:1px solid var(--signal-bright);background:#0c1722}
+  .orbit-center{z-index:2;color:var(--signal-bright);font-family:var(--font-display);font-size:4rem;line-height:1}
+  .orbit-label{position:absolute;z-index:2;background:#0c1722;border:1px solid #68b8be;padding:.3rem .5rem;color:#dffbfa;font-family:var(--font-mono);font-size:.67rem;letter-spacing:.06em}
+  .orbit-one{top:0;left:13%}.orbit-two{right:-8%;top:33%}.orbit-three{bottom:5%;right:4%}.orbit-four{bottom:18%;left:-9%}
+  .flagship-highlights{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #55717c}
+  .flagship-highlights>div{padding:1.2rem 1.2rem 0 0}.flagship-highlights>div+div{border-left:1px solid #55717c;padding-left:1.2rem}
+  .flagship-highlights span{color:var(--signal-bright)}.flagship-highlights p{margin-top:.9rem;font-size:1.05rem;line-height:1.4;max-width:25rem}
+  .project-list{padding-block:clamp(5rem,8vw,9rem)}
+  .list-head{border-top:2px solid var(--ink);padding-top:.8rem;margin-bottom:3rem}
+  .list-head h2{font-size:clamp(3rem,5.8vw,6rem);letter-spacing:-.07em;line-height:.95;max-width:15ch;margin:1.5rem 0 0}
+  .project-row{display:grid;grid-template-columns:5rem 1fr 2rem;gap:1rem;border-top:1px solid var(--ink);padding:1.5rem 0 2rem}
+  .project-row:last-child{border-bottom:1px solid var(--ink)}
+  .row-number{color:var(--signal);font-size:1rem}.row-meta{display:flex;gap:1rem;justify-content:space-between;color:var(--muted)}
+  .row-main h3{font-size:clamp(2.5rem,4vw,4.5rem);letter-spacing:-.065em;line-height:.95;margin:.75rem 0;max-width:22ch}.row-main h3 a:hover{text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:.1em}
+  .row-main>p{color:var(--muted);font-size:1.03rem;line-height:1.45;max-width:45rem}
+  .row-arrow{font-size:2rem;line-height:1;color:var(--signal)}
+  @media(max-width:900px){.flagship-grid{grid-template-columns:1fr}.system-portrait{min-height:24rem}.flagship-copy h2{max-width:18ch}}
+  @media(max-width:600px){.index-cover h1{font-size:clamp(3.25rem,12vw,5rem);margin:2.5rem 0}.index-intro{grid-template-columns:1fr;gap:1.2rem}.index-intro .mono{border-left:0;border-top:1px solid var(--rule);padding:1rem 0 0}.flagship-copy h2{font-size:clamp(3.6rem,14vw,5.8rem)}.portrait-base{font-size:.55rem}.flagship-highlights{grid-template-columns:1fr}.flagship-highlights>div,.flagship-highlights>div+div{border-left:0;border-bottom:1px solid #55717c;padding:1rem 0}.project-row{grid-template-columns:2rem 1fr 1.2rem;gap:.6rem}.row-main h3{font-size:2.25rem}.row-meta{flex-direction:column;gap:.15rem}.row-arrow{font-size:1.4rem}}
 </style>

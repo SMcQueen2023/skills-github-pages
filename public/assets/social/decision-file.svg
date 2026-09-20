@@ -1,12 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Scott McQueen — Decision File</title>
-  <desc id="desc">Editorial graphic for Scott McQueen's business intelligence, reporting, automation and technical delivery work.</desc>
-  <rect width="1200" height="630" fill="#efede5"/>
-  <rect x="0" y="0" width="1200" height="18" fill="#171b1a"/>
-  <text x="66" y="91" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="3" fill="#171b1a">SCOTT McQUEEN / DECISION FILE</text>
-  <path d="M66 122H1134M66 505H1134" stroke="#171b1a" stroke-width="2"/>
-  <text x="58" y="275" font-family="Georgia,serif" font-size="112" fill="#171b1a">I make the numbers</text>
-  <text x="58" y="405" font-family="Georgia,serif" font-style="italic" font-size="128" fill="#eb4b31">hold up.</text>
-  <text x="66" y="556" font-family="Arial,sans-serif" font-size="25" letter-spacing="1" fill="#171b1a">BI  /  REPORTING  /  AUTOMATION  /  TECHNICAL DELIVERY</text>
-  <circle cx="1097" cy="84" r="20" fill="#eb4b31"/>
+  <title id="title">Scott McQueen — Business intelligence and technical delivery</title>
+  <desc id="desc">Graphite and teal graphic reading Make the numbers hold up.</desc>
+  <defs>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#2B4856" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0C1722"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".55"/>
+  <path d="M62 112H1138M62 515H1138" stroke="#6D929D" stroke-width="2"/>
+  <rect x="63" y="57" width="16" height="16" rx="2" fill="none" stroke="#49D6D0" stroke-width="3" transform="rotate(45 71 65)"/>
+  <text x="104" y="75" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" letter-spacing="1" fill="#F2F6F7">SCOTT McQUEEN</text>
+  <text x="1138" y="74" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="3" fill="#7CE4E0">BI / AUTOMATION / DELIVERY</text>
+  <text x="60" y="280" font-family="Arial,Helvetica,sans-serif" font-size="100" font-weight="700" letter-spacing="-6" fill="#F2F6F7">Make the numbers</text>
+  <text x="60" y="403" font-family="Arial,Helvetica,sans-serif" font-size="124" font-weight="700" letter-spacing="-7" fill="#49D6D0">hold up.</text>
+  <text x="66" y="567" font-family="Arial,Helvetica,sans-serif" font-size="23" letter-spacing="1" fill="#C1D5DA">REPORTING  /  RECONCILIATION  /  PORTFOLIO GOVERNANCE</text>
+  <circle cx="1120" cy="546" r="7" fill="#49D6D0"/>
 </svg>
