@@ -1,79 +1,91 @@
 ---
 import Base from '../layouts/Base.astro';
-
+import { profile } from '../data/profile';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const practices = [
+  {
+    label: 'Business judgment',
+    title: 'Make the technical decision useful to the business.',
+    body: 'In the BusinessObjects assessment, I combined proof-of-concept reports, query plans, and Power BI Service testing to explain where the proposed migration would break down. I recommended a different approach, which the VP accepted.',
+    href: '/work/reporting-modernization/#decision',
+    link: 'Read the platform decision',
+  },
+  {
+    label: 'People and delivery',
+    title: 'Help the people doing the work make progress.',
+    body: 'For the SAS-to-Azure effort, I secured sponsorship and led a cross-team group through inventory, planning, and early proofs of concept. Power BI office hours gave report owners a place to develop reports and resolve questions together.',
+    href: '/work/sas-to-azure-migration/#collaboration',
+    link: 'See the collaboration',
+  },
+  {
+    label: 'Quality and accountability',
+    title: 'Establish what the data can support.',
+    body: 'In an external ministry analytics engagement, I rebuilt inconsistent workbook data and checked the records before presenting the findings. I kept unresolved source totals visible and recommended a simpler process for recurring reporting.',
+    href: '/work/external-analytics-enablement/#validation',
+    link: 'Review the validation work',
+  },
+];
 ---
 
-<Base title="Approach — Scott McQueen" description="How Scott McQueen handles metric definitions, automation controls, technical delivery, and AI-assisted development." current="about">
+<Base title="Approach — Scott McQueen | Leading analytics delivery" description="How Scott McQueen combines business judgment, cross-team coordination, technical assessment, and practical coaching to lead analytics delivery." current="about">
   <header class="page-lead wrap">
-    <div class="lead-meta"><p class="eyebrow">Approach / 04</p><span class="mono">Scope / design / delivery</span></div>
-    <h1>Understand the problem. Build for the handoff.</h1>
-    <p class="lead-text">I start with the business problem, the people affected, and the expected benefit. From there I research the current process, design and build the solution, monitor it, and hand it over with room to improve.</p>
+    <div class="lead-meta"><p class="eyebrow">Approach</p><span class="mono">Judgment / collaboration / follow-through</span></div>
+    <h1>Lead the work. Help others deliver.</h1>
+    <p class="lead-text">I am a senior BI and analytics professional who works between business stakeholders and technical teams. I turn business needs into reporting decisions, coordinate the people involved, and stay close enough to the implementation to test whether it works.</p>
   </header>
 
-  <section class="editorial-section wrap" aria-labelledby="method-heading">
+  <section class="editorial-section wrap" aria-labelledby="practice-heading">
     <div class="editorial-grid">
-      <p class="eyebrow">01 / Working method</p>
+      <p class="eyebrow">Leadership in practice</p>
       <div>
-        <h2 id="method-heading">How I move the work forward.</h2>
-        <div class="editorial-copy method-intro">
-          <p>First I establish what needs to change for the business and who will use the result. Then I examine the current data and workflow: source fields, report formulas, spreadsheets, and manual steps.</p>
-          <p>The design and definitions take shape together. During development I check outputs against source records, monitor the result after release, and work with its owners on the next iteration.</p>
-        </div>
-        <div class="method-sequence" role="group" aria-label="Five steps in my delivery method">
-          <div><span class="mono">01</span><strong>Scope</strong><p>Define the problem, people affected, and expected benefit.</p></div>
-          <div><span class="mono">02</span><strong>Research and design</strong><p>Analyze the current process and data; design the model and checks.</p></div>
-          <div><span class="mono">03</span><strong>Development</strong><p>Build, test, and coordinate dependencies with the teams involved.</p></div>
-          <div><span class="mono">04</span><strong>Monitoring</strong><p>Watch output quality and how the solution works in use.</p></div>
-          <div><span class="mono">05</span><strong>Handoff and iteration</strong><p>Transfer ownership and adjust as requirements change.</p></div>
+        <h2 id="practice-heading">The responsibility behind the analysis.</h2>
+        <p class="practice-intro">My leadership experience comes through project ownership, technical direction, and practical coaching. These examples show what that responsibility involved.</p>
+        <div class="practice-list">
+          {practices.map((practice) => (
+            <article>
+              <p class="mono">{practice.label}</p>
+              <div><h3>{practice.title}</h3><p>{practice.body}</p><a class="action-link" href={`${base}${practice.href}`}>{practice.link} <span aria-hidden="true">↗</span></a></div>
+            </article>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <section class="editorial-section wrap" aria-labelledby="principles-heading">
-    <div class="editorial-grid">
-      <p class="eyebrow">02 / Decisions in practice</p>
-      <div>
-        <h2 id="principles-heading">Where I spend the extra time.</h2>
-        <div class="record-list principles">
-          <article class="record-row"><span class="mono">Platform fit</span><div><h3>Test the target against the workload.</h3><p>Power BI proofs of concept, service stress tests, and query plans exposed constraints in the proposed SAP BusinessObjects migration.</p></div><a class="action-link" href={`${base}/work/reporting-modernization/`}>Reporting <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Automation</span><div><h3>Replace thirty manual calculations with a repeatable run.</h3><p>Monthly 401(k) contribution files are aggregated and reconciled automatically; the report shows whether totals balance.</p></div><a class="action-link" href={`${base}/work/reconciliation-automation/`}>Automation <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Signals</span><div><h3>Show what feeds the status.</h3><p>Intake, milestones, and timing data give a portfolio measure something concrete to stand on.</p></div><a class="action-link" href={`${base}/work/portfolio-governance-platform/`}>Portfolio <span aria-hidden="true">↗</span></a></article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ai-section" id="ai-method" aria-labelledby="ai-heading">
+  <section class="working-section" aria-labelledby="working-heading">
     <div class="wrap editorial-grid">
-      <p class="eyebrow">03 / AI-assisted development</p>
+      <p class="eyebrow">Working with a team</p>
       <div>
-        <h2 id="ai-heading">How AI fits into the build.</h2>
+        <h2 id="working-heading">A working session can move the work forward.</h2>
         <div class="editorial-copy">
-          <p>I have used Gemini, GitHub Copilot, and Codex to explore implementation options, write code, and look for issues. I set the requirements, choose the architecture, review the changes, and check the behavior.</p>
-          <p>Codex assisted with this site's Astro migration, pages, and diagrams. The project descriptions were checked against existing public material and firsthand project details, and the generated routes and assets were tested locally. AI suggestions still need review against the requirements and source claims.</p>
+          <p>I have hosted weekly Power BI, SQL, and SAS office hours, using live development and practical questions to help colleagues build self-service capability. Teaching the next step is part of the delivery work.</p>
+          <p>The same approach carries into stakeholder conversations: establish the business need, make the tradeoffs clear, and identify the decision or action that lets the team proceed.</p>
         </div>
-        <a class="action-link" href={`${base}/work/`}>View the work <span aria-hidden="true">↗</span></a>
+        <a class="action-link" href={`${base}/experience/`}>Explore my experience <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-section wrap ai-section" id="ai-method" aria-labelledby="ai-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">Development practice</p>
+      <div>
+        <h2 id="ai-heading">AI assistance, with ownership of the result.</h2>
+        <div class="editorial-copy">
+          <p>I use tools such as GitHub Copilot, Gemini, and Codex to explore options, implement changes, and look for issues. I set requirements, choose the architecture, review changes, and check behavior against the intended result.</p>
+          <p>This portfolio includes AI-assisted development. I review suggested code against source definitions, validation checks, and the team's ability to operate the result.</p>
+        </div>
+        <a class="action-link" href={profile.linkedin}>Discuss an opportunity <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </section>
 </Base>
 
 <style>
-  .editorial-grid h2{max-width:22ch;font-size:clamp(2.35rem,3.5vw,3.75rem);letter-spacing:-.055em}
-  .method-intro{margin-top:1.25rem}
-  .method-sequence{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:2.25rem}
-  .method-sequence>div{min-height:11rem;padding:1rem .8rem 1rem 0;border-right:1px solid var(--rule)}
-  .method-sequence>div+div{padding-left:.8rem}.method-sequence>div:last-child{border-right:0}
-  .method-sequence .mono{display:block;color:var(--signal);margin-bottom:2.4rem}
-  .method-sequence strong{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-size:1.18rem;letter-spacing:-.035em}
-  .method-sequence p{font-size:.88rem;color:var(--muted);margin-top:.4rem;line-height:1.35}
-  .principles{margin-top:1.75rem}.principles .record-row p{max-width:34rem;margin-top:.6rem;line-height:1.4}
-  .principles .action-link{white-space:nowrap}
-  .ai-section{background:var(--ink);color:var(--paper-light);padding-block:clamp(4rem,6vw,6rem)}
-  .ai-section .eyebrow{color:#66d5d7}.ai-section .editorial-copy{margin-top:1.25rem}.ai-section .editorial-copy p{color:#c4d4d9}
-  .ai-section .action-link{margin-top:1.8rem;border-color:var(--paper-light)}.ai-section .action-link:hover{color:#66d5d7;border-color:#66d5d7}
-  @media(max-width:900px){.method-sequence{grid-template-columns:repeat(3,1fr)}.method-sequence>div:nth-child(3){border-right:0}.method-sequence>div:nth-child(n+4){border-top:1px solid var(--rule)}.method-sequence>div:nth-child(4){padding-left:0}}
-  @media(max-width:600px){.method-sequence{grid-template-columns:1fr 1fr}.method-sequence>div:nth-child(3){border-right:1px solid var(--rule)}.method-sequence>div:nth-child(even){border-right:0}.method-sequence>div:nth-child(n+3){border-top:1px solid var(--rule)}.method-sequence>div:nth-child(odd){padding-left:0}.method-sequence .mono{margin-bottom:2rem}.principles .record-row{grid-template-columns:1fr;gap:.55rem}.principles .record-row a{grid-column:auto}}
+  .page-lead h1{max-width:19ch;font-size:clamp(2.8rem,5.5vw,4.8rem)}
+  .practice-intro{max-width:49rem;margin-top:1.25rem;font-size:1.1rem;color:var(--muted)}
+  .practice-list{margin-top:2rem;border-top:2px solid var(--ink)}.practice-list article{display:grid;grid-template-columns:minmax(9rem,.3fr) minmax(0,1fr);gap:2rem;padding:2rem 0;border-bottom:1px solid var(--rule)}
+  .practice-list article>.mono{color:var(--signal);max-width:20ch}.practice-list h3{max-width:30ch;font-size:clamp(1.6rem,2.6vw,2.6rem);letter-spacing:-.04em}.practice-list article div>p{max-width:47rem;margin-top:1rem;font-size:1.05rem}.practice-list .action-link{margin-top:1.1rem}
+  .working-section{background:#dfeaed;padding-block:clamp(3rem,5vw,5rem)}.working-section .editorial-copy,.ai-section .editorial-copy{margin-top:1.5rem;font-size:1.1rem;max-width:48rem}.working-section .action-link,.ai-section .action-link{margin-top:1.5rem}.ai-section{border-top:0}
+  @media(max-width:700px){.practice-list article{grid-template-columns:1fr;gap:.7rem}.practice-list article>.mono{max-width:none}.page-lead .lead-meta{flex-wrap:wrap}}
 </style>

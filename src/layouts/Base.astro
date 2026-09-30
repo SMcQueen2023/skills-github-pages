@@ -10,7 +10,7 @@ interface Props {
 
 const {
   title,
-  description = 'Scott McQueen works across business intelligence, reporting modernization, automation, and technical delivery.',
+  description = 'Scott McQueen connects business priorities, technical decisions, and team capability to lead analytics delivery.',
   current,
   image,
 } = Astro.props;
@@ -62,16 +62,17 @@ const links = [
         </details>
       </div>
     </header>
-    <main id="main"><slot /></main>
+    <main id="main" tabindex="-1"><slot /></main>
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div>
           <p class="footer-name">Scott McQueen<span class="signal-dot" aria-hidden="true">.</span></p>
-          <p>Business intelligence / reporting / automation / technical delivery</p>
+          <p>Analytics leadership · Technical delivery · Data & engineering</p>
         </div>
         <div class="footer-links">
           <a href={`${base}/work/`}>Selected work <span aria-hidden="true">↗</span></a>
-          <a href={`${base}/projects/`}>Projects <span aria-hidden="true">↗</span></a>
+          <a href={`${base}/contact/`}>Contact <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/smmcqueen/">Request my résumé on LinkedIn <span aria-hidden="true">↗</span></a>
           <a href="https://www.linkedin.com/in/smmcqueen/">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
         <p class="footer-end">© {new Date().getFullYear()} Scott McQueen<br />Business intelligence, automation, and technical delivery.</p>

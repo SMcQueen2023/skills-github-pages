@@ -3,7 +3,7 @@
   <desc id="description">A schematic of SharePoint intake leading to a model of project, time, milestone, and status attributes. Timeliness, progression, and delivery behavior feed understandable DAX measures and Power BI executive views. The diagram does not claim a particular formula, score, threshold, or outcome metric.</desc>
   <rect width="1200" height="720" fill="#F2F6F7"/>
   <g fill="#0C1722" font-family="Arial, Helvetica, sans-serif">
-    <text x="48" y="53" font-size="16" font-weight="700" letter-spacing="3">DECISION FILE 03 / GOVERNANCE</text>
+    <text x="48" y="53" font-size="16" font-weight="700" letter-spacing="3">PORTFOLIO REPORTING / GOVERNANCE</text>
     <text x="48" y="128" font-size="58" font-weight="800" letter-spacing="-2">Status from evidence</text>
     <text x="49" y="167" font-size="21">A portfolio view whose signals can be traced back to work.</text>
   </g>
@@ -56,6 +56,6 @@
   <path d="M379 377H400M393 370L400 377L393 384M824 377H851M844 370L851 377L844 384" fill="none" stroke="#0B707C" stroke-width="3"/>
   <g fill="#0C1722" font-family="Arial, Helvetica, sans-serif">
     <text x="48" y="668" font-size="15" letter-spacing="1">SANITIZED MODEL SCHEMATIC · NO FORMULA, SCORE, OR THRESHOLD IMPLIED</text>
-    <text x="1149" y="668" text-anchor="end" font-size="15" font-weight="700">SM / 03</text>
+    <text x="1149" y="668" text-anchor="end" font-size="15" font-weight="700">SM</text>
   </g>
 </svg>

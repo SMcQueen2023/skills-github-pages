@@ -1,54 +1,39 @@
 ---
 import Base from '../layouts/Base.astro';
-
+import { profile } from '../data/profile';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<Base title="Contact — Scott McQueen" description="Connect with Scott McQueen about business intelligence, reporting, automation, and technical delivery roles." current="contact">
+<Base title="Contact — Scott McQueen | Analytics leadership and delivery" description="Connect with Scott McQueen on LinkedIn about BI and Analytics Manager, Technical Project Manager, or Analytics Engineer opportunities. Request a résumé directly." current="contact">
   <header class="page-lead wrap">
-    <div class="lead-meta"><p class="eyebrow">Contact / 06</p><span class="mono">LinkedIn is the best route</span></div>
-    <h1>Reach me on LinkedIn.</h1>
-    <p class="lead-text">I am interested in business intelligence, reporting, automation, and technical delivery lead or manager roles. Send me a note on LinkedIn; I can share my resume and talk through the work shown here.</p>
+    <div class="lead-meta"><p class="eyebrow">Contact</p><span class="mono">Let's discuss the work</span></div>
+    <h1>Start a conversation on LinkedIn.</h1>
+    <p class="lead-text">I welcome conversations about BI and Analytics Manager, Technical Project Manager, and Analytics Engineer opportunities where business judgment and technical delivery matter.</p>
+    <a class="button contact-primary" href={profile.linkedin}>Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+    <p class="resume-note">For my résumé or more detail on an engagement, <a href={profile.linkedin}>reach out via LinkedIn</a>.</p>
   </header>
 
-  <section class="editorial-section wrap" aria-labelledby="channels-heading">
+  <section class="editorial-section wrap" aria-labelledby="conversation-heading">
     <div class="editorial-grid">
-      <p class="eyebrow">01 / Find me</p>
+      <p class="eyebrow">A useful starting point</p>
       <div>
-        <h2 id="channels-heading">Profiles and projects.</h2>
-        <div class="contact-list channels">
-          <a href="https://www.linkedin.com/in/smmcqueen/"><span class="mono">01 / Contact</span><strong>LinkedIn</strong><span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/SMcQueen2023"><span class="mono">02 / Code</span><strong>GitHub</strong><span aria-hidden="true">↗</span></a>
-          <a href="https://gitlab.com/scottmcqueen2023"><span class="mono">03 / Code</span><strong>GitLab</strong><span aria-hidden="true">↗</span></a>
-          <a href="https://www.mcqueencloud.com/"><span class="mono">04 / Site</span><strong>McQueen Cloud Advisory</strong><span aria-hidden="true">↗</span></a>
+        <h2 id="conversation-heading">What does your analytics team need to deliver?</h2>
+        <p class="conversation-copy">Tell me about the role, the business problem, and the people who depend on the result. I can walk through how I have aligned contributors, tested platform choices, supported colleagues, and built reporting workflows.</p>
+        <div class="contact-options">
+          <a href={profile.linkedin}><span class="mono">Profile and résumé requests</span><strong>LinkedIn</strong><span aria-hidden="true">↗</span></a>
+          <a href={`${base}/work/`}><span class="mono">Enterprise contribution</span><strong>Case studies</strong><span aria-hidden="true">↗</span></a>
+          <a href={profile.github}><span class="mono">Inspectable project code</span><strong>GitHub</strong><span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="contact-tail">
-    <div class="wrap editorial-grid">
-      <p class="eyebrow">02 / Selected work</p>
-      <div><h2>What I have worked on.</h2><p>The SAP BusinessObjects migration assessment, 401(k) reconciliation automation, and Power BI portfolio reporting are three places to start.</p><a class="action-link" href={`${base}/work/`}>View work <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
 </Base>
 
 <style>
-  .page-lead{padding-bottom:clamp(2.5rem,3.5vw,3.25rem)}
-  .editorial-section{padding-block:clamp(2rem,3.5vw,3.5rem) clamp(3.5rem,6vw,5rem)}
-  .editorial-section .editorial-grid,.contact-tail .editorial-grid{gap:.85rem}
-  .editorial-section .editorial-grid h2{max-width:none;font-size:clamp(2.2rem,3.9vw,3.7rem);letter-spacing:-.055em}
-  .channels{margin-top:1.5rem}
-  .channels a{grid-template-columns:minmax(7rem,.28fr) minmax(0,1fr) auto;gap:clamp(.75rem,2vw,2rem);align-items:center;padding:clamp(1rem,1.5vw,1.3rem) .65rem;transition:background .18s ease}
-  .channels a:hover{background:#dce9ec}
-  .channels strong{font-family:var(--font-display);font-size:clamp(1.7rem,3vw,3.2rem);font-weight:600;letter-spacing:-.045em;line-height:1.08}
-  .contact-tail{background:var(--ink);color:var(--paper-light);padding-block:clamp(3rem,5vw,5rem)}
-  .contact-tail .eyebrow{color:var(--signal-bright)}
-  .contact-tail h2{font-family:var(--font-display);font-size:clamp(2.2rem,3.9vw,3.7rem);max-width:none;letter-spacing:-.055em}
-  .contact-tail p:not(.eyebrow){max-width:40rem;font-size:1.1rem;margin-top:.9rem;color:#c4d4d9}
-  .contact-tail .action-link{margin-top:1.5rem;border-color:var(--paper-light)}
-  .contact-tail .action-link:hover{color:var(--signal-bright);border-color:var(--signal-bright)}
-  @media(max-width:760px){.channels a{grid-template-columns:1fr auto;gap:.35rem 1rem}.channels a .mono{grid-column:1/-1}}
-  @media(max-width:580px){.channels strong{font-size:clamp(1.8rem,7vw,2.7rem)}.channels a span:last-child{font-size:1.5rem}}
+  .page-lead h1{max-width:18ch;font-size:clamp(2.8rem,5.5vw,4.8rem)}
+  .contact-primary{margin-top:1.8rem}.resume-note{max-width:44rem;margin-top:1.15rem;color:var(--muted);font-size:1rem}.resume-note a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+  .conversation-copy{max-width:49rem;font-size:1.15rem;margin-top:1.3rem}
+  .contact-options{margin-top:2rem;border-top:2px solid var(--ink)}.contact-options a{display:grid;grid-template-columns:minmax(10rem,.4fr) minmax(0,1fr) auto;gap:1.5rem;align-items:center;padding:1.6rem 0;border-bottom:1px solid var(--rule)}
+  .contact-options .mono{color:var(--muted);max-width:23ch}.contact-options strong{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,3rem);line-height:1.05;letter-spacing:-.04em}.contact-options a>span:last-child{font-size:1.7rem}
+  @media(max-width:600px){.contact-options a{grid-template-columns:1fr auto;gap:.5rem}.contact-options .mono{grid-column:1/-1;max-width:none}.page-lead .lead-meta{flex-wrap:wrap}}
 </style>

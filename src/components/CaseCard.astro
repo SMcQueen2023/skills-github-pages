@@ -1,0 +1,13 @@
+---
+import type { Project } from '../data/projects';
+import { sitePath } from '../lib/urls';
+interface Props { project: Project; }
+const { project } = Astro.props;
+---
+<article class="case-card">
+  <div class="case-card-meta"><span class="eyebrow">{project.context}</span><span class="case-status">{project.status}</span></div>
+  <h3><a href={sitePath(`/work/${project.slug}/`)}>{project.title}</a></h3>
+  <p class="case-card-summary">{project.summary}</p>
+  <dl><div><dt>My role</dt><dd>{project.role}</dd></div><div><dt>Result</dt><dd>{project.result}</dd></div></dl>
+  <a class="text-link case-card-link" href={sitePath(`/work/${project.slug}/`)}>Read the case <span class="sr-only">: {project.title}</span><span aria-hidden="true">↗</span></a>
+</article>

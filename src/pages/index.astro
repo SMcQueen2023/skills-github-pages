@@ -1,261 +1,70 @@
 ---
 import Base from '../layouts/Base.astro';
+import CaseCard from '../components/CaseCard.astro';
 import { featuredProjects } from '../data/projects';
-
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const casePreviews: Record<string, { kind: string; readout: string }> = {
-  'reporting-modernization': { kind: 'Platform fit', readout: 'Evidence changed the migration plan' },
-  'reconciliation-automation': { kind: 'Monthly reconciliation', readout: '30 source files, one checked total' },
-  'portfolio-governance-platform': { kind: 'Signal model', readout: 'Health follows delivery data' },
-};
+import { sitePath } from '../lib/urls';
 ---
-<Base
-  title="Scott McQueen — BI, reporting, automation and technical delivery"
-  description="Scott McQueen leads the delivery of enterprise technical solutions across business intelligence, reporting, and automation, from business question through handoff."
-  current="home"
->
-  <section class="cover wrap" aria-labelledby="cover-title">
-    <div class="cover-top">
-      <p class="cover-ident"><strong>Scott McQueen</strong></p>
-      <span class="mono">Business intelligence · Reporting · Automation · Technical delivery</span>
+<Base title="Scott McQueen — Analytics leadership & technical delivery" description="Senior analytics professional connecting business priorities, technical decisions, and team capability. Explore BI leadership, migration planning, and hands-on analytics work." current="home">
+  <section class="home-intro wrap" aria-labelledby="intro-title">
+    <div class="intro-copy">
+      <p class="eyebrow">Scott McQueen / Business intelligence & analytics</p>
+      <h1 id="intro-title">Leading analytics <em>delivery.</em></h1>
+      <p class="intro-summary">I turn business needs into reliable reporting, guide technical decisions, and help colleagues build and use analytics.</p>
+      <p class="intro-context">My foundation is senior BI and data analysis in enterprise accounting and freight reporting—with hands-on work in SQL, Power BI, Python, SAS, and Azure.</p>
+      <div class="action-group">
+        <a class="button" href="#selected-work">Explore the work <span aria-hidden="true">↗</span></a>
+        <a class="action-link" href={sitePath('/contact/')}>Discuss an opportunity <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="intro-link text-link" href="https://www.linkedin.com/in/smmcqueen/">Request my résumé on LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
-    <h1 id="cover-title">Make the numbers <em>hold up.</em></h1>
-    <div class="cover-bottom">
-      <p class="cover-descriptor">I lead the delivery of enterprise technical solutions from the first business question through build and handoff.</p>
-      <p class="cover-context">From finance metrics to reconciliation pipelines and portfolio reporting.</p>
-      <a class="action-link" href={`${base}/work/`}>Open the work <span aria-hidden="true">↗</span></a>
-    </div>
+    <aside class="intro-record" aria-label="Professional profile">
+      <p class="eyebrow">The work I bring</p>
+      <dl>
+        <div><dt>Direction</dt><dd>Business cases, platform decisions, and reporting priorities</dd></div>
+        <div><dt>People</dt><dd>Cross-team coordination, Office Hours, and live technical coaching</dd></div>
+        <div><dt>Execution</dt><dd>Migration assessment, data modeling, and analytical automation</dd></div>
+      </dl>
+      <p class="intro-fit">Interested in <strong>BI / Analytics Manager</strong>, Technical Project Manager, and Analytics Engineer opportunities.</p>
+      <a class="text-link" href="https://www.linkedin.com/in/smmcqueen/">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+    </aside>
   </section>
 
-  <section class="thesis" aria-labelledby="thesis-heading">
-    <div class="wrap">
-      <div class="thesis-head">
-        <p class="eyebrow">01 / The operating pattern</p>
-        <h2 id="thesis-heading">The migration test changed the plan.</h2>
-      </div>
-      <div class="trace-grid" role="group" aria-label="SAP BusinessObjects to Power BI platform decision sequence">
-        <div class="trace-step">
-          <p class="mono">01 / Starting point</p>
-          <h3>Repair the<br />proof</h3>
-          <p>Fix broken Power BI prototypes and migrate a small set of BusinessObjects reports to test the path.</p>
-        </div>
-        <div class="trace-step">
-          <p class="mono">02 / Evidence</p>
-          <h3>Test the<br />target</h3>
-          <p>Use EXPLAIN plans, Power BI Service stress tests, and dependency analysis to examine what could scale.</p>
-        </div>
-        <div class="trace-step">
-          <p class="mono">03 / Constraint</p>
-          <h3>Find the<br />limit</h3>
-          <p>Data volume, semantic complexity, and upstream constraints ruled out Power BI as a standalone target.</p>
-        </div>
-        <div class="trace-step">
-          <p class="mono">04 / Decision</p>
-          <h3>Change<br />course</h3>
-          <p>The VP accepted the recommendation, and I became Accounting's business lead for enterprise IT development.</p>
-        </div>
-      </div>
-      <div class="thesis-case-rail">
-        <div class="thesis-case-label mono"><span>Decision file 01</span><strong>SAP BusinessObjects → Power BI</strong></div>
-        <p>The proof of concept worked for a handful of reports. The evidence showed why it could not carry the whole migration.</p>
-        <a class="thesis-case-link" href={`${base}/work/reporting-modernization/`}>Read the case <span aria-hidden="true">↗</span></a>
+  <nav class="review-paths wrap" aria-label="Explore the evidence by focus">
+    <span class="eyebrow">Explore by focus</span>
+    <a href={sitePath('/work/#analytics-leadership')}>Analytics leadership <span aria-hidden="true">↗</span></a>
+    <a href={sitePath('/work/#technical-delivery')}>Technical delivery <span aria-hidden="true">↗</span></a>
+    <a href={sitePath('/work/#data-engineering')}>Data & engineering <span aria-hidden="true">↗</span></a>
+  </nav>
+
+  <section class="leadership-evidence" aria-labelledby="leadership-heading">
+    <div class="wrap evidence-layout">
+      <div><p class="eyebrow">Leadership in practice</p><h2 id="leadership-heading">Improve the work.<br />Help others do it.</h2></div>
+      <div class="evidence-items">
+        <article><h3>Make analytics useful to leadership</h3><p>I built and maintain a cost-center scorecard used by senior Accounting and Tax leaders to monitor cost-saving initiatives.</p></article>
+        <article><h3>Build colleagues’ capability</h3><p>I hosted weekly Power BI, SQL, and SAS Office Hours, working through reports and technical questions with colleagues in live sessions.</p><a class="text-link" href={sitePath('/work/sas-to-azure-migration/#collaboration')}>See coaching in a migration effort <span aria-hidden="true">↗</span></a></article>
       </div>
     </div>
   </section>
 
-  <section class="ledger wrap" aria-labelledby="ledger-heading">
-    <div class="ledger-heading">
-      <p class="eyebrow">02 / Scale and limits</p>
-      <h2 id="ledger-heading">Two numbers worth explaining.</h2>
-    </div>
-    <div class="ledger-row">
-      <span class="ledger-number">170</span>
-      <div><h3>SAS reports inventoried</h3><p>At Freight, a cross-team effort scoped the SAS-to-Azure/Power BI migration. The inventory describes the work ahead; migration was still at proof-of-concept stage when I left.</p></div>
-      <a class="action-link" href={`${base}/work/sas-to-azure-migration/`}>Migration file <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="ledger-row">
-      <span class="ledger-number">30</span>
-      <div><h3>Source files reconciled each month</h3><p>The 401(k) workflow aggregated contribution totals from 30 files and checked the balance automatically, replacing manual calculations.</p></div>
-      <a class="action-link" href={`${base}/work/reconciliation-automation/`}>Automation file <span aria-hidden="true">↗</span></a>
+  <section id="selected-work" class="section-space wrap" aria-labelledby="work-heading">
+    <div class="section-heading-row"><div><p class="eyebrow">Selected professional work</p><h2 id="work-heading">The responsibility.<br />The decision. The result.</h2></div><p>Four cases show how I align people, evaluate technical options, and make reporting more reliable. Each opens with my role and the work’s status.</p></div>
+    <div class="case-card-grid">{featuredProjects.map(project => <CaseCard project={project} />)}</div>
+    <a class="action-link section-action" href={sitePath('/work/')}>All professional work <span aria-hidden="true">↗</span></a>
+  </section>
+
+  <section class="career-band" aria-labelledby="career-heading">
+    <div class="wrap career-layout">
+      <div><p class="eyebrow">Experience & credentials</p><h2 id="career-heading">Business context.<br />Technical grounding.</h2><p>My work spans enterprise accounting, freight reporting, and an external analytics engagement. I have served as project lead, team Scrum Master, and Accounting business lead while staying close to the data and implementation.</p><a class="text-link" href={sitePath('/experience/')}>Explore my experience ↗</a></div>
+      <div class="qualification-record"><p class="eyebrow">Selected credentials</p><ul><li><strong>Project Management Professional</strong><span>PMI / PMP</span></li><li><strong>Power BI Data Analyst Associate</strong><span>Microsoft</span></li><li><a class="text-link" href="https://learn.microsoft.com/en-us/users/scottmcqueen-9826/credentials/f7ee0ff733a8bfdf"><strong>Fabric Data Engineer Associate ↗</strong></a><span>Microsoft / Received September 25, 2026</span></li></ul><a class="text-link" href={sitePath('/certifications/')}>Credential details & verification ↗</a></div>
     </div>
   </section>
 
-  <section class="work-section wrap" aria-labelledby="work-heading">
-    <div class="work-heading">
-      <p class="eyebrow">03 / Selected work</p>
-      <h2 id="work-heading">Three delivery cases. One standard: the result has to hold up.</h2>
-      <p>Finance reporting, monthly 401(k) reconciliation, and portfolio governance solve different problems. Each project shows the decisions behind the result.</p>
-    </div>
-    {featuredProjects.map((project) => (
-      <article class={`featured-case featured-case--${project.slug}`}>
-        <a class="featured-case__link" href={`${base}/work/${project.slug}/`} aria-label={`Open ${project.title} case`}>
-          <div class="featured-case__copy">
-            <p class="featured-case__meta mono"><span>Project {project.number}</span><span>{project.lane}</span></p>
-            <h3>{project.title}</h3>
-            <p class="featured-case__headline">{project.headline}</p>
-            <p class="featured-case__summary">{project.summary}</p>
-            <span class="featured-case__cta">Read the case <span aria-hidden="true">↗</span></span>
-          </div>
-          <div class="featured-case__preview" aria-hidden="true">
-            <div class="featured-case__preview-head mono"><span>{casePreviews[project.slug].kind}</span><span>{project.number} / {project.artifact.length} stages</span></div>
-            <div class="featured-case__stages">
-              {project.artifact.map((stage, index) => (
-                <div class="featured-case__stage">
-                  <span class="featured-case__stage-index mono">0{index + 1}</span>
-                  <span class="featured-case__stage-text"><strong>{stage.label.replace(/^\d+\s*\/\s*/, '')}</strong><small>{stage.detail}</small></span>
-                </div>
-              ))}
-            </div>
-            <p class="featured-case__readout mono"><span class="featured-case__pulse"></span>{casePreviews[project.slug].readout}</p>
-          </div>
-        </a>
-      </article>
-    ))}
-    <div class="work-all"><a class="action-link" href={`${base}/work/`}>View all work <span aria-hidden="true">↗</span></a></div>
+  <section class="technical-entry wrap" aria-labelledby="technical-heading">
+    <div><p class="eyebrow">Inspect the implementation</p><h2 id="technical-heading">Go from the case to the code.</h2></div>
+    <div><p>Explore public engineering projects alongside the professional cases. Source links and technical notes identify independent builds, demonstrations, and academic work.</p><a class="action-link" href={sitePath('/projects/finance-analytics-platform/#artifacts')}>Inspect SQL & data tests <span aria-hidden="true">↗</span></a></div>
   </section>
 
-  <section class="project-feature" aria-labelledby="project-feature-heading">
-    <div class="wrap project-feature-grid">
-      <div class="project-feature-copy">
-        <p class="eyebrow">04 / Independent project</p>
-        <h2 id="project-feature-heading">Everything is <em>Random.</em></h2>
-        <p>A public browser toolbox for decisions, games, creative work, test data, and credentials. I built the product and the rules underneath each result.</p>
-        <a class="action-link" href={`${base}/projects/everything-is-random/`}>Explore the flagship project <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="project-feature-console" aria-hidden="true">
-        <div class="project-feature-console-top mono"><span>EIR / four example tools</span><span>01 / featured</span></div>
-        <div class="project-feature-orbit"><span>?</span></div>
-        <span class="project-feature-tag project-feature-tag--one mono">Dice</span>
-        <span class="project-feature-tag project-feature-tag--two mono">Words</span>
-        <span class="project-feature-tag project-feature-tag--three mono">UUID</span>
-        <span class="project-feature-tag project-feature-tag--four mono">Teams</span>
-        <div class="project-feature-console-foot mono"><span>Choose a tool</span><span>Generate</span><span>Use the result</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="method-band" aria-labelledby="method-heading">
-    <div class="wrap">
-      <div class="method-heading">
-        <p class="eyebrow">05 / How I deliver</p>
-        <h2 id="method-heading">How I run the work.</h2>
-      </div>
-      <div class="method-steps">
-        <div class="method-step"><p class="folio">01</p><h3>Scope</h3><p>Understand the problem, who it affects, and the benefit of solving it.</p></div>
-        <div class="method-step"><p class="folio">02</p><h3>Research and design</h3><p>Trace the current process, test assumptions, and define the data and controls.</p></div>
-        <div class="method-step"><p class="folio">03</p><h3>Develop</h3><p>Build the solution and coordinate the people and systems it depends on.</p></div>
-        <div class="method-step"><p class="folio">04</p><h3>Monitor</h3><p>Check real outputs, watch for drift, and resolve what the first runs reveal.</p></div>
-        <div class="method-step"><p class="folio">05</p><h3>Hand off or iterate</h3><p>Document the operating path and refine it as people use it.</p></div>
-      </div>
-      <div class="method-end">
-        <div><h3>AI-assisted development, openly.</h3><p>I use Gemini, GitHub Copilot, and Codex for exploration, implementation drafts, and review. I decide the architecture, test the output, and own what ships.</p></div>
-        <div><p>I review suggested code against source definitions, validation checks, and the team's ability to operate the result.</p><a class="action-link" href={`${base}/about/#ai-method`}>Read my approach <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="closing wrap" aria-labelledby="closing-heading">
-    <p class="eyebrow">06 / Next conversation</p>
-    <h2 id="closing-heading">Need a lead who can get into the details?</h2>
-    <a class="action-link" href={`${base}/contact/`}>Start a conversation <span aria-hidden="true">↗</span></a>
+  <section class="contact-invitation wrap" aria-labelledby="contact-heading">
+    <p class="eyebrow">Let’s talk</p><h2 id="contact-heading">Looking for someone to lead analytics delivery?</h2><p>Let’s discuss the team, the reporting challenges, and the outcomes you need.</p><div class="action-group"><a class="button" href={sitePath('/contact/')}>Discuss an opportunity <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/smmcqueen/">LinkedIn ↗</a></div>
   </section>
 </Base>
-
-<style>
-  .project-feature { background: #dfeaed; padding-block: clamp(4rem, 7vw, 7rem); }
-  .project-feature-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
-  .project-feature-copy h2 { max-width: 12ch; margin-top: 1.1rem; font-size: clamp(3.7rem, 6.5vw, 7.2rem); letter-spacing: -.075em; line-height: .9; }
-  .project-feature-copy h2 em { color: var(--signal); font-style: normal; }
-  .project-feature-copy > p:not(.eyebrow) { max-width: 36rem; margin-top: 1.6rem; font-size: clamp(1.1rem, 1.6vw, 1.45rem); line-height: 1.35; }
-  .project-feature-copy .action-link { margin-top: 2rem; }
-  .project-feature-console { position: relative; min-height: 460px; overflow: hidden; border: 1px solid var(--ink); background: #0c1722; color: #e7f4f5; }
-  .project-feature-console::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(#67afbd19 1px, transparent 1px), linear-gradient(90deg, #67afbd19 1px, transparent 1px); background-size: 32px 32px; }
-  .project-feature-console-top, .project-feature-console-foot { position: absolute; z-index: 2; left: 1.2rem; right: 1.2rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--signal-bright); }
-  .project-feature-console-top { top: 1.1rem; padding-bottom: .6rem; border-bottom: 1px solid #56717c; }
-  .project-feature-console-foot { bottom: 1.1rem; padding-top: .6rem; border-top: 1px solid #56717c; font-size: .62rem; }
-  .project-feature-orbit { position: absolute; inset: 50% auto auto 50%; width: 250px; height: 250px; display: grid; place-items: center; transform: translate(-50%, -50%); border: 1px solid #49d6d0; border-radius: 50%; box-shadow: 0 0 0 36px #49d6d017, 0 0 0 72px #49d6d00b; }
-  .project-feature-orbit::after { content: ''; position: absolute; top: 12%; right: 12%; width: 13px; height: 13px; border-radius: 50%; background: #49d6d0; box-shadow: 0 0 20px #49d6d0; }
-  .project-feature-orbit span { font-family: var(--font-display); font-size: 11rem; font-weight: 500; line-height: 1; color: #e7f4f5; }
-  .project-feature-tag { position: absolute; z-index: 2; padding: .35rem .55rem; border: 1px solid #56717c; background: #16313e; color: #c8e7e8; }
-  .project-feature-tag--one { top: 23%; left: 9%; }
-  .project-feature-tag--two { top: 29%; right: 7%; }
-  .project-feature-tag--three { bottom: 24%; left: 7%; }
-  .project-feature-tag--four { bottom: 21%; right: 9%; }
-  .ledger { padding-bottom: clamp(1.75rem, 2.5vw, 2.75rem); }
-  .thesis-case-rail { display: grid; grid-template-columns: 1fr 2fr 1fr; min-height: 7.5rem; border-bottom: 1px solid #56717c; }
-  .thesis-case-label, .thesis-case-rail > p, .thesis-case-link { display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 1.15rem 1.25rem; }
-  .thesis-case-label { gap: .55rem; padding-left: 0; color: var(--signal-bright); }
-  .thesis-case-label strong { color: #e7f4f5; font-family: var(--font-body); font-size: .9rem; font-weight: 600; letter-spacing: 0; }
-  .thesis-case-rail > p { border-left: 1px solid #56717c; color: #c2d3d8; font-size: .95rem; line-height: 1.45; }
-  .thesis-case-link { flex-direction: row; align-items: center; justify-content: space-between; gap: 1rem; border-left: 1px solid #56717c; background: #173743; color: #e7f4f5; font-family: var(--font-mono); font-size: .76rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; transition: background .2s ease, color .2s ease; }
-  .thesis-case-link span { color: var(--signal-bright); font-family: var(--font-body); font-size: 1.45rem; line-height: 1; }
-  .thesis-case-link:hover, .thesis-case-link:focus-visible { background: #245362; color: #fff; }
-  .thesis-case-link:focus-visible { outline: 3px solid var(--signal-bright); outline-offset: -3px; }
-  .thesis-head, .ledger-heading, .work-heading, .method-heading { display: block; margin-bottom: clamp(2.25rem, 4vw, 3.75rem); }
-  .thesis-head .eyebrow, .ledger-heading .eyebrow, .work-heading .eyebrow, .method-heading .eyebrow { display: block; margin-bottom: .85rem; font-size: .77rem; }
-  .thesis-head { border-top: 1px solid #56717c; padding-top: .85rem; }
-  .ledger-heading, .method-heading { border-top: 1px solid var(--ink); padding-top: .85rem; }
-  .work-heading h2 { max-width: 21ch; font-size: clamp(2.9rem, 4.7vw, 5rem); }
-  .work-heading p:last-child { max-width: 39rem; margin-top: 1rem; }
-  .featured-case { margin-top: 1.25rem; border: 1px solid var(--ink); background: var(--paper-light); }
-  .featured-case__link { display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); min-height: 440px; color: inherit; }
-  .featured-case__link:hover { color: inherit; }
-  .featured-case__link:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; box-shadow: none; }
-  .featured-case__copy { display: flex; flex-direction: column; min-width: 0; padding: clamp(1.4rem, 2.6vw, 2.8rem); }
-  .featured-case__meta { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .65rem; border-bottom: 1px solid var(--rule); color: var(--signal); }
-  .featured-case__meta span:last-child { text-align: right; }
-  .featured-case__copy h3 { max-width: 15ch; margin-top: clamp(2.8rem, 5vw, 5.5rem); font-family: 'Space Grotesk', Arial, sans-serif; font-size: clamp(2.25rem, 3.55vw, 4rem); font-weight: 600; letter-spacing: -.055em; line-height: .98; }
-  .featured-case__headline { margin-top: 1rem; font-size: clamp(1.05rem, 1.3vw, 1.28rem); font-weight: 600; }
-  .featured-case__summary { max-width: 32rem; margin-top: .75rem; color: var(--muted); font-size: .96rem; line-height: 1.48; }
-  .featured-case__cta { display: inline-flex; justify-content: space-between; gap: 2.5rem; align-items: center; width: fit-content; margin-top: auto; padding-top: 1.2rem; border-bottom: 2px solid currentColor; padding-bottom: .5rem; font-size: .82rem; font-weight: 700; letter-spacing: .045em; text-transform: uppercase; }
-  .featured-case__cta span { font-size: 1.15rem; font-weight: 400; }
-  .featured-case__link:hover .featured-case__cta { color: var(--signal); }
-  .featured-case__preview { display: flex; flex-direction: column; min-width: 0; padding: clamp(1.1rem, 2vw, 2rem); background: #0c1722; color: #e7f4f5; border-left: 1px solid var(--ink); background-image: linear-gradient(#67afbd14 1px, transparent 1px), linear-gradient(90deg, #67afbd14 1px, transparent 1px); background-size: 28px 28px; }
-  .featured-case__preview-head { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .7rem; border-bottom: 1px solid #5d7b87; color: #67e3dc; }
-  .featured-case__stages { display: grid; flex: 1; gap: .6rem; padding-block: 1.25rem; }
-  .featured-case__stage { display: flex; gap: .8rem; min-width: 0; padding: .85rem; border: 1px solid #66808d; background: #142835ed; }
-  .featured-case__stage-index { flex: 0 0 2rem; color: #67e3dc; }
-  .featured-case__stage-text { display: block; min-width: 0; }
-  .featured-case__stage-text strong { display: block; font-size: .98rem; font-weight: 600; line-height: 1.18; }
-  .featured-case__stage-text small { display: block; margin-top: .35rem; color: #b6cdd2; font-size: .78rem; line-height: 1.35; }
-  .featured-case__readout { display: flex; align-items: center; gap: .75rem; border-top: 1px solid #5d7b87; padding-top: .75rem; color: #c7e4e6; }
-  .featured-case__pulse { width: .55rem; height: .55rem; flex: 0 0 auto; border-radius: 50%; background: #49d6d0; box-shadow: 0 0 0 4px #49d6d025; }
-  .featured-case--reporting-modernization .featured-case__stages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .featured-case--reconciliation-automation .featured-case__stages { grid-template-columns: 1fr; gap: .35rem; }
-  .featured-case--reconciliation-automation .featured-case__stage { align-items: center; padding-block: .55rem; border-left: 3px solid #49d6d0; }
-  .featured-case--reconciliation-automation .featured-case__stage:last-child { border-left-color: #d6b676; }
-  .featured-case--portfolio-governance-platform .featured-case__stages { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .featured-case--portfolio-governance-platform .featured-case__stage { display: block; }
-  .featured-case--portfolio-governance-platform .featured-case__stage-index { display: block; margin-bottom: .8rem; }
-  .featured-case--portfolio-governance-platform .featured-case__stage:last-child { grid-column: 1 / -1; display: flex; align-items: center; border-color: #49d6d0; background: #173b46; }
-  .featured-case--portfolio-governance-platform .featured-case__stage:last-child .featured-case__stage-index { margin: 0; }
-  @media (max-width: 1000px) {
-    .project-feature-grid { grid-template-columns: 1fr; }
-    .project-feature-console { min-height: 420px; }
-    .thesis-case-rail { grid-template-columns: 1fr 2fr; }
-    .thesis-case-link { grid-column: 1 / -1; min-height: 4.25rem; border-top: 1px solid #56717c; border-left: 0; }
-    .featured-case__link { grid-template-columns: 1fr; }
-    .featured-case__copy { min-height: 320px; }
-    .featured-case__copy h3 { margin-top: 2.5rem; }
-    .featured-case__preview { min-height: 340px; border-left: 0; border-top: 1px solid var(--ink); }
-    .featured-case__cta { margin-top: 2rem; }
-  }
-  @media (max-width: 600px) {
-    .project-feature-copy h2 { font-size: clamp(3.2rem, 14vw, 5rem); }
-    .project-feature-console { min-height: 350px; }
-    .project-feature-orbit { width: 180px; height: 180px; box-shadow: 0 0 0 24px #49d6d017, 0 0 0 48px #49d6d00b; }
-    .project-feature-orbit span { font-size: 8rem; }
-    .project-feature-console-foot { font-size: .5rem; }
-    .thesis-case-rail { grid-template-columns: 1fr; }
-    .thesis-case-label, .thesis-case-rail > p, .thesis-case-link { padding-inline: 0; }
-    .thesis-case-rail > p { border-left: 0; border-top: 1px solid #56717c; }
-    .thesis-case-link { grid-column: auto; padding-inline: 1rem; }
-    .featured-case__copy { min-height: auto; }
-    .featured-case__copy h3 { font-size: clamp(2rem, 9vw, 3rem); }
-    .featured-case__preview { min-height: auto; }
-    .featured-case--reporting-modernization .featured-case__stages,
-    .featured-case--portfolio-governance-platform .featured-case__stages { grid-template-columns: 1fr; }
-    .featured-case--portfolio-governance-platform .featured-case__stage { display: flex; }
-    .featured-case--portfolio-governance-platform .featured-case__stage-index { margin: 0; }
-  }
-</style>

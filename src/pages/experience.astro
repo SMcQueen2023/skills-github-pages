@@ -1,65 +1,97 @@
 ---
 import Base from '../layouts/Base.astro';
+import { profile } from '../data/profile';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const experience = [
+  {
+    context: 'Accounting / enterprise reporting',
+    title: 'Reporting modernization',
+    role: 'Project lead and team Scrum Master; later Accounting business lead',
+    contribution: 'I repaired the Power BI proof of concept, investigated query performance and upstream dependencies, and recommended a different migration approach. The VP accepted the recommendation; enterprise IT took on development of the broader solution.',
+    status: 'Assessment and limited proof of concept completed; the wider estate was not migrated by this work.',
+    href: '/work/reporting-modernization/',
+  },
+  {
+    context: 'Freight / enterprise reporting',
+    title: 'SAS-to-Azure migration planning',
+    role: 'Project lead for a cross-team group of approximately ten contributors',
+    contribution: 'I built the business case and secured VP sponsorship. The team inventoried 170 reports, worked with IT on the technical direction, and migrated initial proof-of-concept reports. I ran Power BI office hours to work through implementation questions with colleagues.',
+    status: 'Sponsorship, inventory, planning, and early proofs of concept established before I left the project.',
+    href: '/work/sas-to-azure-migration/',
+  },
+  {
+    context: 'Accounting / analytics automation',
+    title: 'Monthly contribution reconciliation',
+    role: 'Workflow design and hands-on implementation',
+    contribution: 'I automated aggregation and reconciliation across 30 monthly source files using Azure Synapse, SQL, and Python, replacing manual contribution calculations with a repeatable workflow.',
+    status: 'Automated monthly aggregation and reconciliation delivered.',
+    href: '/work/reconciliation-automation/',
+  },
+  {
+    context: 'Enterprise / reporting and data modeling',
+    title: 'Portfolio measures and accounting models',
+    role: 'BI development and data-model design',
+    contribution: 'I connected SharePoint intake and project activity to Power BI portfolio measures. In a separate revenue accounting proof of concept, I designed fact and dimension structures around the reporting questions.',
+    status: 'Portfolio reporting delivered; revenue accounting model remained a proof of concept.',
+    href: '/work/portfolio-governance-platform/',
+  },
+];
 ---
 
-<Base title="Experience — Scott McQueen" description="Scott McQueen's work in enterprise reporting, analytics modeling, reconciliation automation, and portfolio BI." current="experience">
+<Base title="Experience — Scott McQueen | Analytics delivery" description="Enterprise analytics experience across accounting and freight: migration assessment, cross-team delivery, Power BI office hours, and reporting automation." current="experience">
   <header class="page-lead wrap">
-    <div class="lead-meta"><p class="eyebrow">Experience / 03</p><span class="mono">BI / automation / delivery</span></div>
-    <h1>From business case to technical delivery.</h1>
-    <p class="lead-text">I have led reporting and automation initiatives from business case through proof of concept and technical handoff. I bring business teams and IT together to test platform fit, resolve constraints, and make delivery decisions with evidence.</p>
+    <div class="lead-meta"><p class="eyebrow">Experience</p><span class="mono">Enterprise analytics / accounting / freight</span></div>
+    <h1>Hands-on analytics. Responsibility for delivery.</h1>
+    <p class="lead-text">My foundation is senior BI and data analysis. I have led project teams, shaped reporting decisions with business and IT stakeholders, and helped colleagues build their own solutions through live working sessions.</p>
+    <div class="page-actions"><a class="button" href={profile.linkedin}>Request my résumé on LinkedIn <span aria-hidden="true">↗</span></a><a class="action-link" href={`${base}/work/`}>View case studies <span aria-hidden="true">↗</span></a></div>
   </header>
-
-  <section class="editorial-section wrap" aria-labelledby="scope-heading">
-    <div class="editorial-grid">
-      <p class="eyebrow">01 / Delivery scope</p>
-      <div>
-        <h2 id="scope-heading">What the work involves.</h2>
-        <div class="scope-grid">
-          <article><span class="mono">01</span><h3>Understand the problem</h3><p>Identify who is affected, what they envision, and what improves when the problem is solved.</p></article>
-          <article><span class="mono">02</span><h3>Design and define</h3><p>Study the current process and data, then define the model, business rules, and checks together.</p></article>
-          <article><span class="mono">03</span><h3>Develop</h3><p>Build and test the solution while coordinating decisions with business leaders, architects, IT, and reporting teams.</p></article>
-          <article><span class="mono">04</span><h3>Deliver</h3><p>Validate the result with users, release it, and make ownership and support clear.</p></article>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="editorial-section wrap" aria-labelledby="record-heading">
     <div class="editorial-grid">
-      <p class="eyebrow">02 / Representative record</p>
+      <p class="eyebrow">Selected enterprise experience</p>
       <div>
-        <h2 id="record-heading">Selected work.</h2>
-        <p class="record-intro">A view of delivery areas. A dated role history is available in my resume.</p>
-        <div class="record-list">
-          <article class="record-row"><span class="mono">Reporting</span><div><h3>Test the proposed platform against the actual workload.</h3><p>Led an SAP BusinessObjects-to-Power BI proof of concept; query plans, service stress tests, and dependency analysis supported a change in migration approach.</p></div><a class="action-link" href={`${base}/work/reporting-modernization/`}>View work <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Program lead</span><div><h3>Build the case and organize the migration team.</h3><p>Secured VP sponsorship for a Freight SAS-to-Azure reporting initiative, inventoried 170 reports, and led a cross-team group through planning and early proofs of concept.</p></div><a class="action-link" href={`${base}/work/sas-to-azure-migration/`}>View work <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Modeling</span><div><h3>Turn accounting data into a usable BI model.</h3><p>Designed fact and dimension structures for a revenue accounting proof of concept in Power BI.</p></div><a class="action-link" href={`${base}/work/enterprise-data-modeling/`}>View work <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Automation</span><div><h3>Automate monthly 401(k) reconciliation.</h3><p>Aggregated contribution totals from 30 source files each month and reconciled them automatically with Azure Synapse, SQL, and Python.</p></div><a class="action-link" href={`${base}/work/reconciliation-automation/`}>View work <span aria-hidden="true">↗</span></a></article>
-          <article class="record-row"><span class="mono">Portfolio BI</span><div><h3>Don't interpret project health. Calculate it.</h3><p>Used SharePoint intake, modeled project data, and Power BI measures to calculate portfolio status from recorded activity.</p></div><a class="action-link" href={`${base}/work/portfolio-governance-platform/`}>View work <span aria-hidden="true">↗</span></a></article>
+        <h2 id="record-heading">Business context, contribution, and result.</h2>
+        <p class="section-intro">The roles below describe my responsibilities on each initiative.</p>
+        <div class="experience-list">
+          {experience.map((item) => (
+            <article class="experience-entry">
+              <p class="mono">{item.context}</p>
+              <div class="entry-detail">
+                <h3>{item.title}</h3>
+                <p class="role"><strong>My role:</strong> {item.role}</p>
+                <p>{item.contribution}</p>
+                <p class="status"><strong>Result:</strong> {item.status}</p>
+                <a class="action-link" href={`${base}${item.href}`}>Read case study <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <section class="experience-close">
-    <div class="wrap close-grid">
-      <p class="eyebrow">03 / Next conversation</p>
-      <div><h2>Roles where I can contribute.</h2><p>I am interested in business intelligence, reporting, automation, and technical delivery lead or manager roles. I can share a resume and discuss the work behind these examples.</p><a class="action-link" href={`${base}/contact/`}>Get in touch <span aria-hidden="true">↗</span></a></div>
+  <section class="enablement-band" aria-labelledby="enablement-heading">
+    <div class="wrap editorial-grid">
+      <p class="eyebrow">Helping colleagues deliver</p>
+      <div>
+        <h2 id="enablement-heading">Make room for the working session.</h2>
+        <p>Weekly Power BI, SQL, and SAS office hours gave colleagues a place to bring questions and build solutions together. During the SAS migration effort, I worked through Power BI report construction live so report owners could make progress on their own work.</p>
+        <a class="action-link" href={`${base}/work/sas-to-azure-migration/#collaboration`}>See the collaboration <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </section>
 </Base>
 
 <style>
-  .editorial-grid h2{max-width:22ch;font-size:clamp(2.35rem,3.5vw,3.75rem);letter-spacing:-.055em}
-  .scope-grid{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--ink);margin-top:1.75rem}
-  .scope-grid article{min-height:11rem;padding:1rem 1.3rem 1.8rem 0;border-bottom:1px solid var(--rule)}
-  .scope-grid article:nth-child(even){padding-left:1.3rem;border-left:1px solid var(--rule)}
-  .scope-grid .mono{color:var(--signal)}.scope-grid h3{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(1.5rem,2.1vw,2.2rem);letter-spacing:-.045em;margin-top:1.8rem}.scope-grid p{max-width:26rem;color:var(--muted);margin-top:.65rem}
-  .record-intro{max-width:42rem;font-size:1.13rem;margin:1rem 0 1.75rem}.record-row p{max-width:40rem;margin-top:.7rem;line-height:1.45}.record-row .action-link{white-space:nowrap}
-  .experience-close{background:var(--ink);color:var(--paper-light);padding-block:clamp(4rem,6vw,6rem)}.experience-close .eyebrow{color:#66d5d7}.close-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
-  .close-grid h2{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(2.35rem,3.5vw,3.75rem);letter-spacing:-.055em;max-width:22ch}.close-grid p:not(.eyebrow){max-width:42rem;font-size:1.15rem;margin-top:1.1rem;color:#c4d4d9}.close-grid .action-link{margin-top:1.75rem;border-color:var(--paper-light)}.close-grid .action-link:hover{color:#66d5d7;border-color:#66d5d7}
-  @media(max-width:760px){.record-row .action-link{white-space:normal}}
-  @media(max-width:540px){.scope-grid{grid-template-columns:1fr}.scope-grid article:nth-child(even){padding-left:0;border-left:0}.scope-grid article{min-height:0;padding:1rem 0 1.5rem}.scope-grid h3{margin-top:1.4rem}.record-row{grid-template-columns:1fr;gap:.5rem}.record-row a{grid-column:auto}}
+  .page-lead h1{max-width:20ch;font-size:clamp(2.8rem,5.5vw,4.8rem)}
+  .page-actions{display:flex;align-items:center;flex-wrap:wrap;gap:1rem 2rem;margin-top:1.7rem}
+  .section-intro{max-width:45rem;margin-top:1rem;color:var(--muted)}
+  .experience-list{margin-top:2rem;border-top:2px solid var(--ink)}
+  .experience-entry{display:grid;grid-template-columns:minmax(10rem,.32fr) minmax(0,1fr);gap:2.5rem;padding:2rem 0;border-bottom:1px solid var(--rule)}
+  .experience-entry>.mono{max-width:22ch;color:var(--signal)}
+  .entry-detail{max-width:51rem}.entry-detail h3{font-size:clamp(1.6rem,2.6vw,2.6rem);letter-spacing:-.04em}
+  .entry-detail p{margin-top:1rem;font-size:1.05rem}.entry-detail .role{color:var(--muted);font-size:.98rem}.entry-detail .status{padding-left:1rem;border-left:3px solid var(--signal);font-size:.95rem}.entry-detail .action-link{margin-top:1rem}
+  .enablement-band{background:#dfeaed;padding-block:clamp(3rem,5vw,5rem)}.enablement-band p:not(.eyebrow){max-width:49rem;margin-top:1.25rem;font-size:1.15rem}.enablement-band .action-link{margin-top:1.5rem}
+  @media(max-width:700px){.experience-entry{grid-template-columns:1fr;gap:.75rem}.experience-entry>.mono{max-width:none}.page-lead .lead-meta{flex-wrap:wrap}}
 </style>

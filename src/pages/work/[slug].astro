@@ -1,93 +1,50 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { workProjects, type Project } from '../../data/projects';
+import { sitePath } from '../../lib/urls';
 
 export function getStaticPaths() {
-  return workProjects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+  return workProjects.map(project => ({ params: { slug: project.slug }, props: { project } }));
 }
-
 const { project } = Astro.props as { project: Project };
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const currentIndex = workProjects.findIndex((item) => item.slug === project.slug);
-const next = workProjects[(currentIndex + 1) % workProjects.length];
-const isReporting = project.slug === 'reporting-modernization';
-const isReconciliation = project.slug === 'reconciliation-automation';
-const isGovernance = project.slug === 'portfolio-governance-platform';
-const illustration = isReporting ? 'reporting-lineage' : isReconciliation ? 'reconciliation-trace' : isGovernance ? 'governance-health' : undefined;
-const illustrationAlt = isReporting
-  ? 'Schematic: a handful of SAP BusinessObjects reports were repaired and migrated as a Power BI proof of concept; query plans, service stress tests, and dependency analysis changed the wider migration decision.'
-  : isReconciliation
-    ? 'Schematic: 30 monthly contribution files land in Blob Storage, totals are aggregated and reconciled with Synapse, SQL, and Python, and a report shows whether they balance.'
-    : 'Schematic: SharePoint intake and modeled project signals feed explainable Power BI health measures.';
+const next = workProjects[(workProjects.findIndex(item => item.slug === project.slug) + 1) % workProjects.length];
+const illustrations: Record<string, { file: string; alt: string }> = {
+  'reporting-modernization': { file: 'reporting-lineage', alt: 'The Power BI proof of concept, query plans, service tests, and dependency analysis informed a change in the SAP BusinessObjects migration approach.' },
+  'reconciliation-automation': { file: 'reconciliation-trace', alt: 'Thirty monthly contribution files flow into Blob Storage, through Synapse and SQL aggregation, to reconciliation and a balance report. Python supports result validation.' },
+  'portfolio-governance-platform': { file: 'governance-health', alt: 'SharePoint intake, project and time data, and DAX measures connect recorded activity with a portfolio reporting view.' },
+};
+const illustration = illustrations[project.slug];
 ---
-
-<Base title={`${project.title} — Scott McQueen`} description={project.summary} current="work" image={illustration ? `${base}/assets/social/${illustration}.png` : undefined}>
-  <article class:list={['case-file', `case-${project.slug}`]}>
-    <header class="case-cover wrap">
-      <div class="case-rail"><a href={`${base}/work/`}>← Work index</a><span>Decision file / {project.number}</span><span>{project.context}</span></div>
-      <div class="case-heading"><p class="eyebrow">{project.lane}</p><h1>{project.headline}</h1><p class="case-deck">{project.summary}</p></div>
-      <div class="case-cover-bottom"><div><span>Question at stake</span><p>{project.question}</p></div><div><span>Primary move</span><p>{project.decision}</p></div></div>
+<Base title={project.title + ' — Scott McQueen'} description={project.summary} current="work">
+  <article class="professional-case wrap">
+    <header class="case-intro">
+      <a class="text-link" href={sitePath('/work/')}>← Professional work</a>
+      <p class="eyebrow">{project.context}</p>
+      <h1>{project.title}</h1>
+      <p class="case-standfirst">{project.summary}</p>
+      <span class="case-status">{project.status}</span>
+      <dl class="case-overview">
+        <div><dt>Business question</dt><dd>{project.question}</dd></div>
+        <div><dt>My role & scope</dt><dd>{project.role}</dd></div>
+        <div><dt>Consequential contribution</dt><dd>{project.contribution}</dd></div>
+        <div><dt>Outcome</dt><dd>{project.result}</dd></div>
+      </dl>
+      <nav class="case-contents" aria-label="In this case"><a href="#decision">Decision</a><a href="#delivery">Delivery</a><a href="#collaboration">Collaboration</a><a href="#engineering">Technical detail</a><a href="#validation">Validation</a><a href="#outcome">Outcome</a></nav>
     </header>
-
-    <section class="case-artifact" aria-labelledby="artifact-title">
-      <div class="wrap">
-        <div class="artifact-head"><p class="eyebrow">Exhibit A / system logic</p><h2 id="artifact-title">{project.artifactTitle}</h2><p>{project.artifactCaption}</p></div>
-        {illustration && <figure class="diagram-plate"><div class="diagram-scroll" tabindex="0" aria-label="Scroll to inspect the full case illustration"><img src={`${base}/assets/illustrations/${illustration}.svg`} alt={illustrationAlt} width="1200" height="720" loading="lazy" /></div><figcaption>System plate / sanitized public schematic. Scroll horizontally on a small screen to inspect the full drawing.</figcaption></figure>}
-        {project.featured ? (
-          <div class="reading-notes"><p>Read the system plate</p><ol>{project.artifact.map((step) => <li><strong>{step.label.replace(/^\d+ \/ /, '')}</strong><span>{step.detail}</span></li>)}</ol></div>
-        ) : (
-          <div class="general-graphic">
-            {project.artifact.map((step, i) => <div class="general-stage"><span>{String(i + 1).padStart(2, '0')} / {i === 3 ? 'output' : 'step'}</span><strong>{step.label}</strong><p>{step.detail}</p></div>)}
-          </div>
-        )}
-        <p class="artifact-disclosure">Public reconstruction from the case description. No private system screen or record is shown.</p>
+    <div class="case-reading-layout">
+      <aside class="case-context"><p class="eyebrow">Case context</p><p>{project.lane}</p><h2>Tools & methods</h2><ul>{project.tools.map(tool => <li>{tool}</li>)}</ul><a class="text-link" href={sitePath('/contact/')}>Discuss this work ↗</a></aside>
+      <div class="case-prose">
+        <section id="decision"><p class="eyebrow">01 / Judgment</p><h2>The problem and the choice</h2><p>{project.situation}</p><p>{project.decision}</p></section>
+        <section id="delivery"><p class="eyebrow">02 / Delivery responsibility</p><h2>What I owned</h2><p>{project.approach}</p><ul>{project.delivery.map(item => <li>{item}</li>)}</ul></section>
+        <section id="collaboration"><p class="eyebrow">03 / Working with others</p><h2>How the work moved forward</h2><p>{project.collaboration}</p></section>
+        <section id="engineering"><p class="eyebrow">04 / Technical detail</p><h2>The implementation decisions</h2><dl class="technical-details">{project.technicalDetails.map(item => <div><dt>{item.label}</dt><dd>{item.detail}</dd></div>)}</dl>
+          {illustration && <figure class="case-diagram"><a href={sitePath('/assets/illustrations/' + illustration.file + '.svg')} aria-label="Open full-size explanatory diagram"><img src={sitePath('/assets/illustrations/' + illustration.file + '.svg')} alt={illustration.alt} width="1200" height="720" loading="lazy" /></a><figcaption><strong>Public reconstruction.</strong> {project.artifactCaption} <a class="text-link" href={sitePath('/assets/illustrations/' + illustration.file + '.svg')}>Open full-size diagram ↗</a></figcaption></figure>}
+          {project.evidenceLinks?.length > 0 && <div class="case-artifact-links"><h3>Inspect the artifacts</h3>{project.evidenceLinks.map(link => <article><a class="text-link" href={link.url}>{link.label} ↗</a><p>{link.detail}</p></article>)}</div>}
+        </section>
+        <section id="validation"><p class="eyebrow">05 / Validation</p><h2>Validation evidence</h2><p>{project.validation}</p></section>
+        <section id="outcome" class="case-outcome"><p class="eyebrow">06 / Outcome & status</p><h2>What changed</h2><p>{project.result}</p><p class="case-scope-note">{project.boundary}</p></section>
       </div>
-    </section>
-
-    <section class="case-body wrap" aria-label="Case analysis">
-      <aside class="case-sidebar"><p class="eyebrow">Case record</p><p class="sidebar-title">{project.title}</p><dl><dt>Context</dt><dd>{project.context}</dd><dt>Focus</dt><dd>{project.lane}</dd><dt>Tools</dt><dd>{project.tools.join(' / ')}</dd></dl></aside>
-      <div class="case-narrative">
-        <section class="story-block"><div class="story-index">01 / Situation</div><div><h2>Starting condition</h2><p>{project.situation}</p></div></section>
-        <section class="story-block"><div class="story-index">02 / Decision</div><div><h2>Design choice</h2><p>{project.decision}</p><p>{project.approach}</p></div></section>
-        <section class="story-block"><div class="story-index">03 / Verification</div><div><h2>How it was checked</h2><p>{project.validation}</p></div></section>
-      </div>
-    </section>
-
-    <section class="case-conclusion"><div class="wrap conclusion-grid"><div><p class="eyebrow">Outcome</p><h2>Result and limits.</h2></div><div><p class="result-text">{project.result}</p><div class="boundary"><span>What the record supports</span><p>{project.boundary}</p></div></div></div></section>
-    <nav class="case-next wrap" aria-label="Continue reading"><a href={`${base}/work/`}>← All work</a><a href={`${base}/work/${next.slug}/`}><span>Next file / {next.number}</span><strong>{next.headline}</strong><b aria-hidden="true">↗</b></a></nav>
+    </div>
+    <nav class="case-next-nav" aria-label="Continue reading"><a class="text-link" href={sitePath('/work/')}>← All professional work</a><a href={sitePath('/work/' + next.slug + '/')}><span class="eyebrow">Next case</span><strong>{next.title} ↗</strong></a></nav>
   </article>
 </Base>
-
-<style>
-  .case-file{--ink:#0c1722;--paper:#f2f6f7;--red:#0b707c;color:var(--ink);overflow:hidden}
-  .case-cover{padding-top:3rem;padding-bottom:clamp(4rem,8vw,8rem)}
-  .case-rail{display:flex;gap:1rem;justify-content:space-between;border-top:2px solid var(--ink);padding-top:.7rem;text-transform:uppercase;font-family:var(--font-mono,monospace);letter-spacing:.06em;font-size:.72rem}
-  .case-rail a{color:inherit;text-underline-offset:.25em}
-  .case-heading{padding:clamp(3rem,5vw,6rem) 0 clamp(2.5rem,4vw,4rem)}
-  .case-heading .eyebrow{color:var(--red)}
-  .case-heading h1{font-size:clamp(3.8rem,8vw,9rem);line-height:.9;letter-spacing:-.08em;max-width:13ch;margin:1.5rem 0 2.5rem}
-  .case-deck{font-size:clamp(1.3rem,2vw,2rem);line-height:1.28;max-width:44rem;margin:0}
-  .case-cover-bottom{border-top:1px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding-top:1rem}
-  .case-cover-bottom span,.artifact-disclosure,.story-index,.sidebar-title,.case-sidebar dt,.boundary span,.case-next>a:last-child span{font-family:var(--font-mono,monospace);font-size:.73rem;text-transform:uppercase;letter-spacing:.07em}
-  .case-cover-bottom p{font-size:1.1rem;line-height:1.38;max-width:35rem;margin:1rem 0 0}
-  .case-artifact{background:#dfeaed;padding:clamp(3rem,5vw,5rem) 0}.case-artifact .eyebrow{color:var(--red)}
-  .artifact-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.8rem;border-top:2px solid var(--ink);padding-top:.9rem;margin-bottom:2.5rem}
-  .artifact-head .eyebrow{margin:0}.artifact-head h2{font-size:clamp(2.8rem,5.5vw,6rem);letter-spacing:-.07em;line-height:.9;margin:0;max-width:14ch}.artifact-head>p:last-child{font-size:1.15rem;max-width:36rem;line-height:1.35;margin:0}
-  .diagram-plate{margin:0 0 2rem}.diagram-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--ink);background:var(--paper);overscroll-behavior-inline:contain}.diagram-scroll:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px var(--ink)}.diagram-plate img{display:block;width:100%;height:auto;min-width:760px;max-width:none}.diagram-plate figcaption{font-family:var(--font-mono,monospace);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;line-height:1.45;padding-top:.55rem}
-  .artifact-disclosure{border-top:1px solid var(--ink);padding-top:1rem;line-height:1.4;margin:1.5rem 0 0}
-  .reading-notes{display:grid;grid-template-columns:minmax(0,1fr);gap:.75rem;border-top:1px solid var(--ink);padding-top:1rem}
-  .reading-notes>p{font-family:var(--font-mono,monospace);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
-  .reading-notes ol{display:grid;grid-template-columns:repeat(2,1fr);gap:0 2rem;list-style:none;margin:0;padding:0;counter-reset:step}
-  .reading-notes li{counter-increment:step;display:grid;grid-template-columns:2rem 1fr;gap:.25rem .8rem;border-top:1px solid #aebfc6;padding:1rem 0}
-  .reading-notes li::before{content:counter(step,decimal-leading-zero);font-family:var(--font-mono,monospace);font-size:.75rem;color:var(--red);grid-row:span 2}
-  .reading-notes li strong{font-size:1.05rem;line-height:1.2}
-  .reading-notes li span{font-size:.88rem;line-height:1.35}
-  .general-graphic{display:grid;grid-template-columns:repeat(4,1fr);border-top:4px solid var(--ink)}.general-stage{padding:2rem 1.2rem;min-height:17rem;border-right:1px solid var(--ink);display:flex;flex-direction:column}.general-stage:last-child{border-right:0;background:var(--red);color:white}.general-stage span{font: .72rem var(--font-mono,monospace);text-transform:uppercase}.general-stage strong{font-size:clamp(1.5rem,2.5vw,2.7rem);letter-spacing:-.05em;line-height:1;margin:auto 0 1rem}.general-stage p{line-height:1.35;margin:0}
-  .case-body{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:clamp(2rem,4vw,4rem);padding-top:clamp(4rem,6vw,7rem);padding-bottom:clamp(4rem,6vw,7rem)}
-  .case-sidebar{align-self:start;position:sticky;top:6rem;border-top:2px solid var(--ink);padding-top:1rem}.case-sidebar .eyebrow{color:var(--red);margin:0 0 2rem}.sidebar-title{font-size:1rem;line-height:1.3}.case-sidebar dl{margin:2rem 0 0;border-top:1px solid var(--ink)}.case-sidebar dt{margin-top:1.2rem}.case-sidebar dd{margin:.4rem 0 1.5rem;font-size:.94rem;line-height:1.35}
-  .story-block{border-top:1px solid var(--ink);display:grid;grid-template-columns:minmax(0,1fr);gap:.7rem;padding:1.3rem 0 3.5rem}.story-index{color:var(--red)}.story-block h2{font-size:clamp(2.5rem,4.5vw,4.8rem);letter-spacing:-.065em;line-height:.95;max-width:15ch;margin:0 0 1.6rem}.story-block p{font-size:clamp(1.05rem,1.4vw,1.22rem);line-height:1.5;max-width:42rem;margin:0 0 1rem}
-  .case-conclusion{background:var(--ink);color:var(--paper);padding:clamp(4rem,7vw,8rem) 0}.case-conclusion .eyebrow{color:#49d6d0}.conclusion-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.conclusion-grid h2{font-size:clamp(3rem,6vw,6.5rem);line-height:.92;letter-spacing:-.075em;margin:1rem 0;max-width:10ch}.result-text{font-size:clamp(1.3rem,2vw,2rem);line-height:1.3;margin:0 0 3rem}.boundary{border-top:1px solid #56717c;padding-top:1rem}.boundary span{color:#49d6d0}.boundary p{line-height:1.45;max-width:36rem}
-  .case-next{display:flex;justify-content:space-between;gap:2rem;padding-top:3rem;padding-bottom:4rem}.case-next a{color:inherit;text-decoration:none}.case-next>a:first-child{text-decoration:underline;text-underline-offset:.2em}.case-next>a:last-child{display:grid;grid-template-columns:1fr 2rem;gap:.6rem 2rem;max-width:30rem}.case-next>a:last-child span{grid-column:1 / -1}.case-next>a:last-child strong{font-size:clamp(1.8rem,3vw,3rem);line-height:1;letter-spacing:-.05em}.case-next>a:last-child b{font-size:2rem;color:var(--red)}
-  @media(max-width:850px){.general-graphic{grid-template-columns:repeat(2,1fr)}.case-body{grid-template-columns:1fr;gap:3rem}.case-sidebar{position:static;display:grid;grid-template-columns:1fr 2fr;gap:1rem}.case-sidebar dl{display:flex;gap:1.5rem;flex-wrap:wrap;margin:0}.case-sidebar dl>*{flex:1 1 9rem}.general-stage:nth-child(2){border-right:0}}
-  @media(max-width:600px){.case-rail{flex-wrap:wrap}.case-rail span:last-child{width:100%}.case-heading{padding:3rem 0}.case-heading h1{font-size:clamp(3.5rem,14vw,6rem)}.case-cover-bottom{grid-template-columns:1fr;gap:2rem}.reading-notes ol,.general-graphic{grid-template-columns:1fr}.general-stage{border-right:0;border-bottom:1px solid #aebfc6;min-height:13rem}.case-sidebar{display:block}.case-sidebar dl{margin-top:1rem}.story-block{gap:.6rem;padding-bottom:3rem}.story-block h2{font-size:2.8rem}.conclusion-grid{grid-template-columns:1fr}.case-next{flex-direction:column}.case-next>a:last-child{margin-left:auto}}
-</style>

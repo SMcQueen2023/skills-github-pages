@@ -3,7 +3,7 @@
   <desc id="description">A public reconstruction of the SAP BusinessObjects-to-Power BI proof of concept. A handful of reports were repaired and migrated, query plans and Power BI Service stress tests exposed data-size, semantic, and upstream constraints, and leadership accepted a change to enterprise IT-led development.</desc>
   <rect width="1200" height="720" fill="#F2F6F7"/>
   <g fill="#0C1722" font-family="Arial, Helvetica, sans-serif">
-    <text x="48" y="53" font-size="16" font-weight="700" letter-spacing="3">DECISION FILE 01 / REPORTING</text>
+    <text x="48" y="53" font-size="16" font-weight="700" letter-spacing="3">MIGRATION ASSESSMENT / REPORTING</text>
     <text x="48" y="128" font-size="58" font-weight="800" letter-spacing="-2">When the target did not fit</text>
     <text x="49" y="167" font-size="21">A working proof of concept was not a migration strategy for hundreds of reports.</text>
   </g>
@@ -58,6 +58,6 @@
   <path d="M382 356H410M403 349L410 356L403 363M783 356H804M797 349L804 356L797 363" fill="none" stroke="#0B707C" stroke-width="3"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#0C1722">
     <text x="48" y="675" font-size="15" letter-spacing="1">PUBLIC DECISION RECONSTRUCTION · NO PRODUCTION DATA OR UNDISCLOSED METRICS</text>
-    <text x="1149" y="675" text-anchor="end" font-size="15" font-weight="700">SM / 01</text>
+    <text x="1149" y="675" text-anchor="end" font-size="15" font-weight="700">SM</text>
   </g>
 </svg>

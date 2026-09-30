@@ -1,114 +1,62 @@
 ---
 import Base from '../layouts/Base.astro';
-
+import { profile, selectedCredentials, additionalCredentials } from '../data/profile';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const current = [
-  { name: 'Project Management Professional (PMP)', issuer: 'Project Management Institute', date: 'Current through Dec 2026', code: 'PMP' },
-  { name: 'Power BI Data Analyst Associate', issuer: 'Microsoft', date: 'Active through May 2027', code: 'POWER BI' },
-];
-const dated = [
-  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', date: 'Issued Jan 2025', code: 'AZURE / DATA' },
-  { name: 'Azure Data Scientist Associate', issuer: 'Microsoft', date: 'Issued Oct 2025', code: 'AZURE / AI' },
-  { name: 'Applied Data Science Program', issuer: 'MIT Professional Education', date: 'Oct 2024', code: 'APPLIED DS' },
-  { name: 'Base Programming Using SAS 9.4', issuer: 'SAS Certified Specialist', date: 'Mar 2022', code: 'SAS 9.4' },
-];
 ---
 
-<Base title="Credentials — Scott McQueen" description="Scott McQueen's PMP, Power BI, Azure data, applied data science, SAS, and agile credential record with public verification links." current="credentials">
-  <div class="credentials-page">
-    <header class="credentials-hero wrap">
-      <div class="hero-topline"><span class="eyebrow">05 / Credentials</span><span class="mono">Professional record</span></div>
-      <div class="hero-body">
-        <div>
-          <h1>Credentials<span class="title-mark" aria-hidden="true">.</span></h1>
-          <p class="hero-summary">PMP, Power BI, Azure data, applied data science, and SAS. The dates below reflect the public record; issuer profiles are the source for current status.</p>
+<Base title="Credentials — Scott McQueen | PMP, Power BI, Fabric" description="Scott McQueen's selected credentials: PMP, Microsoft Power BI Data Analyst, and Fabric Data Engineer Associate, received September 25, 2026." current="credentials">
+  <header class="page-lead wrap">
+    <div class="lead-meta"><p class="eyebrow">Credentials</p><span class="mono">Delivery / business intelligence / data</span></div>
+    <h1>Credentials that support the work.</h1>
+    <p class="lead-text">Project management discipline, Power BI reporting, and data engineering knowledge complement my enterprise analytics experience.</p>
+  </header>
+
+  <section class="editorial-section wrap" aria-labelledby="selected-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">Selected certifications</p>
+      <div>
+        <h2 id="selected-heading">PMP, Power BI, and Fabric.</h2>
+        <div class="credential-list">
+          {selectedCredentials.map((item) => (
+            <article class="credential-row">
+              <div><p class="mono">{item.issuer}</p><h3>{item.name}</h3><p class="credential-date">{item.date}</p></div>
+              <a class="action-link" href={item.href}>{item.shortName === 'Fabric Data Engineer' ? 'View credential' : 'Issuer profile'} <span aria-hidden="true">↗</span></a>
+            </article>
+          ))}
         </div>
-        <aside class="verification-panel" aria-label="Verification sources">
-          <p class="panel-kicker">Verification sources <span aria-hidden="true">↗</span></p>
-          <a href="https://learn.microsoft.com/en-us/users/scottmcqueen-9826/transcript/vjjrpbm2lq596gn?tab=credentials-tab">Microsoft Learn transcript <span aria-hidden="true">↗</span></a>
-          <a href="https://www.credly.com/users/scott-mcqueen">Credly profile <span aria-hidden="true">↗</span></a>
-        </aside>
+        <p class="verification-note">Issuer profiles provide verification and current status. The case studies show how I apply technical knowledge to delivery decisions.</p>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="credential-section wrap" aria-labelledby="current-heading">
-      <div class="section-heading"><p class="section-index">01 / CURRENT</p><div><h2 id="current-heading">Current certifications</h2><p>Dates shown are from the existing public record.</p></div></div>
-      <div class="credential-table" role="list">
-        {current.map((item, index) => (
-          <article class="credential-item" role="listitem">
-            <span class="item-number" aria-hidden="true">0{index + 1}</span>
-            <div class="item-primary"><h3>{item.name}</h3><p>{item.issuer}</p></div>
-            <span class="item-code">{item.code}</span>
-            <p class="item-date current-date"><span class="status-dot" aria-hidden="true"></span>{item.date}</p>
-          </article>
-        ))}
+  <section class="editorial-section wrap" aria-labelledby="additional-heading">
+    <div class="editorial-grid">
+      <p class="eyebrow">Additional study and certification</p>
+      <div>
+        <h2 id="additional-heading">A broader analytical foundation.</h2>
+        <ul class="additional-list">
+          {additionalCredentials.map((item) => (
+            <li><h3>{item.name}</h3><p>{item.issuer} · {item.date}</p></li>
+          ))}
+        </ul>
+        <div class="profile-links"><a class="action-link" href={profile.microsoftTranscript}>Microsoft transcript <span aria-hidden="true">↗</span></a><a class="action-link" href={profile.credly}>Credly profile <span aria-hidden="true">↗</span></a></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="credential-section wrap" aria-labelledby="dated-heading">
-      <div class="section-heading"><p class="section-index">02 / DATED</p><div><h2 id="dated-heading">Issued and completed</h2><p>Issue and completion dates do not imply current certification status.</p></div></div>
-      <div class="credential-table" role="list">
-        {dated.map((item, index) => (
-          <article class="credential-item" role="listitem">
-            <span class="item-number" aria-hidden="true">0{index + 1}</span>
-            <div class="item-primary"><h3>{item.name}</h3><p>{item.issuer}</p></div>
-            <span class="item-code">{item.code}</span>
-            <p class="item-date">{item.date}</p>
-          </article>
-        ))}
-      </div>
-      <p class="record-footnote"><span aria-hidden="true">*</span> SAFe Practitioner and Product Owner/Product Manager training are part of my historical record. Check the issuer transcript for renewal details on all certifications.</p>
-    </section>
-
-    <section class="applied-section" aria-labelledby="applied-heading">
-      <div class="wrap applied-layout">
-        <div class="applied-intro"><p class="section-index">03 / APPLIED</p><h2 id="applied-heading">In the work</h2><p>These case files cover portfolio measures and reusable data models.</p></div>
-        <div class="applied-links">
-          <a href={`${base}/work/portfolio-governance-platform/`}><span class="applied-code">01 / POWER BI</span><strong>Portfolio governance platform</strong><span class="applied-arrow" aria-hidden="true">↗</span></a>
-          <a href={`${base}/work/enterprise-data-modeling/`}><span class="applied-code">02 / DATA MODELING</span><strong>Enterprise data modeling</strong><span class="applied-arrow" aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-  </div>
+  <section class="applied-band">
+    <div class="wrap"><p class="eyebrow">Applied experience</p><h2>See the decisions behind the credentials.</h2><p>Explore migration planning, technical assessment, and automated reconciliation in the enterprise case studies.</p><a class="action-link" href={`${base}/work/`}>View selected work <span aria-hidden="true">↗</span></a></div>
+  </section>
 </Base>
 
 <style>
-  .credentials-page{--cred-ink:#0c1722;--cred-muted:#4a5d67;--cred-line:#b7cbd0;--cred-accent:#0e7c86;color:var(--cred-ink);background:#f2f6f7;font-family:'IBM Plex Sans',Arial,sans-serif}
-  .credentials-hero{padding-block:clamp(2.5rem,5vw,5rem) clamp(2.5rem,4vw,4rem)}
-  .hero-topline{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--cred-ink);padding-top:.7rem}
-  .hero-topline .eyebrow{color:var(--cred-accent)}.hero-topline .mono{color:var(--cred-muted)}
-  .hero-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,320px);gap:clamp(2rem,6vw,7rem);align-items:end;margin-top:clamp(2rem,4vw,4rem)}
-  .credentials-hero h1{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(3.25rem,7.8vw,7.5rem);font-weight:600;letter-spacing:-.075em;line-height:.95}
-  .title-mark{color:var(--cred-accent)}.hero-summary{max-width:42rem;margin-top:1.3rem;font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.48;color:var(--cred-muted)}
-  .verification-panel{border-left:2px solid var(--cred-accent);padding:1rem 0 .2rem 1.2rem;background:linear-gradient(90deg,rgba(14,124,134,.07),transparent 75%)}
-  .panel-kicker{display:flex;justify-content:space-between;gap:.5rem;margin-bottom:1.15rem;font-family:'IBM Plex Mono',Consolas,monospace;font-size:.71rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--cred-accent)}
-  .verification-panel a{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--cred-line);padding:.75rem 0;font-size:.92rem;font-weight:600;line-height:1.3}
-  .verification-panel a:hover{color:var(--cred-accent)}
-  .credential-section{padding-block:clamp(2rem,3.5vw,3.5rem);border-top:1px solid var(--cred-ink)}
-  .section-heading{display:grid;grid-template-columns:minmax(0,1fr);gap:.45rem;align-items:start;margin-bottom:1.4rem}
-  .section-index,.item-number,.item-code,.applied-code{font-family:'IBM Plex Mono',Consolas,monospace;font-size:.7rem;font-weight:600;letter-spacing:.07em;line-height:1.4;text-transform:uppercase}
-  .section-index{color:var(--cred-accent)}
-  .section-heading h2,.applied-intro h2{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(1.8rem,3vw,3rem);font-weight:600;letter-spacing:-.055em;line-height:1.06}
-  .section-heading p:not(.section-index){margin-top:.45rem;color:var(--cred-muted);font-size:.93rem}
-  .credential-table{border-top:1px solid var(--cred-line)}
-  .credential-item{display:grid;grid-template-columns:3.5rem minmax(0,1fr) minmax(90px,.25fr) minmax(165px,.3fr);align-items:center;gap:1.2rem;min-height:88px;padding:1.05rem .25rem;border-bottom:1px solid var(--cred-line)}
-  .item-number{align-self:start;padding-top:.35rem;color:var(--cred-accent)}
-  .item-primary h3{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(1.12rem,1.75vw,1.45rem);font-weight:600;letter-spacing:-.035em;line-height:1.2}
-  .item-primary p{margin-top:.3rem;color:var(--cred-muted);font-size:.85rem}
-  .item-code{color:var(--cred-muted);font-size:.65rem}
-  .item-date{text-align:right;font-size:.83rem;font-weight:600;line-height:1.35}
-  .current-date{display:flex;justify-content:flex-end;align-items:baseline;gap:.5rem;color:var(--cred-accent)}
-  .status-dot{flex:none;width:.4rem;height:.4rem;border-radius:50%;background:var(--cred-accent)}
-  .record-footnote{max-width:48rem;margin:1.2rem 0 0;color:var(--cred-muted);font-size:.84rem;line-height:1.5}
-  .record-footnote span{color:var(--cred-accent);font-weight:700}
-  .applied-section{margin-top:clamp(1.5rem,3vw,3rem);padding-block:clamp(2.5rem,4vw,4rem);background:#dfeaec}
-  .applied-layout{display:grid;grid-template-columns:minmax(220px,.45fr) 1fr;gap:clamp(2rem,6vw,7rem)}
-  .applied-intro h2{margin-top:.75rem}.applied-intro p:last-child{max-width:19rem;margin-top:.8rem;font-size:.9rem;color:var(--cred-muted)}
-  .applied-links{border-top:1px solid var(--cred-ink)}
-  .applied-links a{display:grid;grid-template-columns:10rem 1fr 2rem;align-items:center;gap:1rem;padding:1.25rem 0;border-bottom:1px solid var(--cred-line)}
-  .applied-links a:hover{color:var(--cred-accent)}.applied-code{color:var(--cred-accent)}
-  .applied-links strong{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:600;letter-spacing:-.035em}
-  .applied-arrow{text-align:right;font-size:1.3rem}
-  @media(max-width:780px){.hero-body{grid-template-columns:1fr}.verification-panel{max-width:28rem}.credential-item{grid-template-columns:2rem minmax(0,1fr) minmax(130px,.38fr)}.item-code{display:none}.applied-layout{grid-template-columns:1fr;gap:1.6rem}.applied-intro p:last-child{max-width:35rem}}
-  @media(max-width:540px){.hero-topline .mono{display:none}.credential-section{padding-block:2.2rem}.credential-item{grid-template-columns:1.6rem minmax(0,1fr);gap:.4rem .65rem;padding:1rem 0}.item-number{grid-row:1 / 3}.item-date{grid-column:2;text-align:left}.current-date{justify-content:flex-start}.item-primary h3{font-size:1.12rem}.applied-links a{grid-template-columns:1fr 1.5rem;gap:.2rem .5rem}.applied-code{grid-column:1 / -1}.applied-arrow{grid-column:2;grid-row:2}}
+  .page-lead h1{max-width:18ch;font-size:clamp(2.8rem,5.5vw,4.8rem)}
+  .credential-list{margin-top:2rem;border-top:2px solid var(--ink)}
+  .credential-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:center;padding:1.6rem 0;border-bottom:1px solid var(--rule)}
+  .credential-row .mono{color:var(--signal)}.credential-row h3{max-width:33ch;font-size:clamp(1.5rem,2.4vw,2.35rem);letter-spacing:-.04em;margin-top:.5rem}.credential-date{margin-top:.75rem;color:var(--muted)}
+  .credential-row .action-link{white-space:nowrap}.verification-note{max-width:48rem;color:var(--muted);margin-top:1.2rem;font-size:.92rem}
+  .additional-list{list-style:none;margin:1.75rem 0 0;padding:0;max-width:55rem}.additional-list li{padding:1.25rem 0;border-top:1px solid var(--rule)}.additional-list h3{font-size:1.3rem;line-height:1.25}.additional-list p{color:var(--muted);margin-top:.5rem}
+  .profile-links{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:1.1rem}
+  .applied-band{background:#dfeaed;padding-block:clamp(3rem,5vw,5rem)}.applied-band h2{max-width:24ch;font-size:clamp(2rem,3.8vw,3.75rem);letter-spacing:-.05em;margin-top:1rem}.applied-band p:not(.eyebrow){max-width:43rem;margin-top:1.25rem;font-size:1.1rem}.applied-band .action-link{margin-top:1.5rem}
+  @media(max-width:700px){.credential-row{grid-template-columns:1fr;gap:.8rem}.credential-row .action-link{justify-self:start}.page-lead .lead-meta{flex-wrap:wrap}}
 </style>
